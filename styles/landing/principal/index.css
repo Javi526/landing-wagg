@@ -1,0 +1,17 @@
+.Initials-container {
+    margin-top: 114px;
+}
+
+.Initials-content {
+    width: 1141px;
+    margin: auto;
+    border: 1px solid;
+}
+
+.Initials-content-intro {
+    display: flex;
+    justify-content: center;
+}
+.Initials-content-description {
+    width: 579px;
+}
