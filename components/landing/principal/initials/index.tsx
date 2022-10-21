@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ImageWoman_and_dog from "../../../../assets/landing/principal/woman-and-dog.webp";
+import ImageWoman_and_dog from "../../../../assets/landing/principal/woman-and-dog.svg";
 import Hello from "../../../../assets/landing/principal/hello.svg";
 
 export default function Initials() {
