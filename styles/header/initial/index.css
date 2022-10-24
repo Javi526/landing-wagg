@@ -48,6 +48,7 @@
     text-align: center;
     color: #9188FD;
     cursor: pointer;
+    margin-left: -30px;
 }
 
 .header-button {
