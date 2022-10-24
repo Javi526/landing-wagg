@@ -1,6 +1,7 @@
-import { why_use } from "../../../../contants/landing/principal";
+import { why_use } from "../../../../constants/landing/principal";
 import { landingPrincipalInterface } from "../../../../interface/landing/principal";
 import Image from "next/image";
+import WhatYouShouldKnow from "../ what-you-should-know";
 
 
 export default function WhyUse() {
@@ -8,7 +9,7 @@ export default function WhyUse() {
     const handleChangeClassName = (id: number) : string => {
          if (id === 1) return "why-use-item-subtitle";
          return "why-use-item-title";
-    }
+    };
 
     return (
         <div className={"why-use-container"}>
@@ -28,6 +29,7 @@ export default function WhyUse() {
                 ))}
               </div>
            </div>
+            <WhatYouShouldKnow />
         </div>
     )
 }

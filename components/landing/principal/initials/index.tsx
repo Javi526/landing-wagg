@@ -33,6 +33,9 @@ export default function Initials() {
                         <Image src={ImageWoman_and_dog} width={512} height={430} alt={"ImageWoman_and_dog"} />
                     </div>
                 </div>
+                <div className={"Initial-text-how-container"}>
+                    <p className={"Initial-text-how"}>¿Cómo funciona?</p>
+                </div>
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 .Initials-container {
     margin-top: 114px;
+    padding-bottom: 184px;
 }
 
 .Initials-content {
@@ -74,13 +75,100 @@
     color: #FFFFFF;
 }
 
+.Initial-text-how-container {
+    margin-top: 77.15px;
+    margin-bottom: 11px;
+}
+
+.Initial-text-how {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    color: #463677;
+    margin: 0;
+}
+
+.HowDoesItWork-container {
+    display: flex;
+    justify-content: center;
+}
+
+.HowDoesItWork-content {
+    width: 1006px;
+    margin: auto;
+    position: absolute;
+    margin-top: -6rem;
+}
+
+.HowDoesItWork-content-card {
+    width: 1006px;
+    height: 198px;
+    background: #D6D4F7;
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.075);
+    border-radius: 20px;
+    padding-top: 31px;
+    padding-left: 44px;
+    padding-right: 30px;
+}
+
+.HowDoesItWork-content-card-item-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.HowDoesItWork-content-card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.HowDoesItWork-content-card-item-img-container {
+    position: absolute;
+    margin-top: -8.3rem;
+}
+
+.HowDoesItWork-content-card-item:nth-of-type(1) {
+    margin-right: 46px;
+}
+.HowDoesItWork-content-card-item:nth-of-type(2) {
+    margin-right: 21px;
+}
+
+.HowDoesItWork-content-card-item-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #463677;
+    margin: 0;
+}
+
+.HowDoesItWork-content-card-item-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #463677;
+    margin: 0;
+}
+
 .why-use-container {
     background: #FAFBFF;
     padding-top: 191px;
 }
 
 .why-use-content {
-    width: 1119px;
+    width: 1142px;
     margin: auto;
 }
 
@@ -88,7 +176,10 @@
    margin-top: 31px;
    margin-bottom: 24px;
 }
-.why-use-title {
+.WhatYouShouldKnow-title {
+    position: relative;
+}
+.why-use-title, .WhatYouShouldKnow-title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -138,4 +229,585 @@
 
 .why-use-item-img {
     position: absolute;
+}
+.WhatYouShouldKnow-container {
+    padding-top: 93px;
+    background: #FAFBFF;
+    padding-bottom: 15rem;
+}
+
+.WhatYouShouldKnow-content {
+    width: 1119px;
+    margin: auto;
+}
+
+.WhatYouShouldKnow-content-image {
+    position: absolute;
+    margin-left: 15.65rem;
+    margin-top: -12px;
+}
+.WhatYouShouldKnow-content-image-dog {
+    position: absolute;
+    margin-left: 61.4rem;
+    margin-top: 11rem
+}
+.WhatYouShouldKnow-content-item-container {
+    margin-top: 24px;
+    margin-bottom: 52px;
+}
+
+.WhatYouShouldKnow-content-item {
+    width: 100%;
+    height: 154px;
+    background: #FFFFFF;
+    border: 1px solid #E7EBF8;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 24px;
+    padding-left: 24px;
+}
+.WhatYouShouldKnow-content-item-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #101223;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.WhatYouShouldKnow-content-item-subTitle {
+    font-family: 'Poppins', sans-serif;
+    width: 931px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5B5D6B;
+
+}
+
+.WhatYouShouldKnow-content-dog {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 1142px;
+    margin: auto;
+}
+
+.WhatYouShouldKnow-circle-pink-container {
+    position: absolute;
+    bottom: 10.8rem;
+    margin-left: 12.5rem;
+}
+.Plan-container {
+    padding-top: 162px;
+    padding-bottom: 121px;
+}
+.Plan-content {
+    width: 1142px;
+    margin: auto;
+}
+
+.Plan-content-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    color: #463677;
+    margin: 0;
+}
+
+.Plan-content-tabs-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Plan-content-tabs-title-container {
+    display: flex;
+}
+
+.Plan-content-tabs-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #463677;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 20px;
+    border-bottom: 2px solid transparent;
+}
+
+
+.Plan-content-tabs-title-selected {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #463677;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-bottom: 2px solid  #FFA7FE;
+    margin-right: 20px;
+}
+
+
+.Plan-content-tabs-card-basic {
+    width: 448px;
+    height: 500px;
+    background: #9188FD;
+    border-radius: 10px;
+    margin-top: 24px;
+    padding-top: 31.91px;
+    z-index: 1;
+}
+.Plan-content-tabs-card-basic-left {
+    padding-left: 26.23px;
+}
+
+.Plan-content-tabs-card-basic-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 18.62px;
+}
+.Plan-content-tabs-card-basic-price-and-time-container {
+    display: flex;
+}
+
+.Plan-content-tabs-card-basic-price {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 31.2px;
+    color: #FFFFFF;
+    margin: 0 11.59px 0 0;
+}
+
+.Plan-content-tabs-card-basic-time {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31.2px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.Plan-content-tabs-card-basic-description {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: #463677;
+    margin: 2.66px 0 0 0;
+}
+
+.Plan-content-tabs-card-basic-item-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 39.89px;
+}
+
+.Plan-content-tabs-card-basic-item {
+    display: flex;
+    margin-bottom: 7.09px;
+}
+
+.Plan-content-tabs-card-basic-item-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0 0 0 14.66px;
+}
+
+.Plan-content-tabs-card-basic-button-container {
+    margin-top: 112.48px;
+    display: flex;
+    justify-content: center;
+}
+
+.Plan-content-tabs-card-basic-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 314px;
+    height: 40.78px;
+    background: #463677;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.Plan-content-tabs-card-basic-img-Aks-us {
+    position: absolute;
+    margin-top: 41px;
+    margin-left: 19.4rem;
+}
+.Plan-content-img-I_am_organization-container {
+    position: absolute;
+    margin-top: 22rem;
+}
+
+.Plan-content-img-Green_mave-container {
+    position: absolute;
+    margin-left: 46.6rem;
+    margin-top: 13.5rem;
+}
+
+.Plan-content-container-day-and-week-container {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 106px;
+}
+
+.Plan-content-container-day-and-week-content {
+    width: 802px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Plan-content-container-day-and-week-item {
+    width: 392px;
+    height: 400px;
+    background: #FAFBFF;
+    border: 1px solid #E7EBF8;
+    border-radius: 10px;
+    padding-top: 35px;
+    z-index: 1;
+}
+
+.Plan-content-tabs-card-day-price-and-time-container {
+    display: flex;
+}
+
+.Plan-content-tabs-card-day-price {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 31.2px;
+    color: #101223;
+    margin: 0 11.59px 0 0;
+}
+
+.Plan-content-tabs-card-day-time {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31.2px;
+    color: #101223;
+    margin: 0;
+}
+
+.Plan-content-tabs-card-day-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #101223;
+    margin-top: 0;
+    margin-bottom: 18.62px;
+}
+.Plan-content-tabs-card-day-and-week-left {
+    padding-left: 36px;
+}
+
+.Plan-content-tabs-card-day-item-container {
+    margin-top: 24px;
+}
+
+.Plan-content-tabs-card-day-item {
+    display: flex;
+    margin-bottom: 8.07px;
+}
+
+.Plan-content-tabs-card-day-item-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5B5D6B;
+    margin: 0 0 0 14.66px;
+}
+
+.Plan-content-tabs-card-day-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 114.15px;
+}
+
+.Plan-content-tabs-card-week-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80.09px;
+}
+
+.Plan-content-tabs-card-day-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 314px;
+    height: 44.77px;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.075));
+    background: #9188FD;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Plan-content-img-I_am_a_pet_parent-container {
+    position: absolute;
+    margin-top: 25rem;
+    margin-left: 2rem;
+}
+
+.Plan-content-img-House-container {
+    position: absolute;
+    margin-left: 58.3rem;
+    margin-top: 31.4rem;
+}
+
+.Plan-content-img-Sky_blue_firule-container {
+    position: absolute;
+    margin-left: 60.3rem;
+    margin-top: 26rem;
+}
+
+.Organizations-container {
+    background: #463677;
+    z-index: 1;
+}
+
+.Organizations-content-container {
+    width: 1113px;
+    margin: auto;
+    padding-top: 67px;
+    padding-bottom: 22px;
+}
+
+.Organizations-content-data-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Organizations-content-data-title-and-description-container {
+    width: 755px;
+}
+
+.Organizations-content-data-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin: 0 0 21px 0;
+}
+
+.Organizations-content-data-description {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.Organizations-content-data-button-container {
+    margin-top: 42px;
+}
+
+.Organizations-content-data-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 224px;
+    height: 46px;
+    font-family: 'Poppins', sans-serif;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.075));
+    background: #9188FD;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Organizations-content-img-three-firule {
+    position: absolute;
+    margin-top: -41px;
+    margin-left: 28.5rem;
+}
+
+.Organizations-content-img-I_want_to_be_part {
+     position: absolute;
+     margin-left: 63.5rem;
+     margin-top: -73px;
+}
+
+.Organizations-content-img-purple_cloud {
+    position: absolute;
+    margin-left: 70rem;
+    margin-top: -69px;
+}
+
+.OurTeam-container {
+    padding-top: 87px;
+    background: #FAFBFF;
+    padding-bottom: 127px;
+}
+
+.OurTeam-content-container {
+    width: 1100px;
+    margin: auto;
+}
+
+.OurTeam-content-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    color: #463677;
+    margin: 0 0 75px 0;
+}
+
+.OurTeam-content-galery-container {
+    width: 672px;
+    height: 494px;
+    margin: auto;
+    padding-top: 36px;
+}
+
+.OurTeam-content-galery-content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.OurTeam-content-galery-left {
+    border: 0.5px solid #E7EBF8;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.OurTeam-content-galery-center {
+    width: 311px;
+    height: 438px;
+    position: absolute;
+    margin-left: 12rem;
+    z-index: 1;
+    margin-top: -36px;
+    filter: drop-shadow(10px 10px 12px rgba(148, 150, 161, 0.1));
+    border: 1px solid #E7EBF8;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.OurTeam-content-galery-right {
+    border: 0.5px solid #E7EBF8;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.OurTeam-content-galery-content {
+    padding-top: 12.3px;
+    padding-left: 30px;
+}
+
+.OurTeam-content-galery-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #101223;
+    margin: 0;
+}
+
+.OurTeam-content-galery-credential {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5B5D6B;
+    margin: 0;
+}
+
+.OurTeam-content-galery-experience {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #9188FD;
+    margin: 7px 0 0 0;
+}
+
+.OurTeam-content-arrow-container {
+    width: 72px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.ArrowYellow-container {
+    position: absolute;
+    margin-top: -11rem;
+    margin-left: 41px;
+}
+
+.CloudViolet-container {
+    position: absolute;
+    margin-top: 9rem;
+}
+
+.CelestialImprint-container {
+    position: absolute;
+    margin-left: 53rem;
+    margin-top: 16rem;
+}
+
+.Waggers-container {
+    position: absolute;
+    margin-left: 52rem;
+    margin-top: -3rem;
 }

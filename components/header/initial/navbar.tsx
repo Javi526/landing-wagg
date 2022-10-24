@@ -1,5 +1,5 @@
 import { MenuInterface } from "../../../interface/header/initial"
-import { menu } from "../../../contants/header/initial/navbar";
+import { menu } from "../../../constants/header/initial/navbar";
 
 export default function Navbar() {
     return (
