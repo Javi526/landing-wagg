@@ -39,6 +39,17 @@
     cursor: pointer;
 }
 
+.header-navbar-item-login {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #9188FD;
+    cursor: pointer;
+}
+
 .header-button {
     display: flex;
     justify-content: center;

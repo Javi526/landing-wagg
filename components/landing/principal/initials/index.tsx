@@ -2,7 +2,7 @@ import Image from "next/image";
 import ImageWoman_and_dog from "../../../../assets/landing/principal/woman-and-dog.svg";
 import Hello from "../../../../assets/landing/principal/hello.svg";
 import LineYellow from "../../../../assets/landing/principal/line-yellow.svg";
-//import ArrowYellow from "../../../../assets/landing/principal/arrow-yellow.svg";
+import ArrowYellow from "../../../../assets/landing/principal/arrow-yellow-hero.png";
 
 export default function Initials() {
     return (
@@ -10,6 +10,9 @@ export default function Initials() {
             <div className={"Initials-content"}>
                 <div className={"Initials-content-intro"}>
                     <div className={"Initials-content-description"}>
+                        <div className={"Initials-content-img-arrow-yellow"}>
+                           <Image src={ArrowYellow} width={58} height={85} alt={"ArrowYellow"} />
+                        </div>
                         <Image src={Hello} width={302} height={57} alt={"hello"} />
                         <div className={"Initials-container-title"}>
                             <p className={"Initials-title"}>Teleconsejo veterinario

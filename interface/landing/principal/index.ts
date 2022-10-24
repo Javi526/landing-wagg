@@ -32,6 +32,11 @@ export interface Tabs_Plan_Interface {
     text: string
 }
 
+export interface Impact_Data_Interface {
+    id: number,
+    text: string
+}
+
 export interface Our_Team_Galery_Interface {
     id: number,
     title: string,

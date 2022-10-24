@@ -83,3 +83,9 @@ export const Our_Team_Galery = [
     { id: 2, title: "Erica Fernández", credential: "MT:0045679000", experience: "7 años de experiencia", img: OurTeam_Image_2 },
     { id: 3, title: "Carla Irazabal", credential: "MT:0045679991", experience: "3 años de experiencia", img: OurTeam_Image_3 }
 ];
+
+export const Impact_Data = [
+        { id: 1, text: "Suscripciones gratuitas para los padres adoptantes" },
+        { id: 2, text: "Capacitaciones a los refugios" },
+        { id: 3, text: "Seguimiento personalizado post-adopción" }
+];

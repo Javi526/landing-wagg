@@ -20,6 +20,13 @@
 .Initials-content-description {
     width: 580px;
 }
+
+.Initials-content-img-arrow-yellow {
+    position: absolute;
+    margin-top: 20.5rem;
+    margin-left: 15rem;
+}
+
 .Initials-container-title {
    margin-top: 16px;
 }
@@ -171,7 +178,16 @@
     width: 1142px;
     margin: auto;
 }
-
+.why-use-content-img-ray-yellows {
+    position: absolute;
+    margin-left: 22rem;
+    margin-top: 0.3rem;
+}
+.why-use-content-img-benefit {
+    position: absolute;
+    margin-left: 56rem;
+    margin-top: -28px;
+}
 .why-use-title-container {
    margin-top: 31px;
    margin-bottom: 24px;
@@ -201,6 +217,7 @@
     border-radius: 10px;
     padding-top: 24px;
     padding-left: 24px;
+    position: relative;
 }
 
 .why-use-item:nth-child(1) {
@@ -613,7 +630,7 @@
 }
 
 .Organizations-content-container {
-    width: 1113px;
+    width: 1142px;
     margin: auto;
     padding-top: 67px;
     padding-bottom: 22px;
@@ -678,14 +695,14 @@
 
 .Organizations-content-img-I_want_to_be_part {
      position: absolute;
-     margin-left: 63.5rem;
+     margin-left: 64.5rem;
      margin-top: -73px;
 }
 
 .Organizations-content-img-purple_cloud {
     position: absolute;
-    margin-left: 70rem;
-    margin-top: -69px;
+    margin-left: 68rem;
+    margin-top: -50px;
 }
 
 .OurTeam-container {
@@ -695,7 +712,7 @@
 }
 
 .OurTeam-content-container {
-    width: 1100px;
+    width: 1142px;
     margin: auto;
 }
 
@@ -810,4 +827,155 @@
     position: absolute;
     margin-left: 52rem;
     margin-top: -3rem;
+}
+
+.Impact-container {
+    padding-top: 122px;
+    padding-bottom: 96px;
+}
+
+.Impact-content-container {
+    width: 1142px;
+    margin: auto;
+}
+
+.Impact-content-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    color: #463677;
+    margin: 0 0 44px 0;
+    position: relative;
+}
+
+.Impact-content-description {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
+    color: #282A3A;
+    width: 673px;
+    margin: 0;
+}
+
+.Impact-content-description-p2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
+    color: #282A3A;
+    width: 673px;
+    margin: 35px 0 31px 0;
+}
+
+.Impact-content-item-container {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.Impact-content-item-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: flex-end;
+    color: #5B5D6B;
+    margin: 0 0 0 12px;
+}
+
+.Impact-content-img {
+    margin-top: 42px;
+    margin-left: 0;
+    margin-bottom: 37px;
+}
+
+.Impact-content-input-container {
+
+}
+
+.Impact-content-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 308px;
+    height: 46px;
+    background: #EEF0F8;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #9E97B4;
+    padding-left: 12px;
+    border-color: transparent;
+    margin-right: 18px;
+}
+
+.Impact-content-button {
+    width: 150px;
+    height: 46px;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.075));
+    background: #463677;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Impact-content-input-label {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #463677;
+    margin: 0 0 8px 0;
+}
+
+.Impact-content-img-DogAndCat {
+    position: absolute;
+    margin-left: 30rem;
+    margin-top: -39px;
+}
+
+.Impact-content-img-spiral-yellow {
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -52px;
+}
+
+.Impact-content-img-join, .Impact-content-part-yellow, .Impact-content-img-part-green {
+    position: absolute;
+}
+
+.Impact-content-img-join {
+    margin-top: 10rem;
+    margin-left: 47.7rem;
+}
+.Impact-content-part-yellow {
+    margin-top: 31rem;
+    margin-left: 33rem;
+    z-index: 1;
+}
+
+.Impact-content-img-part-green {
+    margin-top: 17.5rem;
+    margin-left: 61rem;
+    z-index: 1;
 }

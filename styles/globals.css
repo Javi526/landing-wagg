@@ -1,6 +1,6 @@
 @import "header/initial";
 @import "landing/principal";
-
+@import "footer";
 
 html,
 body {

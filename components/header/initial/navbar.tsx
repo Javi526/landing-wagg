@@ -9,6 +9,7 @@ export default function Navbar() {
                     <p className={"header-navbar-item"}>{data.name}</p>
                 </div>
             ))}
+            <p className={"header-navbar-item-login"}> Ingresá</p>
         </div>
     )
 }
