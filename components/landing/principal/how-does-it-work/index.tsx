@@ -10,7 +10,7 @@ export default function HowDoesItWork() {
                 <div className={"HowDoesItWork-content-card-item-container"}>
                     {HowDoesItWorkData.map((data: HowDoesItWorkDataInterface) => (
                         <div className={"HowDoesItWork-content-card-item"} key={data.id}>
-                            <div className={"HowDoesItWork-content-card-item-img-container"}>
+                            <div className={"HowDoesItWork-content-card-item-img-container"} id={`HowDoesItWork_img-${data.id}`}>
                                 <Image src={data.img} alt={`HowDoesItWork_img-${data.id}`} width={data.width} height={132} />
                             </div>
                            <p className={"HowDoesItWork-content-card-item-title"}>{data.title}</p>

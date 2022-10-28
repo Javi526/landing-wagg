@@ -4,6 +4,7 @@ import Image from "next/image";
 import WhatYouShouldKnow from "../ what-you-should-know";
 import RayYellows from "../../../../assets/landing/principal/ray_yellow.svg";
 import Benefit from "../../../../assets/landing/principal/benefit.svg";
+import BenefitImg from "../../../../assets/landing/principal/benefit-img.svg";
 
 export default function WhyUse() {
 
@@ -24,10 +25,21 @@ export default function WhyUse() {
               <div className={"why-use-title-container"}>
                 <p className={"why-use-title"}>¿Por qué usar wagg?</p>
               </div>
+               <div className={"why-use-responsive"}>
+                   <div className={"why-use-responsive-img"}>
+                       <Image src={BenefitImg} width={254} height={105} alt={"Benefit"} />
+                   </div>
+                   {why_use.map((data: landingPrincipalInterface) => (
+                       <div className={"why-use-responsive-content"} key={data.id}>
+                           <Image src={data.img} alt={data.img} width={88} height={88} />
+                           <p className={"why-use-responsive-content-text"}>{data.title}</p>
+                       </div>
+                   ))}
+               </div>
               <div className={"why-use-item-container"}>
                 {why_use.map((data: landingPrincipalInterface) => (
                     <div className={"why-use-item"} key={data.id}>
-                        {data.title && <p className={"why-use-item-title"}>{data.title}</p>}
+                        {data.id === 1 && <p className={"why-use-item-title"}>{data.title}</p>}
                         <p className={handleChangeClassName(data.id)}>{data.text}</p>
                         <div className={"why-use-item-img"} style={{ marginTop: `${data.top}`, marginLeft: `${data.left}` }}>
                           <Image src={data.img} alt={data.img} width={88} height={67} />

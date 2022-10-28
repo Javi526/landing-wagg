@@ -22,12 +22,12 @@ export const HowDoesItWorkData = [
 
 export const why_use = [
     { id: 1, title: "Estamos disponibles las 24 hs", text: "Facilitamos el acceso inmediato a  veterinarios cuando tu mascota necesite asistencia.", img: Image1, left: "26rem", top: "-4rem" },
-    { id: 2, title: "", text: "Consejos de nutrición para tu mascota", img: Image2, left: "8rem", top: "2rem" },
-    { id: 3, title: "", text: "Determinamos la urgencia de tu situación", img: Image3, left: "8rem", top: "2rem" },
-    { id: 4, title: "", text: "Brindamos instrucciones precisas sobre cómo proceder", img: Image4, left: "8rem", top: "0" },
-    { id: 5, title: "", text: "Te damos una segunda opinión", img: Image5, left: "8rem", top: "2rem" },
-    { id: 6, title: "", text: "Respondemos tus dudas sobre medicamentos y cuidados mascoteros", img: Image6, left: "8rem", top: "0" },
-    { id: 7, title: "", text: "Ofrecemos tips sobre cómo educar a tu mascota", img: Image7, left: "8rem", top: "0" },
+    { id: 2, title: "Consejos de nutrición para tu mascota", text: "Consejos de nutrición para tu mascota", img: Image2, left: "8rem", top: "2rem" },
+    { id: 3, title: "Determinamos la urgencia de tu situación", text: "Determinamos la urgencia de tu situación", img: Image3, left: "8rem", top: "2rem" },
+    { id: 4, title: "Brindamos instrucciones precisas sobre cómo proceder", text: "Brindamos instrucciones precisas sobre cómo proceder", img: Image4, left: "8rem", top: "0" },
+    { id: 5, title: "Te damos una segunda opinión", text: "Te damos una segunda opinión", img: Image5, left: "8rem", top: "2rem" },
+    { id: 6, title: "Respondemos tus dudas sobre medicamentos y cuidados mascoteros", text: "Respondemos tus dudas sobre medicamentos y cuidados mascoteros", img: Image6, left: "8rem", top: "0" },
+    { id: 7, title: "Ofrecemos tips sobre cómo educar a tu mascota", text: "Ofrecemos tips sobre cómo educar a tu mascota", img: Image7, left: "8rem", top: "25px" },
 ];
 
 export const WhatYouShouldKnowData = [
@@ -73,7 +73,6 @@ export const Tabs_Plan_week = {
     item: [
         { id: 1, text: "Acceso al plan base por 1 semana" },
         { id: 2, text: "Atención hasta 3 mascotas" },
-        { id: 3, text: "Seguro de mascotas" }
     ],
     button: "Obtener plan",
 };

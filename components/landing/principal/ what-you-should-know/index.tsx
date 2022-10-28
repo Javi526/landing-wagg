@@ -5,8 +5,26 @@ import { WhatYouShouldKnowInterface } from "../../../../interface/landing/princi
 import Circle_Yellow from "../../../../assets/landing/principal/circle_yellow.png";
 import Sausage_Dogs from "../../../../assets/landing/principal/sausage_dogs.svg";
 import Circle_pink from "../../../../assets/landing/principal/circle_pink.svg";
+import Arrow from "../../../../assets/landing/principal/arrow.svg";
+import { useState } from "react";
 
 export default function WhatYouShouldKnow() {
+
+    const [showData, setShowData] = useState<any>({
+        q1: false,
+        q2: false,
+        q3: false,
+    });
+
+    const handleChangeState = (type : string) : void => {
+        console.log("type", type);
+        setShowData((prevState: any) => ({
+            ...prevState,
+            [type]: !showData[type]
+        }));
+    };
+
+
     return (
         <div className={"WhatYouShouldKnow-container"}>
             <div className={"WhatYouShouldKnow-content"}>
@@ -25,11 +43,29 @@ export default function WhatYouShouldKnow() {
                      </div>
                  ))}
             </div>
+                <div className={"WhatYouShouldKnow-content-item-responsive-container"}>
+                    {WhatYouShouldKnowData.map((data: WhatYouShouldKnowInterface) => (
+                        <>
+                        <div className={"WhatYouShouldKnow-content-item-responsive"} key={data.id} onClick={() => handleChangeState(`q${data.id}`)}>
+                            <p className={"WhatYouShouldKnow-content-item-responsive-title"}>{data.title}</p>
+                            <Image src={Arrow} width={18} height={18} alt={"Arrow"} />
+                        </div>
+                            {showData[`q${data.id}`] &&
+                                <div className={"WhatYouShouldKnow-content-show"}>
+                                    <p className={"WhatYouShouldKnow-content-item-subTitle-responsive"} dangerouslySetInnerHTML={{ __html: data.text }} />
+                                </div>}
+                        </>
+                    ))}
+                </div>
+                <div className={"WhatYouShouldKnow-content-dog-container"}>
                 <div className={"WhatYouShouldKnow-content-dog"}>
                     <div className={"WhatYouShouldKnow-circle-pink-container"}>
                         <Image src={Circle_pink} width={260} height={251} alt={"Circle_pink"} />
                     </div>
-                   <Image src={Bottomless_Dogs} width={287} height={378} alt={"Bottomless_Dogs"} />
+                    <div className={"WhatYouShouldKnow-Bottomless_Dogs-container"}>
+                        <Image src={Bottomless_Dogs} width={287} height={378} alt={"Bottomless_Dogs"} />
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

@@ -44,3 +44,14 @@ export interface Our_Team_Galery_Interface {
     experience: string,
     img: string
 }
+
+export interface why_use_responsive_Tabs_Interface {
+    q1: boolean,
+    q2: boolean,
+    q3: boolean
+}
+
+export interface why_use_responsive_function_Interface {
+    type: string,
+
+}

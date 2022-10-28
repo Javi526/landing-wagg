@@ -61,14 +61,20 @@ export default function OurTeam() {
         <div className={"OurTeam-container"}>
           <div className={"OurTeam-content-container"}>
               <p className={"OurTeam-content-title"}>Nuestro equipo</p>
+              <div className={"Waggers-container-responsive"}>
               <div className={"CloudViolet-container"}>
                   <Image src={CloudViolet} width={273} height={173} alt={"CloudViolet"} />
               </div>
+              </div>
+              <div className={"Waggers-container-responsive"}>
               <div className={"CelestialImprint-container"}>
                   <Image src={CelestialImprint} width={183} height={186} alt={"CelestialImprint"} />
               </div>
-              <div className={"Waggers-container"}>
-                  <Image src={Waggers} width={262} height={89} alt={"Waggers"} />
+              </div>
+              <div className={"Waggers-container-responsive"}>
+                  <div className={"Waggers-container"}>
+                      <Image src={Waggers} width={262} height={89} alt={"Waggers"} />
+                  </div>
               </div>
               <div className={"OurTeam-content-galery-container"}>
                   <div className={"ArrowYellow-container"}>

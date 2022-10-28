@@ -8,7 +8,7 @@ import PartYellow from "../../../../assets/landing/principal/part-yellow.svg";
 import PartGreen from "../../../../assets/landing/principal/part-green.svg";
 import { Impact_Data } from "../../../../constants/landing/principal";
 import { Impact_Data_Interface } from "../../../../interface/landing/principal";
-
+import dog_full from "../../../../assets/landing/principal/dog_full.svg";
 
 export default function Impact() {
     return (
@@ -23,10 +23,10 @@ export default function Impact() {
               <div className={"Impact-content-img-part-green"}>
                   <Image src={PartGreen} width={175} height={159} alt={"PartGreen"} />
               </div>
-             <div className={"Impact-content-img-spiral-yellow"}>
-                 <Image src={Spiral_yellow} width={238} height={95} alt={"Spiral_yellow"} />
-             </div>
               <p className={"Impact-content-title"}>Impacto Wagg</p>
+              <div className={"Impact-content-img-spiral-yellow"}>
+                  <Image src={Spiral_yellow} width={238} height={95} alt={"Spiral_yellow"} />
+              </div>
               <p className={"Impact-content-description"}>Con cada suscripción estas ayudando a un refugio de mascotas. En Wagg queremos sumar nuestro granito de arena para que todos los animales tengan una mejor calidad de vida.</p>
               <p className={"Impact-content-description-p2"}>Ofrecemos:</p>
               <div className={"Impact-content-img-DogAndCat"}>
@@ -47,6 +47,9 @@ export default function Impact() {
                   <p className={"Impact-content-input-label"}>Email</p>
                   <input className={"Impact-content-input"} placeholder={"Ingresá tu email y te contactamos!"} />
                   <button className={"Impact-content-button"}>Enviar</button>
+              </div>
+              <div className={"Impact-content-input-container-responsive"}>
+                  <Image src={dog_full} width={328} height={332} alt={"dog_full"} />
               </div>
           </div>
         </div>
