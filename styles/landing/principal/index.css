@@ -1254,6 +1254,9 @@
         padding: 0 20px;
     }
 
+    .Impact-container {
+        padding-bottom: 30.9rem;
+    }
     .WhatYouShouldKnow-content-dog {
         width: 400px;
     }
@@ -1311,6 +1314,7 @@
         padding-bottom: 161px;
     }
 }
+
 
 @media (max-width: 1133px) {
     .WhatYouShouldKnow-content-image-dog {
@@ -1656,6 +1660,7 @@
     }
     .Impact-container {
         padding-top: 34px;
+        padding-bottom: 0;
     }
 }
 
