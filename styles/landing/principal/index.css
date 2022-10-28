@@ -1692,8 +1692,95 @@
 }
 
 @media (max-width: 463px) {
+
+    .CelestialImprint-container {
+        display: flex;
+        justify-content: center;
+        margin-left: 14rem;
+        width: 100px;
+        height: 90px;
+        margin-top: 33rem;
+    }
+
+    .CloudViolet-container {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        height: 85px;
+        margin-top: 31.1rem;
+        margin-right: 12rem;
+    }
+
+    .Waggers-container {
+        width: 184px;
+        height: 74px;
+        margin-top: 34rem;
+    }
+    .Plan-content-img-Bar_lilac-container {
+        display: flex;
+        justify-content: center;
+        width: max-content;
+        margin-left: 0;
+        margin-top: 26rem;
+        margin-right: 10rem;
+    }
+
+    .Plan-content-img-Bar_lilac-container {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .Plan-content-img-I_am_a_pet_parent-container {
+        margin-top: 34rem;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        width: 96%;
+    }
+
+    .Plan-content-tabs-card-week-button-container, .Plan-content-tabs-card-day-button-container {
+        margin-top: 95px;
+    }
+    .Plan-content-tabs-card-day-button {
+        width: 297px;
+        height: 45px;
+    }
+    .Plan-content-container-day-and-week-content {
+        height: 375px;
+    }
+    .Plan-content-container-day-and-week-item {
+        width: 328px;
+        height: 372px;
+    }
+    .Plan-content-tabs-card-basic-img-Aks-us {
+        width: 127px;
+        height: 44px;
+        margin-left: 11.4rem;
+    }
+    .Plan-content-tabs-card-basic-button {
+        width: 296px;
+        height: 46px;
+    }
+    .Plan-content-img-I_am_organization-container {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .Plan-content-tabs-card-basic {
+        width: 328px;
+        height: 465px;
+    }
+    .Plan-content-tabs-card-basic-title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .Plan-content-tabs-card-basic-price {
+        font-size: 24px;
+        line-height: 31px;
+    }
     .Plan-container {
        padding-top: 67px;
+        padding-bottom: 219px;
     }
     .Initials-content-description {
         width: auto;
@@ -1725,10 +1812,16 @@
     .Initials-image-woman-and-dog {
         margin: 40px 28px 18px 28px;
     }
-    .Initials-subTitle, .Organizations-content-data-description {
+    .Initials-subTitle, .Organizations-content-data-description, .Plan-content-tabs-card-basic-time, .Plan-content-tabs-card-basic-description {
         font-size: 16px;
         line-height: 24px;
     }
+
+    .Plan-content-tabs-card-basic-time {
+        display: flex;
+        align-items: center;
+    }
+
     .Initial-responsive-button-container {
         display: flex;
         justify-content: center;
@@ -1747,9 +1840,11 @@
         line-height: 26px;
     }
     .Organizations-content-img-three-firule {
+        display: flex;
+        justify-content: center;
         width: 25.78px;
         height: 32.06px;
-        margin-left: 11.5rem;
+        margin-left: 15.5rem;
         margin-top: -17px;
     }
     .HowDoesItWork-content-card-item-container {
@@ -1846,9 +1941,14 @@
     }
     .ArrowYellow-container {
         left: 12rem;
-        margin-top: -9rem;
+        margin-top: -7rem;
         width: 60px;
     }
+    .Plan-content-tabs-title-selected, .Plan-content-tabs-title {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
 }
 
 @media (max-width: 360px) {
