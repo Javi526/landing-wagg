@@ -1644,7 +1644,7 @@
         width: 97px;
         height: 39px;
         margin-left: 0;
-        margin-top: -64.2rem;
+        margin-top: -63rem;
     }
     .Impact-content-description, .Impact-content-description-p2 {
         font-size: 16px;
@@ -1750,7 +1750,8 @@
         margin-left: 0;
         display: flex;
         justify-content: center;
-        width: 96%;
+        width: auto;
+        margin-left: 43px;
     }
 
     .Plan-content-tabs-card-week-button-container, .Plan-content-tabs-card-day-button-container {
@@ -1972,7 +1973,7 @@
         padding: 0 16px;
     }
     .Impact-content-img-spiral-yellow {
-        margin-top: -66.2rem;
+        margin-top: -67.5rem;
     }
     .Plan-content-img-I_am_organization-container {
         margin-right: 18px;
