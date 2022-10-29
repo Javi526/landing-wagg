@@ -1001,7 +1001,7 @@
 
 .Impact-container {
     padding-top: 122px;
-    padding-bottom: 96px;
+    padding-bottom: 67px;
 }
 
 .Impact-content-container {
@@ -1014,7 +1014,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 130%;
+    line-height: 41px;
     color: #463677;
     margin: 0 0 44px 0;
     position: relative;
@@ -1024,13 +1024,13 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 27px;
     display: flex;
     align-items: flex-end;
     color: #282A3A;
     width: 673px;
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 .Impact-content-description-p2 {
@@ -1039,11 +1039,11 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    display: flex;
     align-items: flex-end;
     color: #282A3A;
     width: 673px;
     margin: 35px 0 31px 0;
+    display: none;
 }
 
 .Impact-content-item-container {
@@ -1065,9 +1065,11 @@
 }
 
 .Impact-content-img {
-    margin-top: 42px;
+    width: 204px;
+    height: 93px;
+    margin-top: 52px;
     margin-left: 0;
-    margin-bottom: 37px;
+    margin-bottom: 23px;
 }
 
 .Plan-content-tabs-select-content {
@@ -1124,15 +1126,19 @@
 }
 
 .Impact-content-img-DogAndCat {
+    width: 654.06px;
+    height: 471px;
     position: absolute;
-    margin-left: 30rem;
-    margin-top: -39px;
+    margin-left: 32rem;
+    margin-top: -69px;
 }
 
 .Impact-content-img-spiral-yellow {
+    width: 198px;
+    height: 79px;
     position: absolute;
-    margin-top: -116px;
-    margin-left: -52px;
+    margin-top: -107px;
+    margin-left: -41px;
 }
 
 .Impact-content-img-join, .Impact-content-part-yellow, .Impact-content-img-part-green {
@@ -1140,17 +1146,23 @@
 }
 
 .Impact-content-img-join {
-    margin-top: 10rem;
+    width: 209px;
+    height: 67px;
+    margin-top: 5rem;
     margin-left: 47.7rem;
 }
 .Impact-content-part-yellow {
-    margin-top: 31rem;
-    margin-left: 33rem;
+    width: 175px;
+    height: 119px;
+    margin-top: 24rem;
+    margin-left: 35rem;
     z-index: 1;
 }
 
 .Impact-content-img-part-green {
-    margin-top: 17.5rem;
+    width: 139px;
+    height: 126px;
+    margin-top: 13.5rem;
     margin-left: 61rem;
     z-index: 1;
 }
@@ -1173,6 +1185,19 @@
 
 
 @media (max-width: 1184px) {
+    .WhatYouShouldKnow-content-image-dog {
+        margin-top: 11.5rem;
+    }
+    .Impact-content-container {
+        width: auto;
+        padding: 0 20px;
+    }
+    .Impact-content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .Initials-container {
         margin-top: 53px;
     }
@@ -1219,29 +1244,29 @@
 
     }
     .Impact-content-container {
-        width: 934px;
+        width: auto;
     }
     .Impact-content-img-DogAndCat {
         width: 540px;
         height: auto;
-        margin-left: 30rem;
-        margin-top: 3rem;
+        margin-left: 32rem;
+        margin-top: 0.8rem;
     }
     .Impact-content-part-yellow {
-        margin-top: 33rem;
-        margin-left: 33rem;
+        margin-top: 26rem;
+        margin-left: 35rem;
         z-index: 1;
         width: 129px;
     }
     .Impact-content-img-part-green {
-        margin-top: 24.5rem;
-        margin-left: 54rem;
+        margin-top: 14.5rem;
+        margin-left: 55rem;
         z-index: 1;
         width: 120px;
     }
     .Impact-content-img-join {
-        margin-top: 16rem;
-        margin-left: 38.7rem;
+        margin-top: 6rem;
+        margin-left: 44.7rem;
         width: 221px;
         height: 71px;
     }
@@ -1249,13 +1274,45 @@
 
 
 @media (max-width: 1184px) {
+
+    .Impact-content-img-spiral-yellow {
+        width: 198px;
+        height: 79px;
+        margin-top: -31.6rem;
+        margin-left: -107px;
+    }
+    .Impact-content-img-DogAndCat {
+        width: 540px;
+        height: auto;
+        margin-left: 0;
+        margin-top: 78rem;
+    }
+    .Impact-content-img-part-green {
+        margin-top: 65.5rem;
+        margin-left: 18rem;
+        z-index: 1;
+        width: 120px;
+    }
+    .Impact-content-img-join {
+        margin-top: 52rem;
+        margin-left: -4rem;
+        width: 221px;
+        height: 71px;
+    }
+    .Impact-content-part-yellow {
+        margin-top: 90rem;
+        margin-left: -20rem;
+        z-index: 1;
+        width: 129px;
+    }
+
     .why-use-content, .WhatYouShouldKnow-content, .WhatYouShouldKnow-content-dog, .OurTeam-content-container {
         width: auto;
         padding: 0 20px;
     }
 
     .Impact-container {
-        padding-bottom: 30.9rem;
+        padding-bottom: 34.5rem;
     }
     .WhatYouShouldKnow-content-dog {
         width: 400px;
@@ -1319,48 +1376,6 @@
 @media (max-width: 1133px) {
     .WhatYouShouldKnow-content-image-dog {
         margin-top: 11.5rem;
-    }
-}
-@media (max-width: 1110px) {
-    .Impact-content-img-spiral-yellow {
-        width: 198px;
-        height: 79px;
-        margin-top: -39rem;
-        margin-left: -84px;
-    }
-    .Impact-content-img-DogAndCat {
-        width: 540px;
-        height: auto;
-        margin-left: 0;
-        margin-top: 78rem;
-    }
-    .Impact-content-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .Impact-content-img-part-green {
-        margin-top: 65.5rem;
-        margin-left: 18rem;
-        z-index: 1;
-        width: 120px;
-    }
-    .Impact-content-img-join {
-        margin-top: 52rem;
-        margin-left: -4rem;
-        width: 221px;
-        height: 71px;
-    }
-    .Impact-content-part-yellow {
-        margin-top: 90rem;
-        margin-left: -20rem;
-        z-index: 1;
-        width: 129px;
-    }
-    .Impact-content-container {
-        width: auto;
-        padding: 0 20px;
     }
 }
 
@@ -1544,7 +1559,7 @@
     }
 
     .Impact-content-img-spiral-yellow {
-        margin-top: -41rem;
+        margin-top: -31rem;
     }
 }
 
@@ -1629,7 +1644,7 @@
         width: 97px;
         height: 39px;
         margin-left: 0;
-        margin-top: -68.8rem;
+        margin-top: -64.2rem;
     }
     .Impact-content-description, .Impact-content-description-p2 {
         font-size: 16px;
