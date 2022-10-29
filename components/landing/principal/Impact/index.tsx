@@ -27,7 +27,7 @@ export default function Impact() {
               <div className={"Impact-content-img-spiral-yellow"}>
                   <Image src={Spiral_yellow} width={238} height={95} alt={"Spiral_yellow"} />
               </div>
-              <p className={"Impact-content-description"}>Con cada suscripción estas ayudando a un refugio de mascotas. En Wagg queremos sumar nuestro granito de arena para que todos los animales tengan una mejor calidad de vida.</p>
+              <p className={"Impact-content-description"}>Con cada suscripción estas ayudando a un refugio de mascotas. En Wagg queremos sumar nuestro granito de arena para que todos los animales tengan una mejor calidad de vida. Ofrecemos:</p>
               <p className={"Impact-content-description-p2"}>Ofrecemos:</p>
               <div className={"Impact-content-img-DogAndCat"}>
                   <Image src={DogAndCat} width={711} height={512} alt={"DogAndCat"} />
