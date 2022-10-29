@@ -1,6 +1,7 @@
 @import "header/initial";
 @import "landing/principal";
 @import "footer";
+@import "term-conditions";
 
 html,
 body {

@@ -1971,4 +1971,18 @@
         width: 100%;
         padding: 0 16px;
     }
+    .Impact-content-img-spiral-yellow {
+        margin-top: -66.2rem;
+    }
+    .Plan-content-img-I_am_organization-container {
+        margin-right: 18px;
+        margin-top: 31.5rem;
+    }
+    .Organizations-content-img-three-firule {
+        margin-left: 17.5rem;
+    }
+    .Plan-content-tabs-title-selected, .Plan-content-tabs-title {
+        margin-right: 0;
+        padding: 8px 13px;
+    }
 }
