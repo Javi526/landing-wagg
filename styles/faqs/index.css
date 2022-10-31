@@ -50,6 +50,7 @@
     border: 1px solid #E7EBF8;
     border-radius: 10px;
     margin-bottom: 12px;
+    cursor: pointer;
 }
 
 .FaqsContent-items {
