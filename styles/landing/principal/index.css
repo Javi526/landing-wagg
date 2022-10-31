@@ -353,12 +353,12 @@
     cursor: pointer;
 }
 
-.WhatYouShouldKnow-content-item-responsive:nth-of-type(1) {
+.WhatYouShouldKnow-img-1-false, .WhatYouShouldKnow-img-1-true {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.WhatYouShouldKnow-content-item-responsive:nth-of-type(3) {
+.WhatYouShouldKnow-img-3-false {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }

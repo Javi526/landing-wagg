@@ -23,6 +23,11 @@ export default function WhatYouShouldKnow() {
         }));
     };
 
+    const handleChangeClassName = (type :string) : string => {
+        if (showData[type]) return "FaqsContent-items-img-invested";
+        return "FaqsContent-items-img";
+    };
+
 
     return (
         <div className={"WhatYouShouldKnow-container"}>
@@ -45,9 +50,11 @@ export default function WhatYouShouldKnow() {
                 <div className={"WhatYouShouldKnow-content-item-responsive-container"}>
                     {WhatYouShouldKnowData.map((data: WhatYouShouldKnowInterface) => (
                         <>
-                        <div className={"WhatYouShouldKnow-content-item-responsive"} key={data.id} onClick={() => handleChangeState(`q${data.id}`)}>
+                        <div className={`WhatYouShouldKnow-content-item-responsive WhatYouShouldKnow-img-${data.id}-${showData[`q${data.id}`]}`} key={data.id} onClick={() => handleChangeState(`q${data.id}`)}>
                             <p className={"WhatYouShouldKnow-content-item-responsive-title"}>{data.title}</p>
-                            <Image src={Arrow} width={18} height={18} alt={"Arrow"} />
+                            <div className={handleChangeClassName(`q${data.id}`)}>
+                                <Image src={Arrow} width={18} height={18} alt={"Arrow"} />
+                            </div>
                         </div>
                             {showData[`q${data.id}`] &&
                                 <div className={"WhatYouShouldKnow-content-show"}>
