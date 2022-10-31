@@ -460,7 +460,7 @@
 
 .Plan-content-tabs-line-container {
     width: 1142px;
-    margin-top: 59px;
+    margin-top: 57px;
     height: 1px;
     background: #E7EBF8;
     position: absolute;
@@ -499,6 +499,8 @@
     cursor: pointer;
     border-bottom: 2px solid  #FFA7FE;
     margin-right: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -1077,9 +1079,6 @@
     margin-bottom: 23px;
 }
 
-.Impact-content-input-container {
-
-}
 
 .Impact-content-input {
     -webkit-appearance: none;
@@ -1729,6 +1728,16 @@
 }
 
 @media (max-width: 463px) {
+    .Plan-content-tabs-container {
+        margin-top: 7px;
+    }
+    .Plan-content-tabs-title-container {
+        display: flex;
+        justify-content: space-around;
+        width: 328px;
+        margin: auto;
+    }
+
     .WhatYouShouldKnow-container {
         padding-bottom: 11rem;
     }
@@ -1814,7 +1823,7 @@
         line-height: 31px;
     }
     .Plan-container {
-        padding-top: 8rem;
+        padding-top: 7rem;
         padding-bottom: 219px;
     }
     .Initials-content-description {
@@ -1982,6 +1991,7 @@
     .Plan-content-tabs-title-selected, .Plan-content-tabs-title {
         font-size: 14px;
         line-height: 21px;
+        margin-right: 0;
     }
 
 }
@@ -1993,10 +2003,6 @@
     }
     .Impact-content-img-spiral-yellow {
         margin-top: -67.5rem;
-    }
-    .Plan-content-img-I_am_organization-container {
-        margin-right: 18px;
-        margin-top: 31.5rem;
     }
     .Organizations-content-img-three-firule {
         margin-left: 17.5rem;
