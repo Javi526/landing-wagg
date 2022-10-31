@@ -27,7 +27,7 @@ export default function Footer() {
                       <div className={"footer-contact-content"}>
                           <p className={"footer-contact-content-title"}>Unite a Wagg</p>
                           <p className={"footer-contact-content-item"}>Carrera</p>
-                          <p className={"footer-contact-content-item"}>FAQS</p>
+                          <p className={"footer-contact-content-item"} onClick={() => router.push("/faqs")}>FAQS</p>
                       </div>
                      <div className={"footer-contact-content"}>
                          <p className={"footer-contact-content-title"}>Contacto</p>
@@ -38,7 +38,7 @@ export default function Footer() {
                   <div className={"footer-term-and-conditions-container"}>
                       <p className={"footer-term-and-conditions"} onClick={() => router.push("/terms-conditions")}>Términos y condiciones</p>
                       <p className={"footer-term-and-conditions-bar"}>|</p>
-                      <p className={"footer-term-and-conditions"} onClick={() => router.push("/faqs")}>Política de privacidad </p>
+                      <p className={"footer-term-and-conditions"}>Política de privacidad </p>
                   </div>
               </div>
           </div>
