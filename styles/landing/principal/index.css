@@ -625,7 +625,7 @@
 .Plan-content-tabs-select-content {
     display: none;
     justify-content: space-between;
-    width: 28px;
+    width: 67px;
     margin: auto;
     position: relative;
 }
@@ -1477,7 +1477,7 @@
         display: flex;
     }
     .Plan-content-container-day-and-week-container {
-        margin-bottom: 24px;
+        margin-bottom: 14px;
     }
     .Plan-content-tabs-select-container {
         display: flex;

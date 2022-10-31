@@ -8,6 +8,10 @@ import I_am_organization from "../../../../assets/landing/principal/I-am-organiz
 import I_am_a_pet_parent from "../../../../assets/landing/principal/I_am_a_pet_parent.svg";
 import Bar_lilac from "../../../../assets/landing/principal/bar_lilac.svg";
 import Arrow_yellow_plan from "../../../../assets/landing/principal/arrow-yellow-plan.svg";
+import ArrowLeft from "../../../../assets/landing/principal/our-team-galery/arrow-left.svg";
+import ArrowRight from "../../../../assets/landing/principal/our-team-galery/arrow-right.svg";
+import ArrowLeftDisabled from "../../../../assets/landing/principal/arrow-left-disabled.svg";
+import ArrowRightDisabled from "../../../../assets/landing/principal/arrow-right-disabled.svg";
 import Green_mave from "../../../../assets/landing/principal/green_mave.svg";
 import House from "../../../../assets/landing/principal/house.svg";
 import Sky_blue_firule from "../../../../assets/landing/principal/sky_blue_firule.svg";
@@ -22,10 +26,31 @@ export default function Plan() {
           return "Plan-content-tabs-title";
     };
 
-    const handleChangeClassNameTabs = (value : number) : string => {
+  /*  const handleChangeClassNameTabs = (value : number) : string => {
         if (tab === value) return "Plan-content-tabs-select-content-cicle-select";
         return "Plan-content-tabs-select-content-cicle";
+    };*/
+
+    const arrowLeftChange = (num: number) => {
+        if (num > 1) return ArrowLeft;
+        return ArrowLeftDisabled;
     };
+
+    const arrowRightChange = (num: number) => {
+        if (num < 2) return ArrowRight;
+        return ArrowRightDisabled;
+    };
+
+    const arrowLeftType = (num : number) : string => {
+        if (num > 1) return "pointer";
+        return "auto";
+    };
+
+    const arrowRightType = (num : number) : string => {
+        if (num < 2) return "pointer";
+        return "auto";
+    };
+
 
     return (
         <div className={"Plan-container"}>
@@ -142,8 +167,8 @@ export default function Plan() {
                 </div>}
             {type === "Padres de mascotas" && <div className={"Plan-content-tabs-select-container"}>
                 <div className={"Plan-content-tabs-select-content"}>
-                    <div className={handleChangeClassNameTabs(1)} onClick={() => setTab(1)}/>
-                    <div className={handleChangeClassNameTabs(2)} onClick={() => setTab(2)}/>
+                    <Image src={arrowLeftChange(tab)} width={24} height={24} style={{ cursor: `${arrowLeftType(tab)}` }} alt={"ArrowLeft"} onClick={() => setTab(1)}/>
+                    <Image src={arrowRightChange(tab)} width={24} height={24} style={{ cursor: `${arrowRightType(tab)}` }} alt={"ArrowRight"} onClick={() => setTab(2)}/>
                 </div>
             </div>}
         </div>
