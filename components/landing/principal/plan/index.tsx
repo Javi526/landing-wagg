@@ -31,17 +31,17 @@ export default function Plan() {
         <div className={"Plan-container"}>
             <div className={"Plan-content"}>
                 {type === "Organizaciones" &&
-                 <>
+                 <div className={"Plan-content-img-I_am_a_pet_parent-container-responsive"}>
                   <div className={"Plan-content-img-I_am_organization-container"}>
                     <Image src={I_am_organization} width={350} height={215} alt={"I_am_organization"}/>
                   </div>
                      {/*<div className={"Plan-content-img-Green_mave-container"}>
                          <Image src={Green_mave} alt={"Green_mave"}/>
                      </div>*/}
-                 </>
+                 </div>
                 }
                 {type === "Padres de mascotas" &&
-                 <>
+                 <div className={"Plan-content-img-I_am_a_pet_parent-container-responsive"}>
                      <div className={"Plan-content-img-I_am_a_pet_parent-container"}>
                          <Image src={I_am_a_pet_parent} width={278} height={108} alt={"I_am_a_pet_parent"}/>
                      </div>
@@ -54,7 +54,7 @@ export default function Plan() {
                      {/*<div className={"Plan-content-img-House-container"}>
                          <Image src={House} alt={"House"}/>
                      </div>*/}
-                 </>
+                 </div>
                 }
                 <div className={"Plan-content-img-Arrow_yellow_plan-container"}>
                     <Image src={Arrow_yellow_plan} width={119} height={101} alt={"Arrow_yellow_plan"}/>

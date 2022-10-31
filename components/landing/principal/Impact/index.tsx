@@ -23,9 +23,11 @@ export default function Impact() {
               <div className={"Impact-content-img-part-green"}>
                   <Image src={PartGreen} width={175} height={159} alt={"PartGreen"} />
               </div>
-              <p className={"Impact-content-title"}>Impacto Wagg</p>
-              <div className={"Impact-content-img-spiral-yellow"}>
-                  <Image src={Spiral_yellow} width={238} height={95} alt={"Spiral_yellow"} />
+              <div className={"Impact-content-img-spiral-yellow-responsive"}>
+                  <p className={"Impact-content-title"}>Impacto Wagg</p>
+                  <div className={"Impact-content-img-spiral-yellow-content"}>
+                      <Image src={Spiral_yellow} width={238} height={95} alt={"Spiral_yellow"} />
+                  </div>
               </div>
               <p className={"Impact-content-description"}>Con cada suscripción estas ayudando a un refugio de mascotas. En Wagg queremos sumar nuestro granito de arena para que todos los animales tengan una mejor calidad de vida. Ofrecemos:</p>
               <p className={"Impact-content-description-p2"}>Ofrecemos:</p>

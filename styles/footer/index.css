@@ -94,6 +94,22 @@
     color: #FFFFFF;
     opacity: 0.7;
     margin: 48px 0 0 0;
+    cursor: pointer;
+}
+
+.footer-term-and-conditions-container {
+    display: flex;
+}
+
+.footer-term-and-conditions-bar {
+    font-family: 'Poppins', sans-serif;
+    margin: 47px 5px 0 5px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-style: normal;
+    width: 4px;
+    font-weight: 500;
+    height: 21px;
 }
 
 @media (max-width: 1184px) {
@@ -121,6 +137,9 @@
     }
     .footer-social-media-logo {
         margin-bottom: 38.5px;
+    }
+    .footer-term-and-conditions-bar {
+        margin: 5px 5px 0 5px;
     }
     .footer-contact-content {
         margin-bottom: 42px;

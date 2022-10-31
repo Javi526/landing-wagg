@@ -17,7 +17,6 @@ export default function WhatYouShouldKnow() {
     });
 
     const handleChangeState = (type : string) : void => {
-        console.log("type", type);
         setShowData((prevState: any) => ({
             ...prevState,
             [type]: !showData[type]

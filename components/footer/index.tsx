@@ -3,7 +3,7 @@ import LogoTwitter from "../../assets/footer/logo-twitter.svg";
 import LogoMedium from "../../assets/footer/logo-medium.svg";
 import LogoInstagram from "../../assets/footer/logo-instagram.svg";
 import Image from "next/image";
-import { useRouter } from "next/router"
+import { useRouter } from "next/router";
 
 export default function Footer() {
     const router = useRouter()
@@ -35,7 +35,11 @@ export default function Footer() {
                          <p className={"footer-contact-content-item"}>info@wagg.com</p>
                      </div>
                  </div>
-                  <p className={"footer-term-and-conditions"} onClick={() => router.push("/terms-conditions")}>Términos y condiciones  |  Política de privacidad </p>
+                  <div className={"footer-term-and-conditions-container"}>
+                      <p className={"footer-term-and-conditions"} onClick={() => router.push("/terms-conditions")}>Términos y condiciones</p>
+                      <p className={"footer-term-and-conditions-bar"}>|</p>
+                      <p className={"footer-term-and-conditions"} onClick={() => router.push("/faqs")}>Política de privacidad </p>
+                  </div>
               </div>
           </div>
         </div>

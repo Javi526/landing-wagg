@@ -2,6 +2,7 @@
 @import "landing/principal";
 @import "footer";
 @import "term-conditions";
+@import "faqs";
 
 html,
 body {
