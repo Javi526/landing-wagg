@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 export default function Logo() {
     const router = useRouter();
     return (
-        <div onClick={() => router.push("/")}>
+        <div className={"logo-container"} onClick={() => router.push("/")}>
             <Image src={LogoIco} width={108} height={36} alt={"logo"} />
         </div>
     )
