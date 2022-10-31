@@ -29,6 +29,7 @@
 .FaqsContent-content-container {
     width: 1142px;
     margin: auto;
+    user-select: none;
 }
 
 .FaqsContent-title {

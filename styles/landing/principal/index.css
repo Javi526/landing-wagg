@@ -308,6 +308,7 @@
     position: absolute;
 }
 .WhatYouShouldKnow-container {
+    user-select: none;
     padding-top: 93px;
     background: #FAFBFF;
     padding-bottom: 15rem;
