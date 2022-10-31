@@ -89,6 +89,26 @@
     }
 }
 
+@media (max-width: 436px) {
+     .TermsConditionsContent-title {
+         font-size: 24px;
+         line-height: 31px;
+     }
+    .TermsConditionsContent-container {
+        padding-top: 67px;
+    }
+    .TermsConditionsContent-title {
+        margin: 0 0 57px 0;
+    }
+    .TermsConditionsContent-items-title {
+        font-size: 20px;
+    }
+    .TermsConditionsContent-items-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
 @media (max-width:  390px) {
     .TermsConditionsHeader-content-text {
         font-size: 13px;

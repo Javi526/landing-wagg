@@ -99,6 +99,7 @@
     transform: rotate(180deg);
 }
 
+
 @media (max-width: 1184px) {
     .FaqsHeader-container-content, .FaqsContent-content-container {
         width: auto;
@@ -106,9 +107,30 @@
     }
 }
 
+
 @media (max-width: 768px) {
     .FaqsContent-container {
         padding-bottom: 181px;
+    }
+}
+
+@media (max-width: 436px) {
+    .FaqsContent-title {
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .FaqsContent-container {
+        padding-top: 67px;
+    }
+    .FaqsContent-title {
+        margin: 0 0 57px 0;
+    }
+    .FaqsContent-items-title-tabs {
+        font-size: 20px;
+    }
+    .FaqsContent-items-text {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
