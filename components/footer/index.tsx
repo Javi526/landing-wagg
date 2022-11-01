@@ -4,6 +4,7 @@ import LogoMedium from "../../assets/footer/logo-medium.svg";
 import LogoInstagram from "../../assets/footer/logo-instagram.svg";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { ROUTER } from "../../constants/router";
 
 export default function Footer() {
     const router = useRouter()
@@ -27,7 +28,7 @@ export default function Footer() {
                       <div className={"footer-contact-content"}>
                           <p className={"footer-contact-content-title"}>Unite a Wagg</p>
                           <p className={"footer-contact-content-item"}>Carrera</p>
-                          <p className={"footer-contact-content-item"} onClick={() => router.push("/faqs")}>FAQS</p>
+                          <p className={"footer-contact-content-item"} onClick={() => router.push(ROUTER.faqs)}>FAQS</p>
                       </div>
                      <div className={"footer-contact-content"}>
                          <p className={"footer-contact-content-title"}>Contacto</p>
@@ -36,7 +37,7 @@ export default function Footer() {
                      </div>
                  </div>
                   <div className={"footer-term-and-conditions-container"}>
-                      <p className={"footer-term-and-conditions"} onClick={() => router.push("/terms-conditions")}>Términos y condiciones</p>
+                      <p className={"footer-term-and-conditions"} onClick={() => router.push(ROUTER.terms_conditions)}>Términos y condiciones</p>
                       <p className={"footer-term-and-conditions-bar"}>|</p>
                       <p className={"footer-term-and-conditions"}>Política de privacidad </p>
                   </div>

@@ -3,6 +3,7 @@ export interface InputPrincipalInterface {
      height: number,
      label: string,
      placeholder: string,
+     validAccount: boolean
 }
 
 export interface InputPasswordPrincipalInterface {
@@ -24,4 +25,7 @@ export interface ButtonsInterface {
      height: number,
      textConfirm: string,
      textCancel: string
+     question: boolean
+     questionText: string,
+     questionLink: string
 }

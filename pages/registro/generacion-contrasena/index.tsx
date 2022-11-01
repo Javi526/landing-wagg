@@ -1,0 +1,44 @@
+import {NextPage} from "next";
+import RegisterText from "../../../components/common/register/register-text";
+import InputPrincipal from "../../../components/common/input/input-principal";
+import ContentButtons from "../../../components/common/content-buttons";
+
+const PasswordGeneration: NextPage = () => {
+    return (
+        <div className={"register-container"}>
+            <RegisterText
+                title={"Crea una contraseña"}
+                subTitle={"Generá una contraseña segura para poder acceder a tu cuenta en el futuro."}
+                imageRegister={true}
+                imageArrowYellow={false}
+                icon={true}
+                padding={"0 2.3rem"}
+            />
+            <InputPrincipal
+                width={326}
+                height={40}
+                label={"Crear nueva contraseña"}
+                placeholder={"Nueva contraseña"}
+                validAccount={false}
+            />
+            <InputPrincipal
+                width={326}
+                height={40}
+                label={"Repetir contraseña"}
+                placeholder={"Repetir nueva contraseña"}
+                validAccount={false}
+            />
+            <ContentButtons
+                width={326}
+                height={42}
+                textConfirm={"Crear cuenta"}
+                textCancel={"Atras"}
+                question={true}
+                questionText={"¿Ya tenés cuenta?"}
+                questionLink={"Iniciar Sesión"}
+            />
+        </div>
+    )
+};
+
+export default PasswordGeneration

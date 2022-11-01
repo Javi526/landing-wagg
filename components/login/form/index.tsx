@@ -5,7 +5,6 @@ import ContentButtons from "../../common/content-buttons";
 
 
 export default function LoginForm() {
-
     return (
         <div className={"LoginForm-container"}>
             <div className={"LoginForm-content"}>
@@ -35,6 +34,9 @@ export default function LoginForm() {
                           height={42}
                           textConfirm={"Iniciar sesión"}
                           textCancel={"Cancelar"}
+                          question={true}
+                          questionText={""}
+                          questionLink={""}
                       />
                   </div>
               </div>
