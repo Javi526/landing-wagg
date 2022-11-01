@@ -11,8 +11,16 @@ export default function PasswordPrincipal({ width, height, label, labelPassword,
                 className={"input"}
                 placeholder={placeholder}
                 style={{ width, height, paddingLeft: 10, marginTop: 6 }}
-                onClick={() => setKeyboard(true)}
-                onFocus={() => setKeyboard(true)}
+                onClick={() => {
+                    window?.visualViewport?.addEventListener('resize', () => {
+                        setKeyboard(true);
+                    });
+                }}
+                onFocus={() => {
+                    window?.visualViewport?.addEventListener('resize', () => {
+                        setKeyboard(true);
+                    });
+                }}
                 onBlur={() => setKeyboard(false)}
             />
         </div>

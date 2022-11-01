@@ -68,11 +68,13 @@
     .LoginIntro-container {
         display: none;
     }
-    .LoginForm-logo-position-mobile {
-        position: absolute;
-        top: 32px;
-    }
     .LoginForm-content-buttons-position-mobile {
-        margin-top: 7rem;
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .LoginForm-content  {
+        width: auto;
     }
 }

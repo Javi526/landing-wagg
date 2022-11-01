@@ -10,7 +10,7 @@ export default function LoginForm() {
     return (
         <div className={"LoginForm-container"}>
             <div className={"LoginForm-content"}>
-              <div className={`LoginForm-logo ${keyboard && "LoginForm-logo-position-mobile"}`}>
+              <div className={`LoginForm-logo`}>
                   <Logo />
               </div>
               <div className={`LoginIntro-content-title-container ${keyboard && "LoginForm-content-buttons-position-mobile"}`}>
