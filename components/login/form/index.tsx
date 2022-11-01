@@ -11,28 +11,30 @@ export default function LoginForm() {
                   <Logo />
               </div>
               <div className={"LoginIntro-content-title-container"}>
-                  <p className={"LoginForm-content-title"}>Iniciá sesión</p>
-              </div>
-              <div className={"LoginForm-content-buttons"}>
-                  <SelectPrincipal
-                      width={311}
-                      height={40}
-                      label={"Email"}
-                      placeholder={"Ingresá tu email"}
-                  />
-                  <PasswordPrincipal
-                      width={311}
-                      height={40}
-                      label={"Contraseña"}
-                      placeholder={"Ingresá tu contraseña"}
-                      labelPassword={"Olvidé mi contraseña"}
-                  />
-                  <ContentButtons
-                      width={311}
-                      height={42}
-                      textConfirm={"Iniciar sesión"}
-                      textCancel={"Cancelar"}
+                  <div className={"LoginIntro-content-title-content"}>
+                      <p className={"LoginForm-content-title"}>Iniciá sesión</p>
+                  </div>
+                  <div className={"LoginForm-content-buttons"}>
+                      <SelectPrincipal
+                          width={311}
+                          height={40}
+                          label={"Email"}
+                          placeholder={"Ingresá tu email"}
                       />
+                      <PasswordPrincipal
+                          width={311}
+                          height={40}
+                          label={"Contraseña"}
+                          placeholder={"Ingresá tu contraseña"}
+                          labelPassword={"Olvidé mi contraseña"}
+                      />
+                      <ContentButtons
+                          width={311}
+                          height={42}
+                          textConfirm={"Iniciar sesión"}
+                          textCancel={"Cancelar"}
+                      />
+                  </div>
               </div>
             </div>
         </div>
