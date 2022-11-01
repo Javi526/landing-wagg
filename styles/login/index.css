@@ -72,4 +72,7 @@
         position: absolute;
         top: 32px;
     }
+    .LoginForm-content-buttons-position-mobile {
+        margin-top: 7rem;
+    }
 }
