@@ -68,4 +68,8 @@
     .LoginIntro-container {
         display: none;
     }
+    .LoginForm-logo-position-mobile {
+        position: absolute;
+        top: 32px;
+    }
 }

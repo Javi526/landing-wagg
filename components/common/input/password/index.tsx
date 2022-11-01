@@ -1,6 +1,6 @@
 import { InputPasswordPrincipalInterface } from "../../../../interface/common";
 
-export default function PasswordPrincipal({ width, height, label, labelPassword, placeholder } : InputPasswordPrincipalInterface) {
+export default function PasswordPrincipal({ width, height, label, labelPassword, placeholder, setKeyboard } : InputPasswordPrincipalInterface) {
     return (
         <div className={"Input-container"}>
             <div className={"Input-text-container"} style={{ width }}>
@@ -10,7 +10,10 @@ export default function PasswordPrincipal({ width, height, label, labelPassword,
             <input
                 className={"input"}
                 placeholder={placeholder}
-                style={{ width, height, paddingLeft: 10 }}
+                style={{ width, height, paddingLeft: 10, marginTop: 6 }}
+                onClick={() => setKeyboard(true)}
+                onFocus={() => setKeyboard(true)}
+                onBlur={() => setKeyboard(false)}
             />
         </div>
     )

@@ -1,6 +1,6 @@
 
 .Input-container {
-
+    height: 98.5px;
 }
 
 .Input-text-container {
@@ -61,7 +61,7 @@
 }
 
 .LoginForm-content-buttons {
-    margin-top: 9px;
+    margin-top: 10px;
 }
 
 .PurpleButton-content {
