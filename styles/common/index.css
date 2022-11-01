@@ -1,0 +1,93 @@
+
+.Input-container {
+
+}
+
+.Input-text-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Input-label-container {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #463677;
+}
+
+.Input-label-password-container {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #9188FD;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18;
+    color: #777986;
+    margin: 0 6px 24px 0;
+}
+
+input::placeholder {
+    color: #777986;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18;
+    color: #777986;
+}
+
+.ContentButtons-container {
+    margin-top: 22px;
+}
+
+.whiteButton-content, .PurpleButton-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginForm-content-buttons {
+    margin-top: 9px;
+}
+
+.PurpleButton-content {
+    background: #463677;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.whiteButton-content {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #463677;
+    cursor: pointer;
+}
+
+.TextRegister-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}

@@ -1,10 +1,11 @@
-import { MenuInterface } from "../../../interface/header/initial"
+import { HeaderInterface, MenuInterface } from "../../../interface/header/initial";
 import { menu } from "../../../constants/header/initial/navbar";
 import Bar from "../../../assets/header/bar.svg";
 import Cross from "../../../assets/header/cross.svg";
 import Image from "next/image";
+import { ROUTER } from "../../../constants/router";
 
-export default function Navbar({ open, setOpen } : { open: boolean, setOpen: any }) {
+export default function Navbar({ open, setOpen, router }: HeaderInterface) {
     return (
         <>
         <div className={"header-navbar"}>
@@ -13,7 +14,7 @@ export default function Navbar({ open, setOpen } : { open: boolean, setOpen: any
                     <p className={"header-navbar-item"}>{data.name}</p>
                 </div>
             ))}
-            <p className={"header-navbar-item-login"}> Ingresá</p>
+            <p className={"header-navbar-item-login"} onClick={() => router.push(ROUTER.login)}> Ingresá</p>
         </div>
             <div className={"header-bar"} onClick={() => setOpen(!open)}>
                 {!open && <Image src={Bar} width={24} height={24} alt={"bar"} />}
