@@ -26,7 +26,7 @@
     color: #9188FD;
 }
 
-input {
+.input {
     -webkit-appearance: none;
     -moz-appearance: none;
     border: 1px solid #D2D4DA;
@@ -40,7 +40,7 @@ input {
     margin: 0 6px 24px 0;
 }
 
-input::placeholder {
+.input::placeholder {
     color: #777986;
     font-family: 'Poppins';
     font-style: normal;

@@ -5,6 +5,7 @@ export default function InputPrincipal({ width, height, label, placeholder } : I
         <div className={"Input-container"}>
           <label className={"Input-label-container"}>{label}</label>
             <input
+                className={"input"}
                 placeholder={placeholder}
                 style={{ width, height, paddingLeft: 10 }}
             />

@@ -8,6 +8,7 @@ export default function PasswordPrincipal({ width, height, label, labelPassword,
                 <label className={"Input-label-password-container"}>{labelPassword}</label>
             </div>
             <input
+                className={"input"}
                 placeholder={placeholder}
                 style={{ width, height, paddingLeft: 10 }}
             />

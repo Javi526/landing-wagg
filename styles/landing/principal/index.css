@@ -1260,6 +1260,7 @@
     }
     .Impact-content-container {
         width: auto;
+        padding: 0 64px;
     }
     .Impact-content-img-DogAndCat {
         width: 540px;
@@ -1633,6 +1634,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        padding: 0 20px;
     }
     .Impact-content-img-DogAndCat {
         display: none;
