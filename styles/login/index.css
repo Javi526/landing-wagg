@@ -23,14 +23,12 @@
 }
 
 .LoginIntro-content-title-container {
-    height: calc(100vh - 276px);
+    height: calc(100vh - 116px);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.LoginIntro-content-title-content {
-    margin-top: 80px;
-}
+
 
 .LoginForm-content-title {
     font-family: 'Poppins';
@@ -62,6 +60,9 @@
 }
 
 @media (max-width: 1014px) {
+    .LoginIntro-content-title-container {
+        height: calc(100vh - 116px - 14rem);
+    }
     .login-content {
         width: auto;
     }
@@ -70,6 +71,9 @@
     }
     .LoginForm-content-buttons-position-mobile {
         margin-top: 5rem;
+    }
+    .LoginIntro-content-title-content {
+        margin-top: 14rem;
     }
 }
 
