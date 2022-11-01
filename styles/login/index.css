@@ -61,7 +61,7 @@
 
 @media (max-width: 1014px) {
     .LoginIntro-content-title-container {
-        height: calc(100vh - 116px - 14rem);
+        height: calc(100vh - 116px - 35rem);
     }
     .login-content {
         width: auto;
@@ -73,7 +73,7 @@
         margin-top: 5rem;
     }
     .LoginIntro-content-title-content {
-        margin-top: 14rem;
+        margin-top: 35rem;
     }
 }
 
