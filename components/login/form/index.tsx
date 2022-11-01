@@ -13,7 +13,7 @@ export default function LoginForm() {
               <div className={`LoginForm-logo ${keyboard && "LoginForm-logo-position-mobile"}`}>
                   <Logo />
               </div>
-              <div className={"LoginIntro-content-title-container LoginForm-content-buttons-position-mobile"}>
+              <div className={`LoginIntro-content-title-container ${keyboard && "LoginForm-content-buttons-position-mobile"}`}>
                   <div className={"LoginIntro-content-title-content"}>
                       <p className={"LoginForm-content-title"}>Iniciá sesión</p>
                   </div>
