@@ -3,7 +3,6 @@ export interface InputPrincipalInterface {
      height: number,
      label: string,
      placeholder: string,
-     setKeyboard: any
 }
 
 export interface InputPasswordPrincipalInterface {
@@ -12,7 +11,6 @@ export interface InputPasswordPrincipalInterface {
      label: string,
      labelPassword: string,
      placeholder: string,
-     setKeyboard: any
 }
 
 export interface ButtonInterface {
