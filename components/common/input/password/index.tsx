@@ -21,7 +21,11 @@ export default function PasswordPrincipal({ width, height, label, labelPassword,
                         setKeyboard(true);
                     });
                 }}
-                onBlur={() => setKeyboard(false)}
+                onBlur={() => {
+                    window?.visualViewport?.addEventListener('resize', () => {
+                        setKeyboard(true);
+                    });
+                }}
             />
         </div>
     )
