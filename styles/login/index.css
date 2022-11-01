@@ -54,3 +54,12 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 1014px) {
+    .login-content {
+        width: auto;
+    }
+    .LoginIntro-container {
+        display: none;
+    }
+}
