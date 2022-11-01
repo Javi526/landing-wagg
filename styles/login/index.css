@@ -23,13 +23,13 @@
 }
 
 .LoginIntro-content-title-container {
-    height: calc(100vh - 196px);
+    height: calc(100vh - 276px);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .LoginIntro-content-title-content {
-
+    margin-top: 80px;
 }
 
 .LoginForm-content-title {
