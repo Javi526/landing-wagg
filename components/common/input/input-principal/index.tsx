@@ -1,5 +1,7 @@
 import { InputPrincipalInterface } from "../../../../interface/common";
 import { useState, ChangeEvent } from "react";
+import Check from "../../../../assets/register/check.svg";
+import Image from "next/image";
 
 export default function InputPrincipal({ width, height, label, placeholder, validAccount } : InputPrincipalInterface) {
     const [value, setValue] = useState("");
@@ -16,6 +18,9 @@ export default function InputPrincipal({ width, height, label, placeholder, vali
             />
             {validAccount &&
                 <div className={"Input-label-validation-container"}>
+                    <div className={"Input-label-validation-Check-container"}>
+                        <Image src={Check} width={24} height={24} alt={"Check"} />
+                    </div>
                     <label className={"Input-label-validation-text"}>Cuenta empresa. Continuá para crear tu contraseña.</label>
                 </div>}
         </div>
