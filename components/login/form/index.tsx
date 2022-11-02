@@ -1,5 +1,5 @@
 import Logo from "../../header/initial/logo";
-import SelectPrincipal from "../../common/input/input-principal";
+import InputPrincipal from "../../common/input/input-principal";
 import PasswordPrincipal from "../../common/input/password";
 import ContentButtons from "../../common/content-buttons";
 
@@ -16,11 +16,12 @@ export default function LoginForm() {
                       <p className={"LoginForm-content-title"}>Iniciá sesión</p>
                   </div>
                   <div className={"LoginForm-content-buttons"}>
-                      <SelectPrincipal
+                      <InputPrincipal
                           width={311}
                           height={40}
                           label={"Email"}
                           placeholder={"Ingresá tu email"}
+                          validAccount={false}
                       />
                       <PasswordPrincipal
                           width={311}
@@ -35,8 +36,8 @@ export default function LoginForm() {
                           textConfirm={"Iniciar sesión"}
                           textCancel={"Cancelar"}
                           question={true}
-                          questionText={""}
-                          questionLink={""}
+                          questionText={"¿No tenés cuenta?"}
+                          questionLink={"Registrate"}
                       />
                   </div>
               </div>

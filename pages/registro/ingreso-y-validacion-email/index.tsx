@@ -43,8 +43,8 @@ const EmailEntryAndValidation : NextPage = () => {
                 textConfirm={"Continuar"}
                 textCancel={"Atras"}
                 question={true}
-                questionText={""}
-                questionLink={""}
+                questionText={"¿Ya tenés cuenta?"}
+                questionLink={"Iniciar Sesión"}
             />
         </div>
     )
