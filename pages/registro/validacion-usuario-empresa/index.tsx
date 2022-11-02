@@ -46,7 +46,7 @@ const CompanyUserValidation : NextPage = () => {
                 question={true}
                 questionText={"¿Ya tenés cuenta?"}
                 questionLink={"Iniciar Sesión"}
-                url={""}
+                url={ROUTER.login}
                 WhiteButton_url={ROUTER.EmailEntryAndValidation}
                 PurpleButton_url={ROUTER.PasswordGeneration}
                 margin={"20px 0 0 0"}

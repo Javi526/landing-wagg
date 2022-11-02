@@ -37,7 +37,7 @@ const PasswordGeneration: NextPage = () => {
                 question={true}
                 questionText={"¿Ya tenés cuenta?"}
                 questionLink={"Iniciar Sesión"}
-                url={""}
+                url={ROUTER.login}
                 WhiteButton_url={ROUTER.CompanyUserValidation}
                 PurpleButton_url={""}
                 margin={"11px 0 0 0"}

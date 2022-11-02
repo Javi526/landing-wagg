@@ -46,7 +46,7 @@ const EmailEntryAndValidation : NextPage = () => {
                 question={true}
                 questionText={"¿Ya tenés cuenta?"}
                 questionLink={"Iniciar Sesión"}
-                url={""}
+                url={ROUTER.login}
                 WhiteButton_url={ROUTER.login}
                 PurpleButton_url={ROUTER.CompanyUserValidation}
                 margin={"22px 0 0 0"}
