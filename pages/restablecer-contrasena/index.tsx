@@ -36,6 +36,10 @@ const RestorePassword: NextPage = () => {
                 question={false}
                 questionText={"¿Ya tenés cuenta?"}
                 questionLink={"Iniciar Sesión"}
+                url={""}
+                WhiteButton_url={""}
+                PurpleButton_url={""}
+                margin={"26px 0 0 0"}
             />
         </div>
     )

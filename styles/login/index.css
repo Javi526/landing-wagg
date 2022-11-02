@@ -23,7 +23,7 @@
 }
 
 .LoginIntro-content-title-container {
-    height: calc(100vh - 170px);
+    height: calc(100vh - 126px);
     display: flex;
     flex-direction: column;
     justify-content: center;

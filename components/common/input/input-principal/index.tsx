@@ -1,6 +1,9 @@
 import { InputPrincipalInterface } from "../../../../interface/common";
+import { useState, ChangeEvent } from "react";
 
 export default function InputPrincipal({ width, height, label, placeholder, validAccount } : InputPrincipalInterface) {
+    const [value, setValue] = useState("");
+
     return (
         <div className={"Input-container"}>
           <label className={"Input-label-container"}>{label}</label>
@@ -8,6 +11,8 @@ export default function InputPrincipal({ width, height, label, placeholder, vali
                 className={"input"}
                 placeholder={placeholder}
                 style={{ width, height, paddingLeft: 10, marginTop: 6 }}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
+                value={value}
             />
             {validAccount &&
                 <div className={"Input-label-validation-container"}>

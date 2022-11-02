@@ -2,6 +2,7 @@ import Logo from "../../header/initial/logo";
 import InputPrincipal from "../../common/input/input-principal";
 import PasswordPrincipal from "../../common/input/password";
 import ContentButtons from "../../common/content-buttons";
+import {ROUTER} from "../../../constants/router";
 
 
 export default function LoginForm() {
@@ -38,6 +39,10 @@ export default function LoginForm() {
                           question={true}
                           questionText={"¿No tenés cuenta?"}
                           questionLink={"Registrate"}
+                          url={ROUTER.EmailEntryAndValidation}
+                          WhiteButton_url={ROUTER.Landing}
+                          PurpleButton_url={""}
+                          margin={"23.69px 0 0 0"}
                       />
                   </div>
               </div>

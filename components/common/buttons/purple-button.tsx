@@ -1,9 +1,11 @@
-import { ButtonInterface } from "../../../interface/common";
+import { ButtonPurpleInterface } from "../../../interface/common";
 
-export default function PurpleButton({ width, height, text } : ButtonInterface) {
+export default function PurpleButton({ width, height, text, PurpleButton_url, router } : ButtonPurpleInterface) {
     return (
         <div className={"PurpleButton-container"}>
-            <div className={"PurpleButton-content"} style={{ width, height }}>{text}</div>
+            <div className={"PurpleButton-content"} onClick={() => {
+                if (PurpleButton_url) router.push(PurpleButton_url);
+            }} style={{ width, height }}>{text}</div>
         </div>
     )
 }

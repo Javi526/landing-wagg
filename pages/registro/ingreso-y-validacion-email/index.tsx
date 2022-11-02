@@ -2,6 +2,7 @@ import {NextPage} from "next";
 import RegisterText from "../../../components/common/register/register-text";
 import InputPrincipal from "../../../components/common/input/input-principal";
 import ContentButtons from "../../../components/common/content-buttons";
+import {ROUTER} from "../../../constants/router";
 
 const EmailEntryAndValidation : NextPage = () => {
     return (
@@ -45,6 +46,10 @@ const EmailEntryAndValidation : NextPage = () => {
                 question={true}
                 questionText={"¿Ya tenés cuenta?"}
                 questionLink={"Iniciar Sesión"}
+                url={""}
+                WhiteButton_url={ROUTER.login}
+                PurpleButton_url={ROUTER.CompanyUserValidation}
+                margin={"22px 0 0 0"}
             />
         </div>
     )

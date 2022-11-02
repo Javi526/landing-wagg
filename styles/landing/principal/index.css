@@ -1,5 +1,7 @@
 .logo-container {
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
 .Initials-container {

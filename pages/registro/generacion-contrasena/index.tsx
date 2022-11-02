@@ -2,6 +2,7 @@ import {NextPage} from "next";
 import RegisterText from "../../../components/common/register/register-text";
 import InputPrincipal from "../../../components/common/input/input-principal";
 import ContentButtons from "../../../components/common/content-buttons";
+import {ROUTER} from "../../../constants/router";
 
 const PasswordGeneration: NextPage = () => {
     return (
@@ -36,6 +37,10 @@ const PasswordGeneration: NextPage = () => {
                 question={true}
                 questionText={"¿Ya tenés cuenta?"}
                 questionLink={"Iniciar Sesión"}
+                url={""}
+                WhiteButton_url={ROUTER.CompanyUserValidation}
+                PurpleButton_url={""}
+                margin={"11px 0 0 0"}
             />
         </div>
     )

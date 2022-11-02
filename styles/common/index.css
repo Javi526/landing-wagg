@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 98.5px;
+    position: relative;
+    z-index: 1;
 }
 
 .Input-text-container {
@@ -27,6 +28,7 @@
     font-size: 12px;
     line-height: 15px;
     color: #9188FD;
+    cursor: pointer;
 }
 
 .input {
@@ -54,7 +56,7 @@
 }
 
 .ContentButtons-container {
-    margin-top: 22px;
+
 }
 
 .whiteButton-content, .PurpleButton-content {
@@ -93,6 +95,7 @@
     display: flex;
     justify-content: center;
     margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 .register-container {
@@ -157,6 +160,9 @@
 
 .Input-label-validation-container {
     display: flex;
+    position: absolute;
+    margin-top: 67px;
+    margin-left: 10px;
 }
 
 .Input-label-validation-text {
@@ -182,5 +188,8 @@
 @media (max-width: 627px) {
     .register-img-container {
         display: none;
+    }
+    .TextRegister-container {
+        margin-top: 32px;
     }
 }
