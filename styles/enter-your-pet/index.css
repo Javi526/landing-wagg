@@ -67,18 +67,19 @@
 
 .Option-item-button {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 161px;
     height: 37px;
     border: 1px solid #D2D4DA;
     border-radius: 10px;
     cursor: pointer;
+    padding-left: 12px;
 }
 
 .Option-item-button-active {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 161px;
     height: 37px;
@@ -87,6 +88,7 @@
     cursor: pointer;
     color: #FFFFFF;
     background: #463677;
+    padding-left: 12px;
 }
 
 .Option-item-active {
