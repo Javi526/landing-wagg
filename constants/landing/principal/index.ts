@@ -13,6 +13,7 @@ import Image7 from "../../../assets/landing/principal/why-use-item/img-7.svg";
 import OurTeam_Image_1 from "../../../assets/landing/principal/our-team-galery/image-1.svg";
 import OurTeam_Image_2 from "../../../assets/landing/principal/our-team-galery/image-2.svg";
 import OurTeam_Image_3 from "../../../assets/landing/principal/our-team-galery/image-3.svg";
+import { Tabs_ClassName_Interface } from "../../../interface/landing/principal";
 
 export const HowDoesItWorkData = [
     { id: 1, title: "Iniciá una consulta ", text: "Accedé a hablar con un veterinario matriculado", img: One, width: 54 },
@@ -77,6 +78,7 @@ export const Tabs_Plan_week = {
     button: "Obtener plan",
 };
 
+
 export const Our_Team_Galery = [
     { id: 1, title: "Micaela Amor", credential: "MT:004567902141", experience: "5 años de experiencia", img: OurTeam_Image_1 },
     { id: 2, title: "Erica Fernández", credential: "MT:0045679000", experience: "7 años de experiencia", img: OurTeam_Image_2 },
@@ -87,4 +89,28 @@ export const Impact_Data = [
         { id: 1, text: "Suscripciones gratuitas para los padres adoptantes" },
         { id: 2, text: "Capacitaciones a los refugios" },
         { id: 3, text: "Seguimiento personalizado post-adopción" }
+];
+
+export const ClassName_Landing: Tabs_ClassName_Interface = {
+    Plan_content_item: "Plan-content-container-day-and-week-item",
+    Plan_content_button_container: "Plan-content-tabs-card-week-button-container",
+    Plan_content_button: "Plan-content-tabs-card-day-button"
+};
+
+export const ClassName_SelectPlan: Tabs_ClassName_Interface = {
+    Plan_content_item: "Plan-select-content-container-day-and-week-item",
+    Plan_content_button_container: "Plan-content-select-card-week-button-container",
+    Plan_content_button: "Plan-content-select-card-day-button"
+};
+
+export const ClassName_Type = {
+    Not_visible: (tab : number, tabType: number) : string => {
+        if (tab !== tabType) return "Plan-content-week-item-not-visible"
+        return ""
+    }
+};
+
+export const PetParentPlanArray = [
+    { id: 1, description: Tabs_Plan_day, tabType: 1 },
+    { id: 2, description: Tabs_Plan_week, tabType: 2 },
 ];

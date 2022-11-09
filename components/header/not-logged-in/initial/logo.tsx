@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LogoIco from "../../../assets/landing/principal/logo.svg";
+import LogoIco from "../../../../assets/landing/principal/logo.svg";
 import { useRouter } from "next/router";
 
 export default function Logo() {

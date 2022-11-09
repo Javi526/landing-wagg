@@ -1,4 +1,4 @@
-import Logo from "../../header/initial/logo";
+import Logo from "../../header/not-logged-in/initial/logo";
 import InputPrincipal from "../../common/input/input-principal";
 import PasswordPrincipal from "../../common/input/password";
 import ContentButtons from "../../common/content-buttons";
@@ -32,7 +32,7 @@ export default function LoginForm() {
                           labelPassword={"Olvidé mi contraseña"}
                       />
                       <ContentButtons
-                          width={311}
+                          width={"311px"}
                           height={42}
                           textConfirm={"Iniciar sesión"}
                           textCancel={"Cancelar"}

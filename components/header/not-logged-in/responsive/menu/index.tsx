@@ -1,6 +1,6 @@
-import { HeaderResponsive, MenuInterface } from "../../../../interface/header/initial";
-import { menu } from "../../../../constants/header/initial/navbar";
-import { ROUTER } from "../../../../constants/router";
+import { HeaderResponsive, MenuInterface } from "../../../../../interface/header/not-logged-in";
+import { menu } from "../../../../../constants/header/initial/navbar";
+import { ROUTER } from "../../../../../constants/router";
 
 export default function ResponsiveMenu({ router } : HeaderResponsive) {
     return (

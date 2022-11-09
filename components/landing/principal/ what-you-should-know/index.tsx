@@ -49,8 +49,8 @@ export default function WhatYouShouldKnow() {
             </div>
                 <div className={"WhatYouShouldKnow-content-item-responsive-container"}>
                     {WhatYouShouldKnowData.map((data: WhatYouShouldKnowInterface) => (
-                        <>
-                        <div className={`WhatYouShouldKnow-content-item-responsive WhatYouShouldKnow-img-${data.id}-${showData[`q${data.id}`]}`} key={data.id} onClick={() => handleChangeState(`q${data.id}`)}>
+                        <div key={data.id}>
+                        <div className={`WhatYouShouldKnow-content-item-responsive WhatYouShouldKnow-img-${data.id}-${showData[`q${data.id}`]}`} onClick={() => handleChangeState(`q${data.id}`)}>
                             <p className={"WhatYouShouldKnow-content-item-responsive-title"}>{data.title}</p>
                             <div className={handleChangeClassName(`q${data.id}`)}>
                                 <Image src={Arrow} width={18} height={18} alt={"Arrow"} />
@@ -60,7 +60,7 @@ export default function WhatYouShouldKnow() {
                                 <div className={"WhatYouShouldKnow-content-show"}>
                                     <p className={"WhatYouShouldKnow-content-item-subTitle-responsive"} dangerouslySetInnerHTML={{ __html: data.text }} />
                                 </div>}
-                        </>
+                        </div>
                     ))}
                 </div>
                 <div className={"WhatYouShouldKnow-content-dog-container"}>

@@ -1,9 +1,9 @@
-import { HeaderInterface, MenuInterface } from "../../../interface/header/initial";
-import { menu } from "../../../constants/header/initial/navbar";
-import Bar from "../../../assets/header/bar.svg";
-import Cross from "../../../assets/header/cross.svg";
+import { HeaderInterface, MenuInterface } from "../../../../interface/header/not-logged-in";
+import { menu } from "../../../../constants/header/initial/navbar";
+import Bar from "../../../../assets/header/bar.svg";
+import Cross from "../../../../assets/header/cross.svg";
 import Image from "next/image";
-import { ROUTER } from "../../../constants/router";
+import { ROUTER } from "../../../../constants/router";
 
 export default function Navbar({ open, setOpen, router }: HeaderInterface) {
     return (

@@ -5,7 +5,7 @@ export default function PurpleButton({ width, height, text, PurpleButton_url, ro
         <div className={"PurpleButton-container"}>
             <div className={"PurpleButton-content"} onClick={() => {
                 if (PurpleButton_url) router.push(PurpleButton_url);
-            }} style={{ width, height }}>{text}</div>
+            }} style={{ width: width, height }}>{text}</div>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { Register } from "../../../../interface/register";
-import Logo from "../../../header/initial/logo";
+import Logo from "../../../header/not-logged-in/initial/logo";
 import Image from "next/image";
 import register_arrow_yellow from "../../../../assets/register/register-arrow-yellow.svg"
 import registerImg from "../../../../assets/register/register.svg"

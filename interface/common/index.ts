@@ -17,7 +17,7 @@ export interface InputPasswordPrincipalInterface {
 }
 
 export interface ButtonWhiteInterface {
-     width: number,
+     width: string,
      height: number,
      text: string
      router: NextRouter,
@@ -25,7 +25,7 @@ export interface ButtonWhiteInterface {
 }
 
 export interface ButtonPurpleInterface {
-     width: number,
+     width: string,
      height: number,
      text: string
      router: NextRouter,
@@ -33,7 +33,7 @@ export interface ButtonPurpleInterface {
 }
 
 export interface ButtonsInterface {
-     width: number,
+     width: string,
      height: number,
      textConfirm: string,
      textCancel: string

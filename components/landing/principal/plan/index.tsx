@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { Tabs, Tabs_Plan_basic, Tabs_Plan_day, Tabs_Plan_week } from "../../../../constants/landing/principal";
+import { Tabs, Tabs_Plan_basic } from "../../../../constants/landing/principal";
 import { TabsInterface, Tabs_Plan_Interface } from "../../../../interface/landing/principal";
 import Checkbox_circle from "../../../../assets/landing/principal/checkbox_circle.svg";
-import Checkbox_circle_Purple from "../../../../assets/landing/principal/checkbox_circle_purple.svg";
 import Aks_us from "../../../../assets/landing/principal/ask-us.svg";
 import I_am_organization from "../../../../assets/landing/principal/I-am-organization.svg";
 import I_am_a_pet_parent from "../../../../assets/landing/principal/I_am_a_pet_parent.svg";
@@ -12,10 +11,8 @@ import ArrowLeft from "../../../../assets/landing/principal/our-team-galery/arro
 import ArrowRight from "../../../../assets/landing/principal/our-team-galery/arrow-right.svg";
 import ArrowLeftDisabled from "../../../../assets/landing/principal/arrow-left-disabled.svg";
 import ArrowRightDisabled from "../../../../assets/landing/principal/arrow-right-disabled.svg";
-import Green_mave from "../../../../assets/landing/principal/green_mave.svg";
-import House from "../../../../assets/landing/principal/house.svg";
-import Sky_blue_firule from "../../../../assets/landing/principal/sky_blue_firule.svg";
 import Image from "next/image";
+import PetParentPlanCard from "../../../common/tab/pet-parent-plan";
 
 export default function Plan() {
     const [type, setType] = useState("Organizaciones");
@@ -121,50 +118,11 @@ export default function Plan() {
                 </div>
             </div>}
             {type === "Padres de mascotas" &&
-                <div className={"Plan-content-container-day-and-week-container"}>
-                    <div className={"Plan-content-container-day-and-week-content"}>
-                       <div className={`Plan-content-container-day-and-week-item ${tab !== 1 && "Plan-content-week-item-not-visible"}`}>
-                           <div className={"Plan-content-tabs-card-day-and-week-left"}>
-                           <p className={"Plan-content-tabs-card-day-title"}>{Tabs_Plan_day.title}</p>
-                           <div className={"Plan-content-tabs-card-day-price-and-time-container"}>
-                               <p className={"Plan-content-tabs-card-day-price"}>{Tabs_Plan_day.price}</p>
-                               <p className={"Plan-content-tabs-card-day-time"}>/ {Tabs_Plan_day.time}</p>
-                           </div>
-                           <div className={"Plan-content-tabs-card-day-item-container"}>
-                               {Tabs_Plan_day.item.map((data: Tabs_Plan_Interface) => (
-                                   <div className={"Plan-content-tabs-card-day-item"} key={data.id}>
-                                       <Image src={Checkbox_circle_Purple} width={24} height={25} alt={"Checkbox_circle_Purple"} />
-                                       <p className={"Plan-content-tabs-card-day-item-text"}>{data.text}</p>
-                                   </div>
-                               ))}
-                           </div>
-                       </div>
-                           <div className={"Plan-content-tabs-card-day-button-container"}>
-                               <div className={"Plan-content-tabs-card-day-button"}>Obtener plan</div>
-                           </div>
-                       </div>
-                        <div className={`Plan-content-container-day-and-week-item ${tab !== 2 && "Plan-content-week-item-not-visible"}`}>
-                            <div className={"Plan-content-tabs-card-day-and-week-left"}>
-                                <p className={"Plan-content-tabs-card-day-title"}>{Tabs_Plan_week.title}</p>
-                                <div className={"Plan-content-tabs-card-day-price-and-time-container"}>
-                                    <p className={"Plan-content-tabs-card-day-price"}>{Tabs_Plan_week.price}</p>
-                                    <p className={"Plan-content-tabs-card-day-time"}>/ {Tabs_Plan_week.time}</p>
-                                </div>
-                                <div className={"Plan-content-tabs-card-day-item-container"}>
-                                    {Tabs_Plan_week.item.map((data: Tabs_Plan_Interface) => (
-                                        <div className={"Plan-content-tabs-card-day-item"} key={data.id}>
-                                            <Image src={Checkbox_circle_Purple} width={24} height={25} alt={"Checkbox_circle_Purple"} />
-                                            <p className={"Plan-content-tabs-card-day-item-text"}>{data.text}</p>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className={"Plan-content-tabs-card-week-button-container"}>
-                                <div className={"Plan-content-tabs-card-day-button"}>Obtener plan</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>}
+                <PetParentPlanCard
+                    tab={tab}
+                    nameButton={"Obtener plan"}
+                    landing={true}
+                />}
             {type === "Padres de mascotas" && <div className={"Plan-content-tabs-select-container"}>
                 <div className={"Plan-content-tabs-select-content"}>
                     <Image src={arrowLeftChange(tab)} width={24} height={24} style={{ cursor: `${arrowLeftType(tab)}` }} alt={"ArrowLeft"} onClick={() => setTab(1)}/>

@@ -1,10 +1,15 @@
-@import "header/initial";
+@import "header/not-logged-in/initial";
+@import "header/logged-in";
 @import "landing/principal";
 @import "footer";
 @import "term-conditions";
 @import "faqs";
 @import "login";
 @import "common";
+@import "choose-your-plan/check-out";
+@import "choose-your-plan/plan";
+@import "bar";
+@import "enter-your-pet";
 
 html,
 body {

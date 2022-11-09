@@ -638,7 +638,6 @@
     cursor: pointer;
     background: #463677;
     border-radius: 50%;
-    cursor: pointer;
 }
 
 .Plan-content-tabs-select-content-cicle {
@@ -671,8 +670,24 @@
 }
 
 .Plan-content-container-day-and-week-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 352px;
     height: 415px;
+    background: #FAFBFF;
+    border: 1px solid #E7EBF8;
+    border-radius: 10px;
+    padding-top: 35px;
+    z-index: 1;
+}
+
+.Plan-select-content-container-day-and-week-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 335px;
+    height: 357px;
     background: #FAFBFF;
     border: 1px solid #E7EBF8;
     border-radius: 10px;
@@ -739,16 +754,16 @@
 }
 
 
-.Plan-content-tabs-card-day-button-container {
+.Plan-content-tabs-card-day-button-container, .Plan-content-tabs-card-week-button-container  {
     display: flex;
     justify-content: center;
-    margin-top: 128px;
+    margin-bottom: 24px;
 }
 
-.Plan-content-tabs-card-week-button-container {
+.Plan-content-select-card-week-button-container {
     display: flex;
     justify-content: center;
-    margin-top: 128px;
+    margin-bottom: 32px;
 }
 
 .Plan-content-tabs-card-day-button {
@@ -759,6 +774,24 @@
     height: 44.77px;
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.075));
     background: #9188FD;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Plan-content-select-card-day-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 274px;
+    height: 47px;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.075));
+    background: #463677;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1246,7 +1279,7 @@
     }
     .Plan-content-img-I_am_a_pet_parent-container {
         margin-top: 37rem;
-        margin-left: 0rem;
+        margin-left: 0;
     }
     .Plan-content-img-Bar_lilac-container {
         margin-top: 28.9rem;
@@ -1784,16 +1817,12 @@
 
     .Plan-content-img-I_am_a_pet_parent-container {
         margin-top: 34rem;
-        margin-left: 0;
         display: flex;
         justify-content: center;
         width: auto;
         margin-left: 8px;
     }
 
-    .Plan-content-tabs-card-week-button-container, .Plan-content-tabs-card-day-button-container {
-        margin-top: 95px;
-    }
     .Plan-content-tabs-card-day-button {
         width: 297px;
         height: 45px;
@@ -1801,7 +1830,7 @@
     .Plan-content-container-day-and-week-content {
         height: 375px;
     }
-    .Plan-content-container-day-and-week-item {
+    .Plan-content-container-day-and-week-item, .Plan-content-container-day-and-week-item {
         width: 328px;
         height: 372px;
     }

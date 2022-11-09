@@ -30,7 +30,7 @@ const PasswordGeneration: NextPage = () => {
                 validAccount={false}
             />
             <ContentButtons
-                width={326}
+                width={"326px"}
                 height={42}
                 textConfirm={"Crear cuenta"}
                 textCancel={"Atras"}

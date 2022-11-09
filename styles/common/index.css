@@ -20,6 +20,19 @@
     line-height: 18px;
     color: #463677;
 }
+.Input-seconds-label-container {
+    position: absolute;
+    margin-left: 10px;
+    padding-bottom: 39px;
+}
+.Input-seconds-label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 18px;
+    color: #463677;
+}
 
 .Input-label-password-container {
     font-family: 'Poppins';
@@ -43,16 +56,48 @@
     line-height: 18;
     color: #777986;
     margin: 0 0 24px 0;
+    outline: none;
 }
 
-.input::placeholder {
-    color: #777986;
+.input-pay {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18;
     color: #777986;
+    margin: 0 0 12px 0;
+    outline: none;
+}
+
+.select {
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18;
+    color: #777986;
+    margin: 0 0 24px 0;
+    outline: none;
+}
+
+.select::-ms-expand {
+    display: none;
+}
+
+.input::placeholder, .select::placeholder {
+    color: #777986;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18;
 }
 
 .ContentButtons-container {
@@ -180,6 +225,31 @@
     line-height: 130%;
     margin: 0;
     color: #463677;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 172px;
+}
+
+.card-visa {
+    display: flex;
+    justify-content: center;
+    width: 36px;
+    height: 21px;
+    background: #25459A;
+    border-radius: 8%;
+}
+
+.card-mastercard {
+    display: flex;
+    justify-content: center;
+    width: 36px;
+    height: 21px;
+    background: #10427A;
+    border-radius: 8%;
 }
 
 @media (max-width: 545px) {

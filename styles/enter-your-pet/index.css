@@ -1,0 +1,69 @@
+.IngresaATuMascota-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+}
+
+.EnterYourPetForm-container {
+    width: 358px;
+}
+
+.EnterYourPetForm-content-item {
+    width: 335px;
+}
+
+.EnterYourPetForm-content-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    color: #463677;
+    margin: 0;
+}
+
+.EnterYourPetForm-content-subtitle-container {
+    margin-top: 39px;
+    margin-bottom: 18px;
+}
+
+.EnterYourPetForm-content-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9188FD;
+    margin: 0;
+}
+.Option-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    margin-top: 6px;
+}
+
+.Option-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 161px;
+    height: 37px;
+    border: 1px solid #D2D4DA;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Option-item-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 161px;
+    height: 37px;
+    border: 1px solid #463677;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #463677;
+}

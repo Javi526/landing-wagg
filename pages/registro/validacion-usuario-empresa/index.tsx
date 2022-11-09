@@ -39,7 +39,7 @@ const CompanyUserValidation : NextPage = () => {
                 validAccount={true}
             />
             <ContentButtons
-                width={326}
+                width={"326px"}
                 height={42}
                 textConfirm={"Continuar"}
                 textCancel={"Atras"}

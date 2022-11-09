@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 import HeaderButton from "./button";
 import ResponsiveMenu from "../responsive/menu";
 import { useState } from "react";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 export default function Header() {
     const [open, setOpen] = useState<boolean>(false);

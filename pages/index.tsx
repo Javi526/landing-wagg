@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import Header from "../components/header/initial";
+import Header from "../components/header/not-logged-in/initial";
 import Initials from "../components/landing/principal/initials";
 import HowDoesItWork from "../components/landing/principal/how-does-it-work";
 import WhyUse from "../components/landing/principal/why-use";

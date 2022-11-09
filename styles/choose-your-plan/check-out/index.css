@@ -1,0 +1,201 @@
+.CheckOut-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 123px;
+}
+
+.CheckOut-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    color: #463677;
+    margin: 0;
+}
+
+.CheckOut-content-pay-container {
+    display: flex;
+    justify-content: space-between;
+    width: 671px;
+    padding-top: 57px;
+}
+
+.CheckOut-content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 335px;
+}
+
+.CheckOut-container-image-ray-yellow-container {
+    position: absolute;
+    margin-top: 1.2rem;
+    margin-left: 38rem;
+}
+
+.CheckOut-container-image-ray-yellow {
+    width: 58px;
+    height: 34px;
+}
+
+.PaymentData-container {
+
+}
+
+.PaymentData-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #101223;
+    margin: 0 0 20px 0;
+}
+
+.PaymentPlan-plan-container {
+    margin-top: 19px;
+    width: 293px;
+}
+.PaymentPlan-plan-description {
+    width: inherit;
+    height: 212px;
+    background: #FAFBFF;
+    border: 1px solid #E7EBF8;
+    border-radius: 10px;
+    padding: 20px 20px 22px 20px;
+}
+
+.PaymentPlan-plan-description-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #463677;
+    margin: 0;
+}
+
+.PaymentPlan-plan-description-item-container {
+    margin-top: 22px;
+}
+
+.PaymentPlan-plan-description-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+}
+.PaymentPlan-plan-description-item-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777986;
+    margin: 0;
+}
+.PaymentPlan-plan-description-item-value {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #101223;
+    margin: 0;
+}
+
+.PaymentPlan-line {
+    width: 100%;
+    height: 1px;
+    background: #E7EBF8;
+}
+
+.PaymentPlan-plan-description-total-container {
+    margin-top: 41px;
+}
+
+.PaymentPlan-plan-description-total {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: right;
+    color: #101223;
+    margin: 0;
+}
+
+.PaymentPlan-button-container {
+    margin-top: 12px;
+}
+
+.PaymentPlan-term-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #777986;
+    margin: 0;
+}
+.PaymentPlan-term-container {
+    margin-top: 20px;
+}
+.PaymentPlan-term-text a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #9188FD;
+    margin: 0;
+}
+
+@media (max-width: 703px) {
+    .CheckOut-content-pay-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+    .PaymentPlan-plan-container {
+        margin-top: 2rem;
+        width: 335px;
+    }
+    .PaymentPlan-term-text {
+        width: 335px;
+        text-align: center;
+        padding: 0 4px;
+    }
+    .PurpleButton-container {
+        display: flex;
+        justify-content: center;
+    }
+    .PaymentPlan-button-container {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 690px) {
+    .CheckOut-container-image-ray-yellow {
+        display: none;
+    }
+    .CheckOut-title {
+        width: 335px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 467px) {
+    .CheckOut-title {
+        width: 335px;
+        margin: auto;
+        text-align: start;
+    }
+    .CheckOut-content-pay-container {
+        padding-top: 40px;
+    }
+}
