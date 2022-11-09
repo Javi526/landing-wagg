@@ -668,6 +668,13 @@
     display: flex;
     justify-content: space-between;
 }
+.Plan-content-container-day-and-week-content-select {
+    width: 695px;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
 
 .Plan-content-container-day-and-week-item {
     display: flex;
@@ -1523,7 +1530,7 @@
         display: none;
     }
 
-    .Plan-content-container-day-and-week-content {
+    .Plan-content-container-day-and-week-content, .Plan-content-container-day-and-week-content-select {
         width: auto;
     }
 

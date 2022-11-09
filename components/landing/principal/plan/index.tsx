@@ -28,12 +28,12 @@ export default function Plan() {
         return "Plan-content-tabs-select-content-cicle";
     };*/
 
-    const arrowLeftChange = (num: number) => {
+    const arrowLeftChange = (num: number) : any => {
         if (num > 1) return ArrowLeft;
         return ArrowLeftDisabled;
     };
 
-    const arrowRightChange = (num: number) => {
+    const arrowRightChange = (num: number) : string => {
         if (num < 2) return ArrowRight;
         return ArrowRightDisabled;
     };

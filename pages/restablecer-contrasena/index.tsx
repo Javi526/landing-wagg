@@ -32,7 +32,7 @@ const RestorePassword: NextPage = () => {
                 width={"326px"}
                 height={42}
                 textConfirm={"Continuar"}
-                textCancel={"Atras"}
+                textCancel={"Atrás"}
                 question={false}
                 questionText={"¿Ya tenés cuenta?"}
                 questionLink={"Iniciar Sesión"}

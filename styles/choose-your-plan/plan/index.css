@@ -43,6 +43,15 @@
     text-align: center;
     color: #463677;
     margin: 0;
+    position: relative;
+}
+
+.ChooseYourPlan-content-image-cicle_yellow {
+    position: absolute;
+    width: 130px;
+    height: 52px;
+    margin-top: -4.4rem;
+    margin-left: 14rem;
 }
 
 .ChooseYourPlan-content-p {
@@ -55,4 +64,17 @@
     margin: 19px 0 0 0;
     width: 428px;
     text-align: center;
+}
+
+@media (max-width: 446px) {
+    .ChooseYourPlan-content-p {
+        width: auto;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .ChooseYourPlan-content-image-cicle_yellow {
+        margin-top: -6rem;
+    }
 }

@@ -33,7 +33,7 @@ const PasswordGeneration: NextPage = () => {
                 width={"326px"}
                 height={42}
                 textConfirm={"Crear cuenta"}
-                textCancel={"Atras"}
+                textCancel={"Atrás"}
                 question={true}
                 questionText={"¿Ya tenés cuenta?"}
                 questionLink={"Iniciar Sesión"}

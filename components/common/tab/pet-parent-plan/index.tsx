@@ -21,8 +21,8 @@ const handleChangeClassName = (landing: boolean) : Tabs_ClassName_Interface => {
 
 export default function PetParentPlanCard({ tab, nameButton, landing } : PetParentProps) {
     return (
-        <div className={"Plan-content-container-day-and-week-container"}>
-            <div className={"Plan-content-container-day-and-week-content"}>
+        <div className={"Plan-content-container-day-and-week-container"} style={{ marginTop: `${landing ? "18px": "32px"}` }}>
+            <div className={`${landing ? "Plan-content-container-day-and-week-content" : "Plan-content-container-day-and-week-content-select"}`}>
                 {PetParentPlanArray.map((p: PetParentPlanArray_Interface) => (
                  <div className={`${handleChangeClassName(landing).Plan_content_item} ${ClassName_Type.Not_visible(tab, p.tabType)}`} key={p.id}>
                     <div className={"Plan-content-tabs-card-day-and-week-left"}>

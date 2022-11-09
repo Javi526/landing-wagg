@@ -26,7 +26,7 @@ const ForgetPassword: NextPage = () => {
                 width={"326px"}
                 height={42}
                 textConfirm={"Continuar"}
-                textCancel={"Atras"}
+                textCancel={"Atrás"}
                 question={false}
                 questionText={""}
                 questionLink={""}

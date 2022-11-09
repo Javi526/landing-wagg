@@ -1,0 +1,103 @@
+.ReasonForConsultation-container {
+    padding-top: 48px;
+    width: 312px;
+    margin: auto;
+}
+
+.ReasonForConsultation-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #463677;
+    margin: 0 0 44px 0;
+}
+
+.ReasonForConsultation-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #463677;
+    margin: 0 0 16px 0;
+}
+
+.ReasonForConsultation-item-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ReasonForConsultation-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 96px;
+    height: 98px;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ReasonForConsultation-item-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    color: #463677;
+    margin: 2px 0 0 0;
+}
+.ReasonForConsultation-item-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #D2D4DA;
+    border-radius: 50%;
+}
+
+.ReasonForConsultation-item-circle-container {
+    position: absolute;
+    padding-bottom: 4.3rem;
+    margin-left: 4.3rem;
+}
+
+.ReasonForConsultation-item-circle-color {
+    width: 6px;
+    height: 6px;
+    background: #9188FD;
+    border-radius: 50%;
+}
+
+.ReasonForConsultation-form-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #463677;
+    margin: 25px 0 12px 0;
+}
+.ReasonForConsultation-image-container-cloud, .ReasonForConsultation-image-container-linea {
+    position: absolute;
+}
+
+.ReasonForConsultation-image-container-cloud {
+    margin-left: -8.5rem;
+    margin-top: 2.5rem;
+}
+
+.ReasonForConsultation-image-container-linea {
+    margin-left: 17.5rem;
+}
+
+@media (max-width: 703px) {
+    .ReasonForConsultation-image-container-cloud, .ReasonForConsultation-image-container-linea {
+        display: none;
+    }
+}

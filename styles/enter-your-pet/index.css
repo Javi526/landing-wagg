@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     margin-top: 58px;
+    padding-bottom: 208px;
 }
 
 .EnterYourPetForm-container {
@@ -66,4 +67,45 @@
     cursor: pointer;
     color: #FFFFFF;
     background: #463677;
+}
+
+.ShowDog-content-dog-container {
+    margin-top: 63px;
+    margin-left: 18px;
+}
+
+.ShowDog-Bottomless_Dogs-container {
+    width: 230px;
+    height: 303px;
+}
+
+.ShowDog-circle-pink-container {
+    width: 173px;
+    height: 167px;
+    position: absolute;
+    margin-left: 8rem;
+    margin-top: -2rem;
+}
+
+@media (max-width: 776px) {
+    .IngresaATuMascota-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+    .ShowDog-content-dog-container {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .EnterYourPetForm-content-title{
+        Font-size: 28px
+    }
+
+    .EnterYourPetForm-container{
+        width: auto;
+    }
+
+    .ShowDog-circle-pink-container{
+        width: 160px;
+    }
 }

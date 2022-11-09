@@ -1,4 +1,13 @@
 .BarPlan-container {
+    display: flex;
+    align-items: center;
     background: #9188FD;
+    padding-left: 7rem;
     height: 45px;
+}
+
+@media (max-width: 762px) {
+    .BarPlan-container {
+        padding-left: 2rem;
+    }
 }
