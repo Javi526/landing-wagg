@@ -2,7 +2,7 @@
     padding-top: 48px;
     width: 312px;
     margin: auto;
-    padding-bottom: 100px;
+    padding-bottom: 212px;
 }
 
 .ReasonForConsultation-title {
@@ -100,5 +100,8 @@
 @media (max-width: 703px) {
     .ReasonForConsultation-image-container-cloud, .ReasonForConsultation-image-container-linea {
         display: none;
+    }
+    .ReasonForConsultation-container {
+        padding-bottom: 100px;
     }
 }
