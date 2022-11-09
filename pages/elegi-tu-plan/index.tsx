@@ -61,6 +61,7 @@ const ChooseYourPlan: NextPage = () => {
                 <h2 className={"ChooseYourPlan-content-h2"}>Bienvenido a Wagg</h2>
                 <p className={"ChooseYourPlan-content-p"}>En Wagg ofrecemos distintos planes de atención veterinaria y seguro para tu mascota.</p>
             </div>
+            <div className={"PetParentPlanCard-content-container"}>
             <PetParentPlanCard
                 tab={tab}
                 nameButton={"Elegir plan"}
@@ -71,6 +72,7 @@ const ChooseYourPlan: NextPage = () => {
                     <Image src={arrowLeftChange(tab)} width={24} height={24} style={{ cursor: `${arrowLeftType(tab)}` }} alt={"ArrowLeft"} onClick={() => setTab(1)}/>
                     <Image src={arrowRightChange(tab)} width={24} height={24} style={{ cursor: `${arrowRightType(tab)}` }} alt={"ArrowRight"} onClick={() => setTab(2)}/>
              </div>
+            </div>
             </div>
         </main>
     )

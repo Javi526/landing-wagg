@@ -154,6 +154,10 @@
     margin: 0;
 }
 
+.PetParentPlanCard-content-container {
+    padding-bottom: 200px;
+}
+
 
 @media (max-width: 703px) {
     .CheckOut-content-pay-container {
@@ -198,5 +202,8 @@
     }
     .CheckOut-content-pay-container {
         padding-top: 40px;
+    }
+    .PetParentPlanCard-content-container {
+        padding-bottom: 100px;
     }
 }
