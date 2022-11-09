@@ -45,6 +45,15 @@
     margin-top: 6px;
 }
 
+.Option-container-type {
+    display: flex;
+    flex-direction: column;
+}
+
+.OptionButton-container {
+    margin-bottom: 9px;
+}
+
 .Option-item {
     display: flex;
     justify-content: center;
@@ -54,6 +63,30 @@
     border: 1px solid #D2D4DA;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.Option-item-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 161px;
+    height: 37px;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Option-item-button-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 161px;
+    height: 37px;
+    border: 1px solid #463677;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #463677;
 }
 
 .Option-item-active {

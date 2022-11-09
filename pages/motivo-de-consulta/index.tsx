@@ -5,11 +5,12 @@ import CatCard from "../../assets/reason-for-consultation/cat.svg";
 import SumCard from "../../assets/reason-for-consultation/sum.svg";
 import Image from "next/image";
 import {useState} from "react";
-import InputSeconds from "../../components/common/input/input-seconds";
+//import InputSeconds from "../../components/common/input/input-seconds";
 import Cloud from "../../assets/reason-for-consultation/cloud.svg";
 import Linea from "../../assets/reason-for-consultation/linea.svg";
 import ContentButtons from "../../components/common/content-buttons";
 import ArrowHorizontal from "../../assets/header/arrow.svg";
+import OptionButton from "../../components/common/option/button";
 
 export default function ReasonForConsultation() {
     const [option, setOption] = useState("");
@@ -76,20 +77,30 @@ export default function ReasonForConsultation() {
                 </div>
             </div>
                 <p className={"ReasonForConsultation-form-text"}>¿Cúal es tu motivo de consulta?</p>
-                <InputSeconds
+                {/*<InputSeconds
                     width={312}
                     height={48}
                     label={"Consulta General"}
                     placeholder={"Consulta General"}
                     validateCard={false}
-                />
-                <InputSeconds
+                />*/}
+                {/*<InputSeconds
                     width={312}
                     height={48}
                     label={"Emergencia"}
                     placeholder={"Emergencia"}
                     validateCard={false}
-                />
+                />*/}
+                <div className={"OptionButton-container"}>
+                    <OptionButton
+                        label={""}
+                        nameOne={"Consulta General"}
+                        nameTwo={"Emergencia"}
+                        width={"312px"}
+                        height={"48px"}
+                        margin={"0 0 12px 0"}
+                    />
+                </div>
                 <ContentButtons
                     width={"312px"}
                     height={42}
