@@ -24,7 +24,7 @@ export const My_Pets_list_Title: My_Pets_Info_List_Title_Interface[] = [
 export const My_Pets_Card: My_Pets_Card_Interface[] = [
     { id: 1, title: "Greta", img: Image1_cat, alt:"Image1_cat" },
     { id: 2, title: "Caos", img: Image2_dog, alt:"Image2_dog" },
-    { id: 3, title: "Greta", img: Image2_dog, alt:"Image2_dog2" },
+    { id: 3, title: "Lupita", img: Image2_dog, alt:"Image2_dog2" },
     { id: 4, title: "Malbec", img: Image1_cat, alt:"Image1_cat2" },
 ];
 
