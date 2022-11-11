@@ -27,7 +27,7 @@ const CheckOut: NextPage = () => {
 
     return (
         <main>
-            <Header_LoggedIn name={"Paulina"} image={""} />
+            <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} />
             <BarPlan Text={HeaderText} />
              <div className={"CheckOut-container"}>
                  <div className={"CheckOut-container-image-ray-yellow-container"}>

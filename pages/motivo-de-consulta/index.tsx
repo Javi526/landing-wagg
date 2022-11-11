@@ -33,7 +33,7 @@ export default function ReasonForConsultation() {
 
     return (
         <main>
-            <Header_LoggedIn name={"Paulina"} image={""} />
+            <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} />
             <BarPlan Text={HeaderText} />
             <div className={"ReasonForConsultation-container"}>
                 <div className={"ReasonForConsultation-image-container-cloud"}>

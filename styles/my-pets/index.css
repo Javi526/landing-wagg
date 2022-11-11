@@ -1,0 +1,361 @@
+.MyPets-section {
+    width: 1096px;
+    margin: auto;
+    padding-top: 37px;
+}
+
+.MyPets-section-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFA7FE;
+    margin: 0;
+}
+
+
+.MyPets-container {
+    width: 695px;
+    margin: auto;
+    padding-bottom: 118px;
+    user-select: none;
+    margin-top: -16px;
+}
+
+.MyPets-content-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 13px;
+}
+
+.MyPets-content-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    color: #463677;
+    margin: 0 0 10px 0;
+}
+
+.MyPets-content-name {
+    padding-top: 29px;
+}
+
+.MyPets-line {
+    width: 100%;
+    height: 1px;
+    background-color: #E7EBF8;
+    margin-top: -4px;
+}
+
+.MyPets-ImageWoman_and_dog {
+
+}
+
+.MyPets-box-consultation {
+    width: 100%;
+    padding: 22px;
+    background: #DCD9FF;
+    border-radius: 20px;
+    margin-top: 14px;
+}
+
+.MyPets-box-consultation-content, .MyPets-box-items-container, .MyPets-content-items-container, .MyPets-content-info-title-and-button-container, .MyPets-content-tab-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.MyPets-content-items {
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    cursor: pointer;
+    width: 165px;
+    height: 60px;
+    background: #FAFBFF;
+    border-radius: 10px;
+}
+
+.MyPets-content-items-no-select {
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    cursor: pointer;
+    width: 165px;
+    height: 60px;
+    background: #FAFBFF;
+    border-radius: 10px;
+    border: 2px solid #FAFBFF;
+}
+
+.MyPets-content-items-select {
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    cursor: pointer;
+    width: 165px;
+    height: 60px;
+    background: #FAFBFF;
+    border-radius: 10px;
+    border: 2px solid #9188FD;
+}
+
+.MyPets-box-items-container {
+    margin-top: 18px;
+}
+
+.MyPets-box-consultation-content-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 201px;
+    height: 44px;
+    background: #463677;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.MyPets-box-consultation-content-text-container {
+    width: 312px;
+}
+
+.MyPets-box-consultation-content-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #463677;
+    margin: 0;
+}
+
+.MyPets-box-items {
+    display: flex;
+    justify-content: space-between;
+    width: 338px;
+    height: 149px;
+    background: #FAFBFF;
+    border: 1px solid #E7EBF8;
+    border-radius: 20px;
+    padding: 21px 20px 14px 20px;
+}
+
+.MyPets-box-items-content-text-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.MyPets-box-items-content-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #404252;
+    margin: 0;
+}
+
+.MyPets-box-items-content-p2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #777986;
+    margin: 2px 0 0 0;
+}
+
+.MyPets-box-items-content-text-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #463677;
+    margin: 0;
+}
+
+.MyPets-box-image-Heart {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 4px;
+}
+
+.MyPets-title-container {
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.MyPets-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #463677;
+    margin: 0;
+}
+
+
+.MyPets-content-items-active {
+    width: 165px;
+    height: 60px;
+    background: #FAFBFF;
+    border: 2px solid #9188FD;
+    border-radius: 10px;
+}
+
+.MyPets-content-items-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #404252;
+    margin: 0 0 0 6px;
+}
+
+.MyPets-content-info-container {
+    width: 100%;
+    background: #FAFBFF;
+    border: 1px solid #E7EBF8;
+    border-radius: 20px;
+    padding: 20px 24px 0 24px;
+    margin-top: 20px;
+}
+
+.MyPets-content-info-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAFBFF;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-right: 11px;
+    height: 34px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #463677;
+}
+
+.MyPets-content-info-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #6E66CC;
+    margin: 10px 0 0 0;
+}
+
+.MyPets-content-info-button-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #463677;
+    margin: 0 6px 0 0;
+}
+
+.MyPets-content-info-item-container {
+    display: flex;
+    justify-content: space-between;
+    width: 496px;
+    margin-top: 12px;
+}
+
+.MyPets-content-info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.MyPets-content-info-item-p1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #777986;
+    margin: 0;
+}
+
+.MyPets-content-info-item-p2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #404252;
+    margin: 0;
+}
+
+.MyPets-content-image-status {
+    margin: 24px 0 24px 0;
+}
+
+.MyPets-content-line {
+    width: 100%;
+    height: 1px;
+    background-color: #E7EBF8;
+    margin-top: 30px;
+    margin-bottom: 21.5px;
+}
+
+.MyPets-content-tab-container {
+    cursor: pointer;
+}
+.MyPets-content-info-list-container {
+    display: flex;
+    justify-content: space-between;
+    width: 515px;
+    margin-bottom: 10px;
+}
+
+.MyPets-content-list-content-container {
+    display: flex;
+    padding-left: 24px;
+    align-items: center;
+    height: 70px;
+    border-top: 1px solid #E7EBF8;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+.MyPets-content-info-list-p2-opacity {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #9496A1;
+    margin: 0;
+    cursor: pointer;
+}
+
+.MyPets-view-button-chat {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #9188FD;
+    margin: 0;
+    cursor: pointer;
+    margin-left: 24px;
+}

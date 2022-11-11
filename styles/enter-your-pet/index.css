@@ -67,7 +67,7 @@
 
 .Option-item-button {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 161px;
     height: 37px;
@@ -79,7 +79,7 @@
 
 .Option-item-button-active {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 161px;
     height: 37px;
