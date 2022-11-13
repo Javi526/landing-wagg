@@ -24,6 +24,8 @@
     position: absolute;
     margin-left: 10px;
     padding-bottom: 39px;
+    display: inline-block;
+    pointer-events: none;
 }
 .Input-seconds-label {
     font-family: 'Poppins';
