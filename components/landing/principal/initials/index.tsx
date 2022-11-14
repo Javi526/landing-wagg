@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ImageWoman_and_dog from "../../../../assets/landing/principal/woman-and-dog.svg";
+import ImageWoman_and_dog from "../../../../assets/landing/principal/woman_and_dog-min.webp";
 import Hello from "../../../../assets/landing/principal/hello.svg";
 import LineYellow from "../../../../assets/landing/principal/line-yellow.svg";
 import ArrowYellow from "../../../../assets/landing/principal/arrow-yellow-hero.png";
@@ -35,7 +35,7 @@ export default function Initials() {
                         </div>*/}
                     </div>
                     <div className={"Initials-image-woman-and-dog"}>
-                        <Image src={ImageWoman_and_dog} width={512} height={430} alt={"ImageWoman_and_dog"} />
+                        <Image src={ImageWoman_and_dog} width={512} height={402} alt={"ImageWoman_and_dog"} />
                     </div>
                 </div>
                 <div className={"Initial-responsive-button-container"}>
