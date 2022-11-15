@@ -11,6 +11,7 @@ import Insured_Pet from "../../assets/my-pets/insured-pet.svg";
 import Arrow from "../../assets/my-pets/my-pets-arrow.svg";
 import Arrow_responsive from "../../assets/my-pets/my-pets-arrow-responsive.svg";
 import Download from "../../assets/my-pets/download.svg";
+import Arrow_White from "../../assets/my-pets/arrow-white.svg";
 import { useState } from "react";
 import {useRouter} from "next/router";
 import {ROUTER} from "../../constants/router";
@@ -58,7 +59,10 @@ export default function MyPets() {
                           <p className={"MyPets-box-consultation-content-text"}>Cómo podemos ayudar a tu mascota hoy?</p>
                       </div>
                        <div className={"MyPets-box-consultation-content-button-container"}>
-                           <div className={"MyPets-box-consultation-content-button"}>Consultá ahora</div>
+                           <div className={"MyPets-box-consultation-content-button"}>
+                               <p className={"MyPets-box-consultation-content-button-text"}>Consultá</p>
+                               <Image src={Arrow_White} width={14} height={8} alt={"Arrow_White"} />
+                           </div>
                        </div>
                    </div>
                 </div>
