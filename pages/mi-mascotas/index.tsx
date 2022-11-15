@@ -9,12 +9,30 @@ import { My_Pets_Info, My_Pets_list_Title, My_Pets_list, My_Pets_Card } from "..
 import { My_Pets_Info_Interface, My_Pets_Info_List_Title_Interface, My_Pets_Info_List_Interface, My_Pets_Card_Interface } from "../../interface/my-pets";
 import Insured_Pet from "../../assets/my-pets/insured-pet.svg";
 import Arrow from "../../assets/my-pets/my-pets-arrow.svg";
+import Arrow_responsive from "../../assets/my-pets/my-pets-arrow-responsive.svg";
 import Download from "../../assets/my-pets/download.svg";
 import { useState } from "react";
+import {useRouter} from "next/router";
+import {ROUTER} from "../../constants/router";
 
 export default function MyPets() {
     const [showList, setShowList] = useState(false);
     const [showSelectPet, setShowSelectPet] = useState<number>(0);
+    const [showCard, setShowCard] = useState(1);
+
+    const history = useRouter();
+
+    const handleChangeShowCard = (num: number) : string => showCard !== num ? "not-visible-card" : "";
+    const handleChangeCarrouselSelected = (num: number) : string => showCard === num ? "show-points-item-selected" : "show-points-item";
+
+    const handleChangeSelectPet = (id: number) : void => {
+        if (id === showSelectPet) {
+            setShowSelectPet(0);
+        } else {
+            setShowSelectPet(id);
+        }
+    };
+
     return (
         <main>
             <Header_LoggedIn name={"Paulina"} image={""} consultation={true} url={""} />
@@ -25,7 +43,9 @@ export default function MyPets() {
                <div className={"MyPets-content-container"}>
                    <div className={"MyPets-content-name"}>
                        <p className={"MyPets-content-title"}>Hola, Paulina!</p>
-                       <Image src={MypPets_circle_yellow} width={168} height={48} alt={"MypPets_circle_yellow"} />
+                       <div className={"MypPets_circle_yellow"}>
+                           <Image src={MypPets_circle_yellow} width={168} height={48} alt={"MypPets_circle_yellow"} />
+                       </div>
                    </div>
                    <div className={"MyPets-ImageWoman_and_dog"}>
                        <Image src={Woman_and_dog} width={174} height={147} alt={"Woman_and_dog"} />
@@ -43,7 +63,7 @@ export default function MyPets() {
                    </div>
                 </div>
                 <div className={"MyPets-box-items-container"}>
-                    <div className={"MyPets-box-items"}>
+                    <div className={`MyPets-box-items ${handleChangeShowCard(1)}`}>
                         <div className={"MyPets-box-items-content-text-container"}>
                             <div className={"MyPets-box-items-content-text"}>
                                <p className={"MyPets-box-items-content-p"}>Última consulta</p>
@@ -55,7 +75,7 @@ export default function MyPets() {
                             <Image src={Active} width={70} height={28} alt={"img-active"} />
                         </div>
                     </div>
-                    <div className={"MyPets-box-items"}>
+                    <div className={`MyPets-box-items ${handleChangeShowCard(2)}`}>
                         <div className={"MyPets-box-items-content-text-container"}>
                             <div className={"MyPets-box-items-content-text"}>
                                 <p className={"MyPets-box-items-content-p"}>Contratá nuestro seguro Wagg</p>
@@ -67,16 +87,55 @@ export default function MyPets() {
                         </div>
                     </div>
                 </div>
+                <div className={"show-points-carrousel"}>
+                    <div className={"show-points-item-container"}>
+                        <div className={`${handleChangeCarrouselSelected(1)}`} onClick={() => setShowCard(1)} />
+                        <div className={`${handleChangeCarrouselSelected(2)}`} onClick={() => setShowCard(2)} />
+                    </div>
+                </div>
                 <div className={"MyPets-title-container"}>
                     <p className={"MyPets-title"}>Mis Mascotas</p>
                 </div>
                 <div className={"MyPets-content-items-container"}>
                     {My_Pets_Card.map((data: My_Pets_Card_Interface) => (
-                        <div key={data.id} onClick={() => setShowSelectPet(data.id)}>
-                        <div className={`${showSelectPet === data.id ? "MyPets-content-items-select" : "MyPets-content-items-no-select"}`}>
-                            <Image src={data.img} width={36} height={36} alt={data.alt} />
-                            <p className={"MyPets-content-items-title"}>{data.title}</p>
+                        <div key={data.id}>
+                        <div className={`${showSelectPet === data.id ? "MyPets-content-items-select" : "MyPets-content-items-no-select"}`} onClick={() => handleChangeSelectPet(data.id)}>
+                            <div className={"MyPets-content-responsive-container"}>
+                                <div className={"MyPets-content-responsive-image-and-title"}>
+                                    <Image src={data.img} width={36} height={36} alt={data.alt} />
+                                    <p className={"MyPets-content-items-title"}>{data.title}</p>
+                                </div>
+                                <div className={"MyPets-content-responsive-arrow"}>
+                                    <div className={`${showSelectPet === data.id ? "FaqsContent-items-img-invested MyPets-content-responsive-container" : ""}`}>
+                                        <Image src={Arrow_responsive} width={12} height={8} alt={"Arrow_responsive"} />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                            {showSelectPet === data.id &&
+                                <div className={"MyPets-content-info-responsive-container"}>
+                                <div className={"MyPets-content-info-responsive-content"}>
+                                    <div className={"MyPets-content-info-title-and-button-container"}>
+                                        <p className={"MyPets-content-info-title"}>Información</p>
+                                        <div className={"MyPets-content-info-button"}>
+                                            <p className={"MyPets-content-info-button-p"}>Editar</p>
+                                            <Image src={Pen} width={15} height={14} alt={"pen"}/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={"MyPets-content-info-item-container"}>
+                                    {My_Pets_Info.map((data: My_Pets_Info_Interface) => (
+                                        <div className={"MyPets-content-info-item"} key={data.id}>
+                                            <p className={"MyPets-content-info-item-p1"}>{data.title}</p>
+                                            <p className={"MyPets-content-info-item-p2"}>{data.description}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className={"MyPets-content-image-status"}>
+                                    <Image src={Insured_Pet} width={154} height={28} alt={"Insured_Pet"}/>
+                                </div>
+                                <div className={"MyPets-content-button-responsive"} onClick={() => history.push(ROUTER.LastConsultation)}>Últimas Consultas</div>
+                            </div>}
                         </div>
                     ))}
                 </div>

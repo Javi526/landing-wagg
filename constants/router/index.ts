@@ -8,6 +8,8 @@ type routerInterface = {
     RestorePassword: string,
     CompanyUserValidation: string,
     PasswordGeneration: string,
+    MyPets: string,
+    LastConsultation: string,
     Landing: string
 }
 
@@ -20,5 +22,7 @@ export const ROUTER: routerInterface = {
     RestorePassword: "/restablecer-contrasena",
     CompanyUserValidation: "/registro/validacion-usuario-empresa",
     PasswordGeneration: "/registro/generacion-contrasena",
+    MyPets: "/mi-mascotas",
+    LastConsultation: "/ultima-consulta",
     Landing: "/"
 }

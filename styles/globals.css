@@ -12,6 +12,7 @@
 @import "enter-your-pet";
 @import "reason-for-consultation";
 @import "my-pets";
+@import "last-consultation";
 
 html,
 body {

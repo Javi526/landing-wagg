@@ -35,7 +35,7 @@ export default function Initials() {
                         </div>*/}
                     </div>
                     <div className={"Initials-image-woman-and-dog"}>
-                        <Image src={ImageWoman_and_dog} width={512} height={402} alt={"ImageWoman_and_dog"} />
+                        <Image src={ImageWoman_and_dog} width={511} height={402} alt={"ImageWoman_and_dog"} />
                     </div>
                 </div>
                 <div className={"Initial-responsive-button-container"}>
