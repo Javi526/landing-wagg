@@ -52,7 +52,7 @@ const ChooseYourPlan: NextPage = () => {
 
     return (
         <main>
-            <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} />
+            <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} chat={false} />
             <BarPlan Text={HeaderText} />
             <div className={"ChooseYourPlan-content"}>
                 <div className={"ChooseYourPlan-content-image-cicle_yellow"}>

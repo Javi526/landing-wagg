@@ -4,12 +4,12 @@ import Head from 'next/head'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-        <>
-      <Head>
-        <title>Wagg</title>
-      </Head>
-      <Component {...pageProps} />
-      </>
+      <main>
+       <Head>
+         <title>Wagg</title>
+       </Head>
+       <Component {...pageProps} />
+      </main>
   );
 }
 

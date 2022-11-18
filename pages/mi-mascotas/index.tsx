@@ -36,7 +36,7 @@ export default function MyPets() {
 
     return (
         <main>
-            <Header_LoggedIn name={"Paulina"} image={""} consultation={true} url={""} />
+            <Header_LoggedIn name={"Paulina"} image={""} consultation={true} url={""} chat={false} />
             <div className={"MyPets-section"}>
                 <p className={"MyPets-section-p"}>Mis mascotas</p>
             </div>

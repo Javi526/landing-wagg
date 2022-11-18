@@ -5,7 +5,7 @@ import { HeaderLoggedInInterface } from "../../../interface/header/logged-in";
 import HeaderArrow from "../../../assets/header/header-arrow.svg"
 import {useRouter} from "next/router";
 
-export default function Header_LoggedIn({ name, image, consultation, url }: HeaderLoggedInInterface) {
+export default function Header_LoggedIn({ name, image, consultation, url, chat }: HeaderLoggedInInterface) {
     const router = useRouter();
 
     const showAvatar = (image: string) : string => {
@@ -23,7 +23,12 @@ export default function Header_LoggedIn({ name, image, consultation, url }: Head
             <div className={"Header_LoggedIn-user-container"}>
              {consultation &&
                 <div className={"Header_LoggedIn-user-button-and-line"}>
-                  <div className={"Header_LoggedIn-user-button-yellow"} onClick={() => redirect(url)}>Consultá ahora </div>
+                  <div className={"Header_LoggedIn-user-button-yellow"} onClick={() => redirect(url)}>Consultá ahora</div>
+                  <div className={"Header_LoggedIn-user-line"} />
+                </div>}
+                {chat &&
+                  <div className={"Header_LoggedIn-user-button-and-line"}>
+                    <div className={"Header_LoggedIn-user-button-chat-active"} onClick={() => {}}>Chat activo</div>
                   <div className={"Header_LoggedIn-user-line"} />
                 </div>}
                 <div className={"Header_LoggedIn-user"}>

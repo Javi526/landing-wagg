@@ -1,0 +1,452 @@
+.Chat-container {
+    display: flex;
+}
+
+.Chat-content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 335px);
+}
+.SectionVideoAndFinishChat-menu {
+    display: none;
+}
+
+.SectionVideoAndFinishChat-container {
+    display: flex;
+    align-items: center;
+    height: 67px;
+    background: #FAFBFF;
+    border-bottom: 1px solid #E7EBF8;
+    padding: 0 27px 0 25px;
+}
+
+.SectionVideoAndFinishChat-section-user-active, .SectionVideoAndFinishChat-section-chat-and-video {
+    display: flex;
+    align-items: center;
+}
+
+.SectionVideoAndFinishChat-section-user-online-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #463677;
+    margin: 0 8px 0 0;
+}
+
+.SectionVideoAndFinishChat-section-name-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    color: #777986;
+}
+
+.SectionVideoAndFinishChat-section-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.FinishChat-container {
+    margin-right: 19px;
+}
+
+.FinishChat-button {
+    width: 132px;
+    height: 39px;
+    background: #EB5757;
+    border-radius: 10px;
+    border-color: transparent;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.Video-content {
+    cursor: pointer;
+}
+
+.Message-container {
+
+}
+
+.Message-content {
+   padding: 24px;
+   height: calc(100vh - 388px);
+   overflow-x: hidden;
+}
+
+.DetailsConsultation-reason-consultation-container {
+    height: calc(100vh - 405px);
+}
+
+.SendingForm-container {
+    height: 241px;
+    padding: 23px 24px;
+    background: #FAFBFF;
+    border-top: 1px solid #E7EBF8;
+}
+
+.SendingForm-content {
+    background: #FFFFFF;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 0 18px;
+}
+
+.SendingForm-content-send {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.SendingForm-textarea-container {
+    height: calc(100% - 57px);
+}
+
+.SendingForm-textarea {
+    width: 100%;
+    height: 100%;
+    border-color: transparent;
+    outline: none;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777986;
+    resize: none;
+}
+
+.SendingForm-content-send-icon-container {
+    display: flex;
+}
+
+.SendingForm-content-send-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    background: #F3F4F8;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.TagReceive-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.MessageImage-receive-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.MessageImage-transmitter-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.TagReceive-content {
+    display: flex;
+}
+
+.TagReceive-content-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DCD9FF;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.TagReceive-content-circle-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 18px;
+    color: #463677;
+    margin: 0;
+}
+
+.SendingForm-content-send-button {
+    width: 95px;
+    height: 40px;
+    background: #463677;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.TagReceive-content-text {
+    width: 371px;
+    padding: 12px 18px;
+    background: #FAFBFF;
+    border-radius: 10px;
+}
+
+.TagTransmitter-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+.TagTransmitter-content, .MessageImage-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.TagTransmitter-content-text {
+    width: 371px;
+    padding: 12px 18px;
+    background: #9188FD;
+    border-radius: 10px;
+}
+
+.TagReceive-content-text-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #5B5D6B;
+    margin: 0;
+}
+
+.TagTransmitter-content-text-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FAFBFF;
+    margin: 0;
+}
+
+.TagReceive-content-date, .TagTransmitter-content-date, .MessageImage-content-date {
+    margin-top: 7px;
+}
+
+.TagReceive-content-date-p, .TagTransmitter-content-date-p, .MessageImage-content-date-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #777986;
+    margin: 0;
+}
+.DetailsConsultation-container {
+    width: 335px;
+    background-color: #FAFBFF;
+    border-left: 1px solid #E7EBF8;
+}
+.DetailsConsultation-content {
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-right: 26px;
+}
+
+.DetailsConsultation-content-title-container {
+    padding-left: 4px;
+    margin-bottom: 16px;
+}
+
+.DetailsConsultation-content-title {
+    font-family: 'Poppins', sans-serif;
+    width: max-content;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: #463677;
+    margin: 0;
+}
+
+.DetailsConsultation-reason-text {
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+
+.DetailsConsultation-reason-text-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #777986;
+    margin: 0 0 8px 0;
+}
+
+.DetailsConsultation-reason-text-p2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #404252;
+    margin: 0;
+}
+
+.DetailsConsultation-reason-pet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 33rem);
+}
+
+.DetailsConsultation-reason-pet-container {
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 34px;
+}
+
+.DetailsConsultation-reason-text-p3 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 6px 0 0 0;
+    color: #404252;
+}
+
+.DetailsConsultation-reason-container {
+    margin-left: 7px;
+}
+
+.DetailsConsultation-reason-text-p4 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    margin: 0 0 19px 0;
+    color: #463677;
+}
+
+.DetailsConsultation-reason-pet-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.DetailsConsultation-reason-pet-item-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: #404252;
+    margin: 0;
+}
+
+.DetailsConsultation-reason-pet-button-container {
+    margin-top: 22px;
+}
+
+.DetailsConsultation-reason-pet-button {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #463677;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+}
+
+@media (max-width: 799px) {
+    .SectionVideoAndFinishChat-menu {
+        display: flex;
+    }
+    .DetailsConsultation-container, .FinishChat-container, .Video-container {
+        display: none;
+    }
+    .Chat-content {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 461px) {
+    .SectionVideoAndFinishChat-menu {
+        display: flex;
+    }
+    .SendingForm-content-send {
+        justify-content: flex-end;
+        width: auto;
+    }
+    .SendingForm-content-send-button {
+        display: none;
+    }
+    .TagReceive-content-text {
+        width: 275px;
+    }
+    .TagTransmitter-content-text {
+        width: 271px;
+    }
+    .Message-content {
+        padding: 16px;
+        height: calc(100vh - 227px);
+    }
+    .SendingForm-textarea {
+        width: 100%;
+        padding: 9px 0 0 0;
+        font-size: 14px;
+    }
+    .SendingForm-textarea-container {
+        width: inherit;
+        height: 40px;
+    }
+    .SendingForm-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+    }
+    .SendingForm-content-send-icon {
+        background: transparent;
+    }
+    .SendingForm-content-send-icon {
+        margin-right: 0;
+    }
+    .SendingForm-container {
+        height: 80px;
+        padding: 8px 8px 24px 8px;
+    }
+}

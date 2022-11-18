@@ -3,4 +3,5 @@ export interface HeaderLoggedInInterface {
     image: string,
     consultation: boolean,
     url: string
+    chat: boolean
 }

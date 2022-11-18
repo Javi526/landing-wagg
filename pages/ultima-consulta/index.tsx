@@ -20,7 +20,7 @@ export default function LastConsultation() {
 
      return (
          <main>
-             <Header_LoggedIn name={"Paulina"} image={""} consultation={true} url={""} />
+             <Header_LoggedIn name={"Paulina"} image={""} consultation={true} url={""} chat={false} />
              <div className={"LastConsultation-container"}>
                  <div className={"LastConsultation-image-arrow-back-container"} onClick={() => history.push(ROUTER.MyPets)}>
                      <Image src={ArrowBack} width={16} height={16} alt={"ArrowBack"} />

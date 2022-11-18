@@ -25,7 +25,7 @@ export default function IngresaATuMascota() {
 
     return (
         <div>
-            <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} />
+            <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} chat={false} />
             <BarPlan Text={HeaderText} />
             <div className={"IngresaATuMascota-container"}>
                 <EnterYourPetForm />
