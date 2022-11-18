@@ -8,14 +8,19 @@ export default function Chat() {
     const [showMenu, setShowMenu] = useState(false);
     return (
         <main>
-           <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} chat={true} />
-            <div className={"Chat-container"}>
-               <div className={"Chat-content"}>
-                 <SectionVideoAndFinishChat name={"Dra. María Fernández"} />
-                 <Message />
-               </div>
-               <DetailsConsultation />
-            </div>
+            {!showMenu ?
+                <>
+                <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} chat={true}/>
+                <div className={"Chat-container"}>
+                    <div className={"Chat-content"}>
+                        <SectionVideoAndFinishChat name={"Dra. María Fernández"} setShowMenu={setShowMenu} />
+                        <Message/>
+                    </div>
+                    <DetailsConsultation showMenu={showMenu} setShowMenu={setShowMenu} />
+                </div>
+            </> :
+                <DetailsConsultation showMenu={showMenu} setShowMenu={setShowMenu} />
+            }
         </main>
     )
 }

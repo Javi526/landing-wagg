@@ -1,11 +1,20 @@
 import Image1_cat from "../../../assets/my-pets/image1-cat.svg";
 import ChatDownload from "../../../assets/chat/chat-download.svg";
+import ChatArrow from "../../../assets/chat/chat-arrow.svg";
 import Image from "next/image";
 
-export default function DetailsConsultation() {
+type Props = {
+    showMenu: boolean,
+    setShowMenu: any
+}
+
+export default function DetailsConsultation({ showMenu, setShowMenu } : Props) {
     return (
-        <div className={"DetailsConsultation-container"}>
+        <div className={`${showMenu ? "DetailsConsultation-responsive-container" : "DetailsConsultation-container"}`}>
           <div className={"DetailsConsultation-content"}>
+             <div className={"DetailsConsultation-arrow"} onClick={() => setShowMenu(false)}>
+                 <Image src={ChatArrow} width={16} height={16} alt={"ChatArrow"} />
+             </div>
              <div className={"DetailsConsultation-content-title-container"}>
                <p className={"DetailsConsultation-content-title"}>Detalles de la consulta</p>
              </div>
@@ -37,6 +46,7 @@ export default function DetailsConsultation() {
                          </div>
                          <div className={"DetailsConsultation-reason-pet-button-container"}>
                             <button className={"DetailsConsultation-reason-pet-button"}>Descargar todos</button>
+                             <button className={"DetailsConsultation-reason-pet-button-chat"}>Terminar chat</button>
                          </div>
                      </div>
                  </div>

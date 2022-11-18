@@ -146,6 +146,9 @@
     cursor: pointer;
     margin-right: 8px;
 }
+.DetailsConsultation-reason-pet-button-chat {
+    display: none;
+}
 
 .TagReceive-container {
     display: flex;
@@ -263,6 +266,13 @@
     color: #777986;
     margin: 0;
 }
+
+.DetailsConsultation-responsive-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFBFF;
+}
+
 .DetailsConsultation-container {
     width: 335px;
     background-color: #FAFBFF;
@@ -390,6 +400,13 @@
     cursor: pointer;
 }
 
+.DetailsConsultation-arrow {
+    display: none;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-bottom: 25px;
+}
+
 @media (max-width: 799px) {
     .SectionVideoAndFinishChat-menu {
         display: flex;
@@ -400,10 +417,64 @@
     .Chat-content {
         width: 100%;
     }
-
+    .DetailsConsultation-arrow {
+        display: flex;
+    }
+    .DetailsConsultation-reason-pet {
+        height: calc(100vh - 20rem);
+    }
+    .DetailsConsultation-reason-pet-item {
+        margin-bottom: 22px;
+    }
+    .DetailsConsultation-reason-pet-button-container {
+        margin-top: 27px;
+    }
+    .DetailsConsultation-reason-pet-button-chat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        border-color: transparent;
+        width: 100%;
+        height: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        background: #EB5757;
+        border-radius: 10px;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+    .DetailsConsultation-reason-text {
+        margin-top: 53px;
+        margin-bottom: 32px;
+    }
+    .DetailsConsultation-content-title-container {
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 461px) {
+    .DetailsConsultation-reason-pet-item-p {
+        font-size: 12px;
+        color: #404252;
+    }
+    .DetailsConsultation-content-title {
+        font-size: 16px;
+    }
+    .DetailsConsultation-reason-text-p2 {
+        font-size: 14px;
+    }
+    .DetailsConsultation-reason-text-p, .DetailsConsultation-reason-text-p3 {
+        font-size: 12px;
+    }
+    .DetailsConsultation-content {
+        padding-left: 16px;
+        padding-right: 18px;
+    }
     .SectionVideoAndFinishChat-menu {
         display: flex;
     }

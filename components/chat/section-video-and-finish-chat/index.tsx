@@ -4,10 +4,11 @@ import ChatPoints  from "../../../assets/chat/chat-pounts.svg";
 import Image from "next/image";
 
 type Props = {
-    name: string
+    name: string,
+    setShowMenu: any
 }
 
-export default function SectionVideoAndFinishChat({ name } :Props) {
+export default function SectionVideoAndFinishChat({ name, setShowMenu } :Props) {
     return (
         <div className={"SectionVideoAndFinishChat-container"}>
           <div className={"SectionVideoAndFinishChat-section-container"}>
@@ -18,7 +19,7 @@ export default function SectionVideoAndFinishChat({ name } :Props) {
               <div className={"SectionVideoAndFinishChat-section-chat-and-video"}>
                   <FinishChat />
                   <Video />
-                  <div className={"SectionVideoAndFinishChat-menu"}>
+                  <div className={"SectionVideoAndFinishChat-menu"} onClick={() => setShowMenu(true)}>
                       <Image src={ChatPoints} width={18} height={4} alt={"ChatPoints"} />
                   </div>
               </div>
