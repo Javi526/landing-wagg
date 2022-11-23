@@ -4,7 +4,7 @@ import Header_LoggedIn from "../../components/header/logged-in";
 import Image from "next/image";
 import Select from "../../components/common/selects";
 import TagSelect from "../../components/common/tag-select";
-import { TagSelect_Item, TagSelect_State } from "../../constants/tag-select";
+import { TagSelect_Item, TagSelect_State, TagSelect_option } from "../../constants/tag-select";
 import { TagSelect_Item_Interface, TagSelect_State_Interface } from "../../interface/tag-select";
 import PurpleButton from "../../components/common/buttons/purple-button";
 import { useRouter } from "next/router";
@@ -27,7 +27,7 @@ const SmallBoard: NextPage = () => {
                 <p className={"SmallBoard-container-content-title"}>Resumen de la Consulta</p>
                 <p className={"SmallBoard-container-content-subtitle"}>Es hora de calificar y reportar el estado de la mascota. Seleccioná una opción y considerá que el padre de mascota leerá los pasos a seguir una vez finalizada la consulta.</p>
                 <div className={"SmallBoard-select"}>
-                    <Select width={389} height={40} label={"Motivo de consulta"} placeholder={"Seleccionar"} />
+                    <Select width={389} height={40} label={"Motivo de consulta"} placeholder={"Seleccionar"} select_data={TagSelect_option} />
                 </div>
                 <div className={"SmallBoard-table-header"}>
                    <p className={"SmallBoard-table-header-title"}>Estado</p>

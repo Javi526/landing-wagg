@@ -70,6 +70,21 @@
     top: 5rem;
 }
 
+.input-list-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #777986;
+    margin: 0;
+}
+
+.input-list-p-container {
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
 .input-pay {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -96,6 +111,15 @@
     color: #777986;
     margin: 0 0 24px 0;
     outline: none;
+}
+
+
+.select-remove-arrow {
+    width: 14px;
+    height: 14px;
+    background: white;
+    position: absolute;
+    right: 1px;
 }
 
 .Input-select-container {
@@ -346,13 +370,17 @@
 }
 
 .TagSelect-p2, .TagSelect-p3 {
+    width: 182px;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 130%;
     margin: 0;
     color: #404252;
+}
 
+option {
+    margin-left: 41px;
 }
 
 .TagSelect-check-container, .SmallBoard-button-container {

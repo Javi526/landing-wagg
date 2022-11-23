@@ -40,12 +40,14 @@ export default function EnterYourPetForm() {
                 height={40}
                 label={"Género"}
                 placeholder={"Seleccióna el género"}
+                select_data={[]}
             />
             <Select
                 width={335}
                 height={40}
                 label={"Castrado?"}
                 placeholder={"Seleccióna el estado"}
+                select_data={[]}
             />
             <ContentButtons
                 width={"335px"}

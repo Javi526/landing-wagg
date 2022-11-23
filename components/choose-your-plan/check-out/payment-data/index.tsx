@@ -24,6 +24,7 @@ export default function PaymentData() {
                     height={40}
                     label={"Documento"}
                     placeholder={"Tipo"}
+                    select_data={[]}
                 />
                 <InputPrincipal
                     width={184}
