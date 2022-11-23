@@ -24,7 +24,7 @@ export default function PaymentPlan() {
               </div>
           </div>
           <div className={"PaymentPlan-button-container"}>
-              <PurpleButton width={"100%"} height={40} text={"Pagar"} router={router} PurpleButton_url={""} />
+              <PurpleButton width={"100%"} height={40} text={"Pagar"} router={router} PurpleButton_url={""} disabled={true} />
           </div>
           <div className={"PaymentPlan-term-container"}>
               <p className={"PaymentPlan-term-text"} dangerouslySetInnerHTML={{ __html: text }} />

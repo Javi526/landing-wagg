@@ -2,6 +2,8 @@ import { useState } from "react";
 import {ChangeEvent} from "react";
 import ArrowSelect from "../../../assets/register/arrow-select.svg";
 import Image from "next/image";
+//import {TagSelect_option} from "../../../constants/tag-select";
+//import {TagSelect_Option_Interface} from "../../../interface/tag-select";
 
 type SelectProps = {
     width: number,
@@ -14,7 +16,7 @@ export default function Select({ width, height, label, placeholder } : SelectPro
     const [value, setValue] = useState("");
 
     return (
-        <div className={"Input-container"}>
+        <div className={"Input-container"} style={{ width }}>
             <div className={"Input-select-container"}>
                 <Image src={ArrowSelect} width={12} height={6} alt={"ArrowSelect"} />
             </div>
@@ -27,6 +29,7 @@ export default function Select({ width, height, label, placeholder } : SelectPro
                 value={value}
                 disabled={true}
             />
+
         </div>
     )
 }

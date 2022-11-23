@@ -30,6 +30,7 @@ export interface ButtonPurpleInterface {
      text: string
      router: NextRouter,
      PurpleButton_url: string,
+     disabled: boolean
 }
 
 export interface ButtonsInterface {
