@@ -1,0 +1,263 @@
+.AccountSummary-container {
+    padding-top: 60px;
+    width: 695px;
+    margin: auto;
+}
+
+.AccountSummary-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    margin: 0;
+    color: #463677;
+}
+
+.AccountSummary-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    margin: 4px 0 24px 0;
+    color: #6E66CC;
+}
+
+.AccountSummary-details-container {
+    background: #FFFFFF;
+    border: 1px solid #E7EBF8;
+    border-radius: 10px;
+    padding: 26px 24px 20px 24px;
+}
+
+.AccountSummary-details-text-container {
+    margin-top: 15px;
+    margin-bottom: 32px;
+}
+
+.AccountSummary-details-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+    color: #463677;
+}
+
+.AccountSummary-details-text strong {
+    font-weight: 600;
+}
+
+.AccountSummary-details-button-container {
+    width: 355px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AccountSummary-details-button-history {
+    width: 160px;
+    height: 40px;
+    background: #463677;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.AccountSummary-details-button-download {
+    width: 185px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E7EBF8;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #463677;
+    outline: none;
+    cursor: pointer;
+}
+
+.AccountSummary-message-container {
+    margin: 24px 0;
+}
+
+.AccountSummary-message-content {
+    display: flex;
+    width: 100%;
+    background: #F3F2FF;
+    border: 1px solid #DCD9FF;
+    border-radius: 10px;
+    padding: 14px 15px 15px 15px;
+}
+
+.AccountSummary-message-content-img {
+    position: absolute;
+    margin-top: -2px;
+}
+
+.AccountSummary-message-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    color: #6E66CC;
+    margin: 0 0 0 23px;
+}
+
+.AccountSummary-message-p strong {
+    font-weight: 500;
+}
+
+.AccountSummary-comment-container {
+    margin-bottom: 85px;
+}
+
+.AccountSummary-comment-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #FAFBFF;
+    border: 1px solid #E7EBF8;
+    border-radius: 20px;
+    padding: 26px 21px 32px 24px;
+}
+
+.AccountSummary-comment {
+    width: 335px;
+}
+
+.AccountSummary-comment-user {
+    display: flex;
+}
+
+.AccountSummary-comment-user-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DCD9FF;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.AccountSummary-comment-user-logo-p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: #463677;
+    margin: 0;
+}
+
+
+.AccountSummary-comment-user-text {
+    margin-top: 3px;
+    margin-left: 12px;
+}
+
+.AccountSummary-comment-user-text-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #463677;
+    margin: 0;
+}
+
+.AccountSummary-rating-container {
+    margin-top: 40px;
+}
+
+.AccountSummary-textarea-container {
+    margin-top: 12px;
+}
+
+.AccountSummary-image-purple {
+    position: absolute;
+    z-index: 1;
+    margin-top: 10.5rem;
+    margin-left: 14.5rem;
+}
+
+.AccountSummary-image-DogSummary {
+    width: 293px;
+    margin-top: 12px;
+    margin-right: 14px;
+}
+
+.AccountSummary-textarea {
+    width: 100%;
+    height: 128px;
+    border-color: #D2D4DA;
+    border-radius: 10px;
+    resize: none;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #777986;
+}
+
+.AccountSummary-rating-content {
+    display: flex;
+    justify-content: space-between;
+    width: 199px;
+    margin-top: 16px;
+    margin-bottom: 44px;
+}
+
+.AccountSummary-rating-p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 0;
+    color: #5B5D6B;
+}
+
+@media (max-width: 735px) {
+    .AccountSummary-container {
+        width: auto;
+        padding: 60px 20px 0 20px;
+    }
+    .AccountSummary-image {
+        display: none;
+    }
+    .AccountSummary-comment-content {
+         justify-content: center;
+         padding: 26px 24px 26px 24px;
+    }
+}
+
+@media (max-width: 445px) {
+    .AccountSummary-container {
+        padding: 36px 20px 0 20px;
+    }
+    .AccountSummary-details-button-container {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .AccountSummary-details-button-history, .AccountSummary-details-button-download {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+}

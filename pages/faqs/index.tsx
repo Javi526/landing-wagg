@@ -7,12 +7,12 @@ import Footer from "../../components/footer";
 
 const Faqs: NextPage = () => {
     return (
-        <>
+        <main>
          <Header />
          <FaqsHeader />
          <FaqsContent />
          <Footer />
-        </>
+        </main>
     )
 }
 

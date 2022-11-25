@@ -154,6 +154,17 @@
     border-color: transparent;
 }
 
+.Tag-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    border-radius: 5px;
+}
+
 .LoginForm-content-buttons {
     margin-top: 10px;
 }
