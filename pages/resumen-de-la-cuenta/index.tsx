@@ -9,7 +9,7 @@ import Image from "next/image";
 import { handleChangeNameInitials } from "../../utils";
 
 const text = `La salud de tu mascota no puede esperar.<strong> Recomendamos una visita presencial con un veterinario en las próximas 4 horas.</strong>`;
-const notificationText = `Si después de esta consulta creés que tu mascota necesita ser atentida, no dudes en acercarte al centro veterinariosmas cercano. La salud de tu mascota es parte de tu responsabilidad. Para mas información consulta nuestros <strong><a href="https://landing-wagg.vercel.app/terminos-y-condiciones">Términos y Condiciones.</a></strong>`;
+const notificationText = `Si después de esta consulta creés que tu mascota necesita ser atentida, no dudes en acercarte al centro veterinarios mas cercano. La salud de tu mascota es prioridad. Para mas información consulta nuestros <strong><a href="https://landing-wagg.vercel.app/terminos-y-condiciones">Términos y Condiciones.</a></strong>`;
 const firstName = "María";
 const lastName = "Fernández";
 
