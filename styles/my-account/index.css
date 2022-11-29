@@ -1,0 +1,243 @@
+.MyAccountVeterinary-container {
+    margin-bottom: 116px;
+}
+
+.MyAccountVeterinary-content-container {
+    width: 695px;
+    margin: auto;
+    padding-top: 8px;
+}
+
+.MyAccountVeterinary-content-username {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.MyAccountVeterinary-content-user {
+    display: flex;
+}
+
+.MyAccountVeterinary-content-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 26px;
+}
+
+.MyAccountVeterinary-content-edit {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 11px 0 0 0;
+    color: #463677;
+}
+
+.MyAccountVeterinary-content-name-container {
+    padding-top: 5px;
+}
+
+.MyAccountVeterinary-content-name-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    margin: 0;
+    color: #463677;
+}
+
+.MyAccountVeterinary-content-name-p2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+    color: #777986;
+}
+
+.MyAccountVeterinary-content-image-yellow {
+    position: absolute;
+    margin-left: -47px;
+    margin-top: 80px;
+    z-index: 1;
+}
+
+.MyAccountVeterinary-section-info {
+    margin-top: 21px;
+    background: #FAFBFF;
+    width: 100%;
+    border: 1px solid #E7EBF8;
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 40px;
+}
+
+.MyAccountVeterinary-section-info-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #6E66CC;
+    margin: 0;
+}
+
+.MyAccountVeterinary-section-info-data {
+    display: grid;
+    margin-top: 12px;
+    grid-template-columns: 225px 214px;
+}
+
+.MyAccountVeterinary-section-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.MyAccountVeterinary-section-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 0;
+    color: #777986;
+}
+
+.MyAccountVeterinary-section-p2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+    color: #404252;
+}
+
+.MyAccountVeterinary-section-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    margin: 0 0 12px 0;
+    color: #463677;
+}
+
+.MyAccountVeterinary-section-resource-container {
+    background: #FAFBFF;
+    width: 100%;
+    border: 1px solid #E7EBF8;
+    border-radius: 20px;
+}
+
+.MyAccountVeterinary-section-resource {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 17px 17px 20px 25px;
+}
+
+.MyAccountVeterinary-section-resource-description {
+    display: flex;
+    align-items: center;
+}
+
+.MyAccountVeterinary-section-resource-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0 0 0 10px;
+    color: #404252;
+}
+
+.MyAccountVeterinary-section-resource-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAFBFF;
+    width: 96px;
+    height: 34px;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
+}
+
+.MyAccountVeterinary-section-resource-button-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 7px 0 0;
+    color: #463677;
+}
+
+.MyAccountVeterinary-section-line {
+    width: 100%;
+    height: 1px;
+    background: #E7EBF8;
+}
+
+.MyAccountVeterinary-section-resource-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    width: 100%;
+    height: 48px;
+}
+
+.MyAccountVeterinary-section-resource-tab-name-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 0;
+    color: #6E66CC;
+}
+
+.MyAccountVeterinary-section-resource-seconds-container {
+    margin-top: 25px;
+}
+
+@media (max-width: 753px) {
+    .MyAccountVeterinary-content-container {
+        width: auto;
+        padding: 10px 20px 0 20px;
+    }
+}
+
+@media (max-width: 717px) {
+   .MyAccountVeterinary-content-image {
+       display: none;
+   }
+}
+
+@media (max-width: 601px) {
+    .MyAccountVeterinary-container {
+        margin-top: 34px;
+    }
+}
+
+@media (max-width: 519px) {
+    .MyAccountVeterinary-section-info-data {
+        grid-template-columns: 225px;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width: 443px) {
+    .MyAccountVeterinary-content-name-p {
+        font-size: 29px;
+        line-height: 34px;
+    }
+    .MyAccountVeterinary-content-name-p2 {
+        font-size: 13px;
+    }
+}

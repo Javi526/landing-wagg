@@ -16,6 +16,7 @@
 @import "chat";
 @import "small-board";
 @import "account-summary";
+@import "my-account";
 
 html,
 body {
