@@ -23,8 +23,13 @@ const MyAccountVeterinary: NextPage = () => {
     const [text, setText] = useState("");
     const [showTab, setShowTab] = useState(false);
 
+    const handleChangeModal = () : object => {
+        if (showModal || showModalDrop) return { height: "100vh", overflow: "hidden" }
+        return {};
+    };
+
     return (
-        <main>
+        <main style={handleChangeModal()}>
             <Header_LoggedIn name={"Marina"} image={""} consultation={false} url={""} chat={false} />
             <div className={"MyAccountVeterinary-container"}>
                 <div className={"MyPets-section"}>
