@@ -395,7 +395,7 @@ option {
     margin-left: 41px;
 }
 
-.TagSelect-check-container, .SmallBoard-button-container {
+.TagSelect-check-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,6 +424,32 @@ option {
     height: 8px;
     border-radius: 50%;
     background: #463677;
+}
+
+.TagSelect-mobile-content-select {
+    display: flex;
+}
+
+.viewport-mobile-modal {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.TagSelect-mobile-description {
+    padding: 0px 18px 18px 18px;
+}
+
+@media (max-width: 725px) {
+    .TagSelect-container-select, .TagSelect-container-selected {
+        display: none;
+    }
+    .TagSelect-mobile-content-container {
+        display: flex;
+        align-items: center;
+        padding: 0 26px;
+        height: 68px;
+        border-radius: 10px;
+    }
 }
 
 @media (max-width: 627px) {
@@ -456,4 +482,5 @@ option {
         font-size: 12px;
     }
 }
+
 
