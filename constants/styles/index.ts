@@ -4,12 +4,12 @@ export const styles_Modal = `
      overflow: hidden;
    }
    @supports(height: 1svh) {
-       body, main {
+       body {
         height: 100svh;
         overflow: hidden;
      }
    @supports(height: 1lvh) {
-       body, main {
+       body {
         height: 100lvh;
         overflow: hidden;
      }  
