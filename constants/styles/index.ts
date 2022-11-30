@@ -4,4 +4,10 @@ export const styles_Modal = `
      overflow: hidden;
    }
   
+  @media (max-width: 412px) {
+      body, main {
+       height: 100dvh;
+       overflow: hidden;
+     }
+  }
 `;
