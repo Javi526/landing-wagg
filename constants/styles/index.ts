@@ -4,10 +4,9 @@ export const styles_Modal = `
      overflow: hidden;
    }
   
-  @media (max-width: 412px) {
-      body, main {
-       height: 100dvh;
-       overflow: hidden;
-     }
+ @supports (-webkit-touch-callout: none) {
+  html,body, main {
+    height: -webkit-fill-available;
   }
+}
 `;
