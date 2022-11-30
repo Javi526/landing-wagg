@@ -63,7 +63,6 @@
     position: absolute;
     margin-left: -47px;
     margin-top: 80px;
-    z-index: 1;
 }
 
 .MyAccountVeterinary-section-info {
@@ -165,6 +164,7 @@
     height: 34px;
     border: 1px solid #D2D4DA;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .MyAccountVeterinary-section-resource-button-name {
@@ -190,6 +190,8 @@
     padding: 0 24px;
     width: 100%;
     height: 48px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .MyAccountVeterinary-section-resource-tab-name-p {
@@ -204,6 +206,147 @@
 
 .MyAccountVeterinary-section-resource-seconds-container {
     margin-top: 25px;
+}
+
+.MyAccountVeterinary-section-modal {
+    width: 426px;
+    height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 18px rgba(64, 66, 82, 0.2);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.MyAccountVeterinary-section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 51px;
+    padding: 0 20px;
+    border-bottom: 1px solid #E7EBF8;
+}
+
+.MyAccountVeterinary-section-head-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    margin: 0;
+    color: #463677;
+}
+
+.MyAccountVeterinary-section-head-img {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.MyAccountVeterinary-section-form-container {
+    margin-top: 24px;
+    padding: 0 20px;
+}
+
+.MyAccountVeterinary-section-ContentButtons {
+    margin-top: 77px;
+}
+
+.MyAccountVeterinary-section-content-tab {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.MyAccountVeterinary-section-content-tab-text {
+    padding: 12px 0px 12px 18px;
+    background: #FFFFFF;
+    border: 1px solid #E7EBF8;
+    border-radius: 10px;
+    width: calc(100% - 58px);
+    margin-right: 11px;
+}
+
+.MyAccountVeterinary-section-content-tab-drop {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.MyAccountVeterinary-section-content-tab-edit {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.MyAccountVeterinary-section-content-tab-text-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    margin: 0;
+    color: #5B5D6B;
+}
+.MyAccountVeterinary-section-modal-drop-text-container {
+    display: flex;
+    justify-content: center;
+}
+
+.MyAccountVeterinary-section-modal-drop-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+    text-align: center;
+    color: #404252;
+}
+
+.MyAccountVeterinary-section-modal-drop {
+    width: 440px;
+    height: 212px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 18px rgba(64, 66, 82, 0.2);
+    border-radius: 20px;
+    padding: 33px 24px 22px 24px;
+}
+
+.MyAccountVeterinary-section-modal-drop-button-container {
+    margin-top: 37px;
+}
+
+.MyAccountVeterinary-section-modal-drop-button {
+    width: 100%;
+    height: 40px;
+    background: #EB5757;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    border-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.MyAccountVeterinary-section-modal-cancel-button {
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    outline: none;
+    border-color: transparent;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #404252;
+    cursor: pointer;
 }
 
 @media (max-width: 753px) {
@@ -232,6 +375,7 @@
     }
 }
 
+
 @media (max-width: 443px) {
     .MyAccountVeterinary-content-name-p {
         font-size: 29px;
@@ -239,5 +383,17 @@
     }
     .MyAccountVeterinary-content-name-p2 {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 440px) {
+    .MyAccountVeterinary-section-modal-drop {
+        width: auto;
+    }
+}
+
+@media (max-width: 426px) {
+    .MyAccountVeterinary-section-modal {
+        width: auto;
     }
 }

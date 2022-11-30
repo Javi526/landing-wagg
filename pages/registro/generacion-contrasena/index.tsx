@@ -16,14 +16,14 @@ const PasswordGeneration: NextPage = () => {
                 padding={"0 2.3rem"}
             />
             <InputPrincipal
-                width={326}
+                width={"326px"}
                 height={40}
                 label={"Crear nueva contraseña"}
                 placeholder={"Nueva contraseña"}
                 validAccount={false}
             />
             <InputPrincipal
-                width={326}
+                width={"326px"}
                 height={40}
                 label={"Repetir contraseña"}
                 placeholder={"Repetir nueva contraseña"}

@@ -17,14 +17,14 @@ const CompanyUserValidation : NextPage = () => {
             />
             <div className={"register-content"}>
                 <InputPrincipal
-                    width={156}
+                    width={"156px"}
                     height={40}
                     label={"Nombre"}
                     placeholder={"Paulina"}
                     validAccount={false}
                 />
                 <InputPrincipal
-                    width={156}
+                    width={"156px"}
                     height={40}
                     label={"Apellido"}
                     placeholder={"Rodríguez"}
@@ -32,7 +32,7 @@ const CompanyUserValidation : NextPage = () => {
                 />
             </div>
             <InputPrincipal
-                width={326}
+                width={"326px"}
                 height={40}
                 label={"Email"}
                 placeholder={"paulina@wagg.com"}

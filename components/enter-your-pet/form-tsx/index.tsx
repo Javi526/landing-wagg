@@ -14,7 +14,7 @@ export default function EnterYourPetForm() {
                 <p className={"EnterYourPetForm-content-subtitle"}>Mascota 1</p>
             </div>
             <InputPrincipal
-                width={335}
+                width={"335px"}
                 height={40}
                 label={"Nombre de tu mascota"}
                 placeholder={"Nombre de tu mascota"}
@@ -22,28 +22,28 @@ export default function EnterYourPetForm() {
             />
             <Option label={"Tipo de mascota"} />
             <InputPrincipal
-                width={335}
+                width={"335px"}
                 height={40}
                 label={"Raza"}
                 placeholder={"Raza de tu mascota"}
                 validAccount={false}
             />
             <InputPrincipal
-                width={335}
+                width={"335px"}
                 height={40}
                 label={"Fecha de nacimiento"}
                 placeholder={"DD/MM/AAAA"}
                 validAccount={false}
             />
             <Select
-                width={335}
+                width={"335px"}
                 height={40}
                 label={"Género"}
                 placeholder={"Seleccióna el género"}
                 select_data={[]}
             />
             <Select
-                width={335}
+                width={"335px"}
                 height={40}
                 label={"Castrado?"}
                 placeholder={"Seleccióna el estado"}

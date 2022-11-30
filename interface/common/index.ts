@@ -1,7 +1,7 @@
 import { NextRouter } from "next/router";
 
 export interface InputPrincipalInterface {
-     width: number,
+     width: string,
      height: number,
      label: string,
      placeholder: string,

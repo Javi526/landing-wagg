@@ -15,14 +15,14 @@ const RestorePassword: NextPage = () => {
                 padding={"0"}
             />
             <InputPrincipal
-                width={326}
+                width={"326px"}
                 height={40}
                 label={"Nueva contraseña"}
                 placeholder={"Contraseña"}
                 validAccount={false}
             />
             <InputPrincipal
-                width={326}
+                width={"326px"}
                 height={40}
                 label={"Repetir contraseña"}
                 placeholder={"Contraseña"}

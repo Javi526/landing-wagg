@@ -16,7 +16,7 @@ const ForgetPassword: NextPage = () => {
                padding={"0 27px"}
             />
             <InputPrincipal
-                width={326}
+                width={"326px"}
                 height={40}
                 label={"Email"}
                 placeholder={"Ingresá tu email asociado a Wagg"}

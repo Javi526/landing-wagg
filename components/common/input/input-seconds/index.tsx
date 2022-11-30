@@ -27,13 +27,7 @@ export default function InputSeconds({ width, height, label, placeholder, valida
                 placeholder={placeholder}
                 size={18}
                 style={{ width, height, paddingLeft: 10, paddingTop: `${value ? "11px" : ""}` }}
-                onChange={(e: ChangeEvent<HTMLInputElement>) => {
-                    if (validateCard) {
-                        setValue(e.target.value);
-                    } else {
-                        setValue(e.target.value);
-                    }
-                }}
+                onChange={(e: ChangeEvent<HTMLInputElement>) =>  setValue(e.target.value)}
                 value={value}
             />
         </div>

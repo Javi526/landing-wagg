@@ -7,9 +7,22 @@ import Chat from "../../assets/my-account/my-account-chat.svg";
 import Sum from "../../assets/my-account/sum.svg";
 import Arrow from "../../assets/my-account/arrow.svg";
 import Info from "../../assets/my-account/info.svg";
+import Cross from "../../assets/my-account/cross.svg";
+import Drop from "../../assets/my-account/drop.svg";
+import Edit from "../../assets/my-account/edit.svg";
 import Image from "next/image";
+import Modal from "../../components/modal";
+import { useState } from "react";
+import InputPrincipal from "../../components/common/input/input-principal";
+import ContentButtons from "../../components/common/content-buttons";
+import Select from "../../components/common/selects";
 
 const MyAccountVeterinary: NextPage = () => {
+    const [showModal, setShowModal] = useState(false);
+    const [showModalDrop, setShowModalDrop] = useState(false);
+    const [text, setText] = useState("");
+    const [showTab, setShowTab] = useState(false);
+
     return (
         <main>
             <Header_LoggedIn name={"Marina"} image={""} consultation={false} url={""} chat={false} />
@@ -30,7 +43,7 @@ const MyAccountVeterinary: NextPage = () => {
                           </div>
                       </div>
                       <div className={"MyAccountVeterinary-content-image"}>
-                         <div className={"MyAccountVeterinary-content-image-yellow"}>
+                         <div className={"MyAccountVeterinary-content-image-yellow"} style={{ zIndex: `${showModal || showModalDrop ? "0" : "1"}` }}>
                              <Image src={Yellow} width={168} height={48} alt={"MyAccountVeterinary-Yellow"} />
                          </div>
                           <div className={"MyAccountVeterinary-content-image-cloud"}>
@@ -58,21 +71,40 @@ const MyAccountVeterinary: NextPage = () => {
                             <Image src={Chat} width={22} height={22} alt={"MyAccountVeterinary-Chat"} />
                             <p className={"MyAccountVeterinary-section-resource-name"}>Hotkeys</p>
                           </div>
-                           <div className={"MyAccountVeterinary-section-resource-button"}>
+                           <div className={"MyAccountVeterinary-section-resource-button"} onClick={() => {
+                               setShowModal(true);
+                               setText("Nuevo");
+                           }}>
                               <p className={"MyAccountVeterinary-section-resource-button-name"}>Nuevo</p>
                               <Image src={Sum} width={11} height={11} alt={"MyAccountVeterinary-sum"} />
                            </div>
                        </div>
                        <div className={"MyAccountVeterinary-section-line"} />
-                       <div className={"MyAccountVeterinary-section-resource-tab"}>
+                       <div className={"MyAccountVeterinary-section-resource-tab"} onClick={() => setShowTab(!showTab)}>
                            <div className={"MyAccountVeterinary-section-resource-tab-name"}>
                                <p className={"MyAccountVeterinary-section-resource-tab-name-p"}>Saludos</p>
                            </div>
-                           <div className={"MyAccountVeterinary-section-resource-tab-arrow"}>
+                           <div className={"MyAccountVeterinary-section-resource-tab-arrow"} style={{ transform: `rotate(${showTab ? "180deg" : "0deg"})` }}>
                                <Image src={Arrow} width={14} height={8} alt={"MyAccountVeterinary-Arrow"} />
                            </div>
                        </div>
                         <div className={"MyAccountVeterinary-section-line"} />
+                        {showTab &&
+                            <div className={"MyAccountVeterinary-section-content-tab"}>
+                            <div className={"MyAccountVeterinary-section-content-tab-text"}>
+                                <p className={"MyAccountVeterinary-section-content-tab-text-p"}>Hola! ¿En qué puedo
+                                    ayudarte hoy?</p>
+                            </div>
+                            <div className={"MyAccountVeterinary-section-content-tab-drop"} onClick={() => setShowModalDrop(true)}>
+                                <Image src={Drop} width={16} height={18} alt={"MyAccountVeterinary-Drop"}/>
+                            </div>
+                            <div className={"MyAccountVeterinary-section-content-tab-edit"} onClick={() => {
+                                setShowModal(true);
+                                setText("Editar");
+                            }}>
+                                <Image src={Edit} width={16} height={15} alt={"MyAccountVeterinary-Edit"}/>
+                            </div>
+                        </div>}
                         <div className={"MyAccountVeterinary-section-resource-tab"}>
                             <div className={"MyAccountVeterinary-section-resource-tab-name"}>
                                 <p className={"MyAccountVeterinary-section-resource-tab-name-p"}>Recomendaciones</p>
@@ -131,6 +163,56 @@ const MyAccountVeterinary: NextPage = () => {
                     </div>
                 </div>
             </div>
+            <Modal openModal={showModal}>
+               <div className={"MyAccountVeterinary-section-modal"}>
+                  <div className={"MyAccountVeterinary-section-head"}>
+                     <p className={"MyAccountVeterinary-section-head-p"}>{text} Hotkey</p>
+                     <div className={"MyAccountVeterinary-section-head-img"} onClick={() => setShowModal(false)}>
+                        <Image src={Cross} width={14} height={15} alt={"MyAccountVeterinary-Cross"} />
+                     </div>
+                  </div>
+                  <div className={"MyAccountVeterinary-section-form-container"}>
+                     <InputPrincipal
+                         width={"100%"}
+                         height={40}
+                         label={"Escribí un nuevo texto predeterminado"}
+                         placeholder={"Texto"}
+                         validAccount={false}
+                     />
+                      <Select
+                          width={"100%"}
+                          height={40}
+                          label={"Seleccióna una categoría"}
+                          placeholder={"Ninguna"}
+                          select_data={[]}
+                      />
+                        <ContentButtons
+                              width={"100%"}
+                              height={40}
+                              textConfirm={"Crear"}
+                              textCancel={"Cancelar"}
+                              question={false}
+                              questionText={""}
+                              questionLink={""}
+                              url={""}
+                              PurpleButton_url={""}
+                              WhiteButton_url={""}
+                              margin={"53px 0 0 0"}
+                          />
+                  </div>
+               </div>
+            </Modal>
+            <Modal openModal={showModalDrop}>
+                <div className={"MyAccountVeterinary-section-modal-drop"}>
+                   <div className={"MyAccountVeterinary-section-modal-drop-text-container"}>
+                       <p className={"MyAccountVeterinary-section-modal-drop-text"}>¿Quieres borras este hotkey? La <br />acción no se puede deshacer</p>
+                   </div>
+                   <div className={"MyAccountVeterinary-section-modal-drop-button-container"}>
+                       <button className={"MyAccountVeterinary-section-modal-drop-button"}>Si, borrar</button>
+                       <button className={"MyAccountVeterinary-section-modal-cancel-button"} onClick={() => setShowModalDrop(false)}>No, cancelar</button>
+                   </div>
+                </div>
+            </Modal>
         </main>
     )
 };

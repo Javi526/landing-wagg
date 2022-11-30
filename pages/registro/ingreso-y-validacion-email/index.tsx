@@ -17,14 +17,14 @@ const EmailEntryAndValidation : NextPage = () => {
             />
             <div className={"register-content"}>
                 <InputPrincipal
-                    width={156}
+                    width={"156px"}
                     height={40}
                     label={"Nombre"}
                     placeholder={"Tu nombre"}
                     validAccount={false}
                 />
                 <InputPrincipal
-                    width={156}
+                    width={"156px"}
                     height={40}
                     label={"Apellido"}
                     placeholder={"Tu apellido"}
@@ -32,7 +32,7 @@ const EmailEntryAndValidation : NextPage = () => {
                 />
             </div>
             <InputPrincipal
-                width={326}
+                width={"326px"}
                 height={40}
                 label={"Email"}
                 placeholder={"Ingresá tu email"}

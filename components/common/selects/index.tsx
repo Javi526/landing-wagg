@@ -4,7 +4,7 @@ import ArrowSelect from "../../../assets/register/arrow-select.svg";
 import Image from "next/image";
 
 type SelectProps = {
-    width: number,
+    width: string,
     height: number,
     label: string,
     placeholder: string,

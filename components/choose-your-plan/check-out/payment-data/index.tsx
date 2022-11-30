@@ -12,7 +12,7 @@ export default function PaymentData() {
         <div className={"PaymentData-container"}>
           <p className={"PaymentData-title"}>Datos de pago</p>
             <InputPrincipal
-               width={335}
+               width={"335px"}
                height={40}
                label={"Correo electrónico"}
                placeholder={"Ingresá tu correo electrónico"}
@@ -20,14 +20,14 @@ export default function PaymentData() {
             />
             <div className={"CheckOut-content-container"}>
                 <Select
-                    width={136}
+                    width={"136px"}
                     height={40}
                     label={"Documento"}
                     placeholder={"Tipo"}
                     select_data={[]}
                 />
                 <InputPrincipal
-                    width={184}
+                    width={"184px"}
                     height={40}
                     label={"Número de documento"}
                     placeholder={"Número"}

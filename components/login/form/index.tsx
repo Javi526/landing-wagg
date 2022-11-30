@@ -18,7 +18,7 @@ export default function LoginForm() {
                   </div>
                   <div className={"LoginForm-content-buttons"}>
                       <InputPrincipal
-                          width={311}
+                          width={"311px"}
                           height={40}
                           label={"Email"}
                           placeholder={"Ingresá tu email"}

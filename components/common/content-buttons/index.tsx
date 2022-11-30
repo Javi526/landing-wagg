@@ -8,7 +8,7 @@ export default function ContentButtons({ width, height, textConfirm, textCancel,
     const router = useRouter();
          return (
              <div className={"ContentButtons-container"} style={{ margin }}>
-                 <PurpleButton width={width} height={height} text={textConfirm} router={router} PurpleButton_url={PurpleButton_url} disabled={true} />
+                 <PurpleButton width={width} height={height} text={textConfirm} router={router} PurpleButton_url={PurpleButton_url} disabled={false} />
                  <WhiteButton width={width} height={height} text={textCancel} router={router} WhiteButton_url={WhiteButton_url} />
                  {question && <TextRegister questionText={questionText} questionLink={questionLink} url={url} />}
              </div>

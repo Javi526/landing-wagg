@@ -27,7 +27,7 @@ const SmallBoard: NextPage = () => {
                 <p className={"SmallBoard-container-content-title"}>Resumen de la Consulta</p>
                 <p className={"SmallBoard-container-content-subtitle"}>Es hora de calificar y reportar el estado de la mascota. Seleccioná una opción y considerá que el padre de mascota leerá los pasos a seguir una vez finalizada la consulta.</p>
                 <div className={"SmallBoard-select"}>
-                    <Select width={389} height={40} label={"Motivo de consulta"} placeholder={"Seleccionar"} select_data={TagSelect_option} />
+                    <Select width={"389px"} height={40} label={"Motivo de consulta"} placeholder={"Seleccionar"} select_data={TagSelect_option} />
                 </div>
                 <div className={"SmallBoard-table-header"}>
                    <p className={"SmallBoard-table-header-title"}>Estado</p>
