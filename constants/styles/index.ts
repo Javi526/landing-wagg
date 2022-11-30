@@ -5,7 +5,7 @@ export const styles_Modal = `
    }
    @supports(height: 1dvh) {
        body, main {
-        height: 1dvh;
+        height: 100vh;
         overflow: hidden;
      }
    }
