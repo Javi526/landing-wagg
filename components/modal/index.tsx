@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom";
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, Fragment } from "react";
+import { styles_Modal } from "../../constants/styles";
 
 type Props = {
     openModal: boolean,
@@ -15,12 +16,12 @@ export default function Modal({ openModal, children } : Props) {
         return null
     });
 
-
     if (openModal && modal) {
         return ReactDOM.createPortal(
-            <div className={"modal-container"}>
-                {children}
-            </div>,
+            <Fragment>
+                <style jsx global>{styles_Modal}</style>
+                <div className={"modal-container"}>{children}</div>
+            </Fragment>,
             modal
         );
     } else {
