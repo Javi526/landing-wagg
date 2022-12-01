@@ -65,7 +65,7 @@ export default function TagSelect({ id, textOne, textTwo, textThree, background,
                </div>
                <p className={"TagSelect-p1"}>{textOne}</p>
                </div>
-               <div style={{ transform: `${valueSelect ? "roteate" : ""}` }}>
+               <div style={{ transform: `rotate(${valueSelect ? "180deg" : "0deg"})` }}>
                  <Image src={Arrow} width={14} height={8} alt={"TagSelect-mobile-arrow"} />
                </div>
            </div>
