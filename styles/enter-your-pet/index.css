@@ -143,4 +143,7 @@
     .ShowDog-circle-pink-container{
         width: 160px;
     }
+    .ShowDog-content-dog {
+        display: none;
+    }
 }
