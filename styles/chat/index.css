@@ -11,6 +11,14 @@
     display: none;
 }
 
+.SectionVideoAndFinishChat-section-img-container {
+    display: flex;
+}
+
+.SectionVideoAndFinishChat-section-img {
+    display: none;
+}
+
 .SectionVideoAndFinishChat-container {
     display: flex;
     align-items: center;
@@ -24,6 +32,7 @@
     display: flex;
     align-items: center;
 }
+
 
 .SectionVideoAndFinishChat-section-user-online-p {
     font-family: 'Poppins', sans-serif;
@@ -52,7 +61,7 @@
 }
 
 .FinishChat-container {
-    margin-right: 19px;
+    margin-right: 0;
 }
 
 .FinishChat-button {
@@ -71,6 +80,10 @@
     cursor: pointer;
 }
 
+.FinishChat-button:after {
+    content: "Terminar chat";
+}
+
 .Video-content {
     cursor: pointer;
 }
@@ -81,7 +94,7 @@
 
 .Message-content {
    padding: 24px;
-   height: calc(100vh - 388px);
+   height: calc(100vh - 244px);
    overflow-x: hidden;
 }
 
@@ -90,38 +103,48 @@
 }
 
 .SendingForm-container {
-    height: 241px;
-    padding: 23px 24px;
+    position: fixed;
+    bottom: 0;
+    padding: 14px 24px 32px 24px;
     background: #FAFBFF;
     border-top: 1px solid #E7EBF8;
+    width: calc(100% - 335px);
 }
 
 .SendingForm-content {
+    display: flex;
+    align-items: flex-end;
     background: #FFFFFF;
     border: 1px solid #D2D4DA;
     border-radius: 10px;
     width: 100%;
     height: 100%;
-    padding: 0 18px;
+    padding: 0 14px;
 }
 
 .SendingForm-content-send {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-end;
+    height: 48px;
+    align-items: center;
+    padding-top: 6px;
 }
 
 .SendingForm-textarea-container {
-    height: calc(100% - 57px);
+    display: flex;
+    align-items: center;
+    width: calc(100% - 57px);
 }
 
 .SendingForm-textarea {
+    display: block;
+    padding-top: 11px;
     width: 100%;
-    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    min-height: 48px;
     border-color: transparent;
     outline: none;
-    padding-top: 20px;
-    padding-bottom: 8px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -131,8 +154,22 @@
     resize: none;
 }
 
+.SendingForm-textarea[contenteditable]:empty::before {
+    content: "Mensaje";
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777986;
+}
+
 .SendingForm-content-send-icon-container {
     display: flex;
+}
+
+.SendingForm-content-send-icon-emoji {
+    margin-right: 16px;
 }
 
 .SendingForm-content-send-icon {
@@ -275,16 +312,61 @@
 
 .DetailsConsultation-container {
     width: 335px;
+    height: calc(100vh - 80px);
     background-color: #FAFBFF;
     border-left: 1px solid #E7EBF8;
 }
 .DetailsConsultation-content {
-    padding-top: 28px;
+    padding-top: 22px;
     padding-left: 20px;
     padding-right: 26px;
 }
 
+.DetailsConsultation-tab-container {
+    display: flex;
+}
+
+.DetailsConsultation-tab-line {
+    margin-left: -20px;
+    margin-right: -26px;
+    height: 1px;
+    background: #E7EBF8;
+    margin-bottom: 31px;
+}
+
+
+.DetailsConsultation-tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    height: 37px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.DetailsConsultation-tab-content-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    height: 37px;
+    border-bottom: 2px solid #FFA7FE;
+    cursor: pointer;
+}
+
+.DetailsConsultation-tab-content-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    color: #463677;
+}
+
 .DetailsConsultation-content-title-container {
+    display: none;
     padding-left: 4px;
     margin-bottom: 16px;
 }
@@ -303,7 +385,7 @@
 
 .DetailsConsultation-reason-text {
     margin-top: 32px;
-    margin-bottom: 80px;
+    margin-bottom: 45px;
 }
 
 .DetailsConsultation-reason-text-p {
@@ -313,7 +395,7 @@
     font-size: 14px;
     line-height: 130%;
     color: #777986;
-    margin: 0 0 8px 0;
+    margin: 0 0 4px 0;
 }
 
 .DetailsConsultation-reason-text-p2 {
@@ -330,7 +412,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - 33rem);
 }
 
 .DetailsConsultation-reason-pet-container {
@@ -351,6 +432,31 @@
 
 .DetailsConsultation-reason-container {
     margin-left: 7px;
+}
+
+.DetailsConsultation-checked-container {
+    display: flex;
+    align-items: center;
+}
+
+.DetailsConsultation-checked {
+
+}
+
+input[type="checkbox"]:enabled:checked {
+    background: #463677;
+    color: white;
+}
+
+.DetailsConsultation-checked-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 0 0 0 6px;
+    color: #404252;
+    padding-top: 2px;
 }
 
 .DetailsConsultation-reason-text-p4 {
@@ -381,6 +487,7 @@
 }
 
 .DetailsConsultation-reason-pet-button-container {
+    display: none;
     margin-top: 22px;
 }
 
@@ -403,28 +510,169 @@
 .DetailsConsultation-arrow {
     display: none;
     cursor: pointer;
-    margin-top: 28px;
-    margin-bottom: 25px;
 }
 
-@media (max-width: 799px) {
+.file-input {
+    display: none;
+
+}
+
+.MessageContent-file-notification {
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    height: 50px;
+    background: #F3F4F8;
+}
+
+.MessageContent-file-title-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.MessageContent-file-content-container {
+    width: 535px;
+    margin: auto;
+}
+
+.MessageContent-file-image-container {
+    margin-bottom: 42px;
+}
+
+.SendingForm-content-more-file {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    position: fixed;
+    width: calc(100% - 335px);
+    bottom: 0;
+    height: 87px;
+    border-top: 1px solid #E7EBF8;
+}
+.SendingForm-content-more-file-button-container {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 29px;
+    margin-top: 10px;
+}
+
+.MessageContent-file-cross, .SendingForm-content-send-icon-Attached {
+    cursor: pointer;
+}
+
+.SendingForm-content-more-file-button {
+    width: 95px;
+    height: 40px;
+    background: #463677;
+    border-radius: 10px;
+    outline: none;
+    border-color: transparent;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.MessageContent-file-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 0;
+    color: #777986;
+}
+
+.SendingForm-content-more-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.SendingForm-content-more-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #E7EBF8;
+    border-radius: 10px;
+    margin-left: 9px;
+}
+
+.MessageContent-file-image-container {
+    margin-top: 68px;
+}
+
+@media (max-width: 1336px) {
+    .MessageContent-file-content-container {
+        width: 352px;
+    }
+}
+
+@media (max-width: 899px) {
+    .SectionVideoAndFinishChat-section-user-active {
+        cursor: pointer;
+    }
+    .FinishChat-button:after {
+        content: "Finalizar";
+    }
+    .SectionVideoAndFinishChat-section-img {
+        display: flex;
+        margin-right: 8px;
+    }
+    .SectionVideoAndFinishChat-section-user-active {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .SectionVideoAndFinishChat-section-name-p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 130%;
+        color: #404252;
+        margin: 0;
+    }
+    .SectionVideoAndFinishChat-section-user-online-p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 130%;
+        color: #777986;
+        margin: 0;
+    }
     .SectionVideoAndFinishChat-menu {
         display: flex;
     }
-    .DetailsConsultation-container, .FinishChat-container, .Video-container {
+    .DetailsConsultation-container, .Video-container, .SectionVideoAndFinishChat-menu {
         display: none;
     }
-    .Chat-content {
+    .DetailsConsultation-tab-container {
+        justify-content: center;
+    }
+    .Chat-content, .SendingForm-container, .SendingForm-content-more-file {
         width: 100%;
     }
     .DetailsConsultation-arrow {
         display: flex;
+        position: absolute;
     }
-    .DetailsConsultation-reason-pet {
-        height: calc(100vh - 20rem);
+    .DetailsConsultation-tab-content, .DetailsConsultation-tab-content-active {
+        width: 100%;
+    }
+    .DetailsConsultation-reason-pet-container {
+        margin-bottom: 24px;
     }
     .DetailsConsultation-reason-pet-item {
-        margin-bottom: 22px;
+        margin-bottom: 16px;
     }
     .DetailsConsultation-reason-pet-button-container {
         margin-top: 27px;
@@ -458,9 +706,34 @@
 }
 
 @media (max-width: 461px) {
+    .MessageContent-file-image-container {
+        margin-top: 25px;
+    }
+    .FinishChat-container {
+        display: flex;
+    }
+    .FinishChat-button {
+        width: 82px;
+        height: 32px;
+        border-radius: 10px;
+    }
+    .SectionVideoAndFinishChat-container {
+        padding: 0 14px;
+    }
+
     .DetailsConsultation-reason-pet-item-p {
-        font-size: 12px;
+        font-size: 14px;
         color: #404252;
+    }
+    .DetailsConsultation-reason-pet-button-chat {
+        display: none;
+    }
+    .DetailsConsultation-tab-line {
+        margin-left: -16px;
+        margin-right: -18px;
+    }
+    .DetailsConsultation-reason-pet-item {
+        margin-bottom: 16px;
     }
     .DetailsConsultation-content-title {
         font-size: 16px;
@@ -475,9 +748,7 @@
         padding-left: 16px;
         padding-right: 18px;
     }
-    .SectionVideoAndFinishChat-menu {
-        display: flex;
-    }
+
     .SendingForm-content-send {
         justify-content: flex-end;
         width: auto;
@@ -495,20 +766,14 @@
         padding: 16px;
         height: calc(100vh - 227px);
     }
-    .SendingForm-textarea {
+    .SendingForm-textarea[contenteditable]:empty::before {
         width: 100%;
         padding: 9px 0 0 0;
         font-size: 14px;
     }
-    .SendingForm-textarea-container {
-        width: inherit;
-        height: 40px;
-    }
     .SendingForm-content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        height: 48px;
     }
     .SendingForm-content-send-icon {
         background: transparent;
@@ -517,7 +782,13 @@
         margin-right: 0;
     }
     .SendingForm-container {
-        height: 80px;
         padding: 8px 8px 24px 8px;
+    }
+}
+
+@media (max-width: 392px) {
+    .MessageContent-file-content-container {
+        width: 100%;
+        padding: 0 20px;
     }
 }

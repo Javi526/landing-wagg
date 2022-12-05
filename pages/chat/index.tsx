@@ -10,7 +10,7 @@ export default function Chat() {
         <main>
             {!showMenu ?
                 <>
-                <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} chat={true}/>
+                <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} chat={false}/>
                 <div className={"Chat-container"}>
                     <div className={"Chat-content"}>
                         <SectionVideoAndFinishChat name={"Dra. María Fernández"} setShowMenu={setShowMenu} />
@@ -19,7 +19,10 @@ export default function Chat() {
                     <DetailsConsultation showMenu={showMenu} setShowMenu={setShowMenu} />
                 </div>
             </> :
-                <DetailsConsultation showMenu={showMenu} setShowMenu={setShowMenu} />
+                <>
+                 <Header_LoggedIn name={"Paulina"} image={""} consultation={false} url={""} chat={false}/>
+                 <DetailsConsultation showMenu={showMenu} setShowMenu={setShowMenu} />
+                </>
             }
         </main>
     )
