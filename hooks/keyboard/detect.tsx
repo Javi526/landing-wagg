@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react';
 
-const minKeyboardHeight : number = 300;
-const useDetectKeyboardOpen = () => {
+type Props = {
+    minKeyboardHeight: number,
+    defaultValue: boolean
+}
+
+const useDetectKeyboardOpen = ({ minKeyboardHeight = 300, defaultValue } :Props) => {
     const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
 
     useEffect(() => {
