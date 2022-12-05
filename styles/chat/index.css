@@ -786,6 +786,7 @@ input[type="checkbox"]:enabled:checked {
     }
 }
 
+
 @media (max-width: 392px) {
     .MessageContent-file-content-container {
         width: 100%;

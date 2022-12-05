@@ -8,6 +8,8 @@ import Image from "next/image";
 import Emoji from "../../../../assets/chat/emoji.svg";
 import CatMini from "../../../../assets/chat/cat-min.svg";
 import More from "../../../../assets/chat/more.svg";
+import {useState} from "react";
+import useDetectKeyboardOpen from "../../../../hooks/keyboard/detect";
 //import Attached from "../../../../assets/chat/attached.svg";
 
 type Props = {
@@ -16,7 +18,9 @@ type Props = {
 }
 
 export default function MessageContent({ openFile, setOpenFile } : Props) {
-
+    const [text, setText] = useState("");
+    //if (typeof window === "object" && window.innerWidth < 900) setShowMenu(true);
+    const isKeyboardOpen = useDetectKeyboardOpen();
     return (
       <>
       {!openFile ?
@@ -48,6 +52,7 @@ export default function MessageContent({ openFile, setOpenFile } : Props) {
                   className={"SendingForm-textarea"}
                   placeholder={"Mensaje"}
                   role="textbox" contentEditable={true}
+                  onInput={((Event) => setText(`${Event.currentTarget.textContent}`))}
               ></span>
                </div>
                <div className={"SendingForm-content-send"}>
@@ -60,17 +65,18 @@ export default function MessageContent({ openFile, setOpenFile } : Props) {
                </div>
            </div>
           </div>
-           <div className={"SendingForm-content-more-file"}>
+           {!isKeyboardOpen &&
+               <div className={"SendingForm-content-more-file"}>
                <div className={"SendingForm-content-more-container"}>
-                    <Image src={CatMini} width={56} height={56} alt={"SendingForm-CatMini"} />
-               <div className={"SendingForm-content-more-image-container"}>
-                  <Image src={More} width={14} height={14} alt={"SendingForm-more"} />
-               </div>
+                   <Image src={CatMini} width={56} height={56} alt={"SendingForm-CatMini"}/>
+                   <div className={"SendingForm-content-more-image-container"}>
+                       <Image src={More} width={14} height={14} alt={"SendingForm-more"}/>
+                   </div>
                    <div className={"SendingForm-content-more-file-button-container"}>
                        <button className={"SendingForm-content-more-file-button"}>Enviar</button>
                    </div>
                </div>
-           </div>
+           </div>}
       </div>
     }
     </>

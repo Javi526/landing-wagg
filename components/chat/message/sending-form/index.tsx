@@ -7,6 +7,7 @@ type Props = {
 }
 
 export default function SendingForm({ setOpenFile }: Props) {
+
     return (
         <div className={"SendingForm-container"}>
           <div className={"SendingForm-content"}>
