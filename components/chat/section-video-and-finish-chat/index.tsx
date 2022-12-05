@@ -18,7 +18,7 @@ export default function SectionVideoAndFinishChat({ name, setShowMenu } :Props) 
                       <Image src={Avatar} width={36} height={36} alt={"SectionVideoAndFinishChat-Avatar"} />
                   </div>
               <div className={"SectionVideoAndFinishChat-section-user-active"} onClick={() => {
-                 if (typeof window === "object" && window.innerWidth < 900) setShowMenu(true);
+                   if (typeof window === "object" && window.innerWidth < 900) setShowMenu(true);
                  }}>
                  <p className={"SectionVideoAndFinishChat-section-user-online-p"}>En línea</p>
                  <p className={"SectionVideoAndFinishChat-section-name-p"}>{name}</p>
