@@ -1,4 +1,4 @@
-.Chat-container {
+.Chat-container, .ChatContact-item-data-description-container {
     display: flex;
 }
 
@@ -7,6 +7,199 @@
     flex-direction: column;
     width: calc(100% - 335px);
 }
+
+.Chat-content-veterinary {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 695px);
+}
+
+.ChatContact-tab-container {
+    display: flex;
+    padding: 0 12px;
+    user-select: none;
+}
+
+.ChatContact-item-container {
+    height: calc(100vh - 191px);
+    overflow-y: auto;
+}
+
+.ChatContact-item {
+    display: flex;
+    width: 100%;
+    height: 66px;
+    border-bottom: 1px solid #E7EBF8;
+    border-top: 1px solid #E7EBF8;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.ChatContact-item:hover {
+    display: flex;
+    width: 100%;
+    height: 66px;
+    border-bottom: 1px solid #E7EBF8;
+    border-top: 1px solid #E7EBF8;
+    padding-right: 16px;
+    cursor: pointer;
+    background: rgba(231, 235, 248, 0.5);
+}
+
+.ChatContact-item-status {
+    width: 6px;
+    height: inherit;
+}
+
+.ChatContact-tab {
+    width: 111px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.ChatContact-tab-active {
+    width: 111px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #9188FD;
+    cursor: pointer;
+}
+.ChatContact-item-data {
+    display: flex;
+    align-items: center;
+}
+
+.ChatContact-tab-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    color: #777986;
+
+}
+.ChatContact-container {
+    width: 360px;
+    border-right: 1px solid #E7EBF8;
+}
+
+.ChatContact-search-container {
+    margin-top: 13px;
+    padding: 0 12px;
+    margin-bottom: 19px;
+}
+
+.ChatContact-image-glass {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.ChatContact-search {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
+    padding-left: 32px;
+    outline: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777986;
+}
+
+.ChatContact-item-details {
+    margin-left: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.ChatContact-item-data-user {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #DCD9FF;
+    margin-right: 6px;
+}
+
+.ChatContact-item-data-user-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 14px;
+    margin: 0;
+    color: #463677;
+}
+
+.ChatContact-item-data-description-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    margin: 0 0 0 4px;
+    color: #777986;
+}
+.ChatContact-item-data-time {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    margin: 0 0 4px 0;
+    color: #777986;
+}
+
+.ChatContact-item-data-name-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    color: #404252;
+}
+.ChatContact-item-data-time-and-count {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.ChatContact-item-data-count {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.ChatContact-item-data-count-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    margin: 0;
+    color: #FAFBFF;
+}
+
 .SectionVideoAndFinishChat-menu {
     display: none;
 }
@@ -111,6 +304,28 @@
     width: calc(100% - 335px);
 }
 
+.SendingForm-veterinary-container {
+    position: fixed;
+    bottom: 0;
+    padding: 14px 24px 32px 24px;
+    background: #FAFBFF;
+    border-top: 1px solid #E7EBF8;
+    width: calc(100% - 695px);
+}
+
+.VeterinaryTab-tab-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+    border-bottom: 1px solid #E7EBF8;
+    border-top: 1px solid #E7EBF8;
+    padding: 0 26px 0 20px;
+    margin-left: -20px;
+    margin-right: -26px;
+    cursor: pointer;
+}
+
 .SendingForm-content {
     display: flex;
     align-items: flex-end;
@@ -185,6 +400,48 @@
 }
 .DetailsConsultation-reason-pet-button-chat {
     display: none;
+}
+
+.VeterinaryTab-client-container {
+    margin-top: 31px;
+    margin-bottom: 45px;
+}
+
+.VeterinaryTab-client-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 0;
+    color: #9188FD;
+}
+
+.VeterinaryTab-button-history-container {
+    margin-top: 40px;
+}
+
+.VeterinaryTab-button-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
+    background: #FAFBFF;
+    cursor: pointer;
+    user-select: none;
+}
+
+.VeterinaryTab-button-history-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 0 0 7px;
+    color: #463677;
 }
 
 .TagReceive-container {
@@ -334,6 +591,13 @@
     margin-bottom: 31px;
 }
 
+.VeterinaryTab-tab-line {
+    margin-left: -20px;
+    margin-right: -26px;
+    height: 1px;
+    background: #E7EBF8;
+}
+
 
 .DetailsConsultation-tab-content {
     display: flex;
@@ -351,6 +615,26 @@
     align-items: center;
     width: 141px;
     height: 37px;
+    border-bottom: 2px solid #FFA7FE;
+    cursor: pointer;
+}
+
+.VeterinaryTab-tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87px;
+    height: 39px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.VeterinaryTab-tab-content-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87px;
+    height: 39px;
     border-bottom: 2px solid #FFA7FE;
     cursor: pointer;
 }

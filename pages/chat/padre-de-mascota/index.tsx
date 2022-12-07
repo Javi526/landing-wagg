@@ -1,7 +1,7 @@
-import Header_LoggedIn from "../../components/header/logged-in";
-import SectionVideoAndFinishChat from "../../components/chat/section-video-and-finish-chat";
-import Message from "../../components/chat/message";
-import DetailsConsultation from "../../components/chat/details-consultation";
+import Header_LoggedIn from "../../../components/header/logged-in";
+import SectionVideoAndFinishChat from "../../../components/chat/section-video-and-finish-chat";
+import Message from "../../../components/chat/message";
+import DetailsConsultation from "../../../components/chat/details-consultation";
 import {useState} from "react";
 
 export default function Chat() {
