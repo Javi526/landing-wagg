@@ -9,7 +9,7 @@ type Props = {
 export default function SendingForm({ setOpenFile }: Props) {
 
     return (
-        <div className={"SendingForm-veterinary-container"}>
+        <div className={"SendingForm-container"}>
           <div className={"SendingForm-content"}>
            <div className={"SendingForm-textarea-container"}>
               <span

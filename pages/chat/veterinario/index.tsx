@@ -1,10 +1,10 @@
 import Header_LoggedIn from "../../../components/header/logged-in";
 import SectionVideoAndFinishChat from "../../../components/chat/section-video-and-finish-chat";
-import Message from "../../../components/chat/message";
 import DetailsConsultation from "../../../components/chat/details-consultation";
 import {useState} from "react";
 import Contact from "../../../components/chat/contact";
 import VeterinaryTab from "../../../components/chat/veterinary-tab";
+import MessageVeterinary from "../../../components/chat/message/message-veterinary";
 
 export default function ChatVets() {
     const [showMenu, setShowMenu] = useState(false);
@@ -17,7 +17,7 @@ export default function ChatVets() {
                     <Contact />
                     <div className={"Chat-content-veterinary"}>
                         <SectionVideoAndFinishChat name={"Dra. María Fernández"} setShowMenu={setShowMenu} />
-                        <Message/>
+                        <MessageVeterinary />
                     </div>
                     <VeterinaryTab showMenu={showMenu} setShowMenu={setShowMenu} />
                 </div>
