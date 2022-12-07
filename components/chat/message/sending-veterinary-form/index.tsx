@@ -3,13 +3,14 @@ import Attached from "../../../../assets/chat/attached.svg";
 import Image from "next/image";
 
 type Props = {
-    setOpenFile: any
+    setOpenFile: any,
+    showMessage: boolean
 }
 
-export default function SendingVeterinaryForm({ setOpenFile }: Props) {
+export default function SendingVeterinaryForm({ setOpenFile, showMessage }: Props) {
 
     return (
-        <div className={"SendingForm-veterinary-container"}>
+        <div className={"SendingForm-veterinary-container"} style={{ ...(showMessage && { width: "100%" }) }}>
             <div className={"SendingForm-content"}>
                 <div className={"SendingForm-textarea-container"}>
               <span

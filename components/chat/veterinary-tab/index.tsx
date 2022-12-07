@@ -20,7 +20,7 @@ export default function VeterinaryTab({ showMenu, setShowMenu } : Props) {
         return "VeterinaryTab-tab-content";
     };
     return (
-        <div className={`${showMenu ? "DetailsConsultation-responsive-container" : "DetailsConsultation-container"}`}>
+        <div className={`${showMenu ? "DetailsConsultation-responsive-container" : "Veterinary-DetailsConsultation-container"}`}>
             <div className={"DetailsConsultation-content"}>
                 <div className={"DetailsConsultation-arrow"} onClick={() => setShowMenu(false)}>
                     <Image src={ChatArrow} width={16} height={16} alt={"ChatArrow"} />

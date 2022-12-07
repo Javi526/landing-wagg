@@ -1,13 +1,17 @@
-import MessageContent from "../content";
 import SendingForm from "../sending-veterinary-form";
-import {useState} from "react";
+import { useState } from "react";
+import VeterinaryMessageContent from "../content-veterinary";
 
-export default function MessageVeterinary() {
+type Props = {
+    showMessage: any
+}
+
+export default function MessageVeterinary({ showMessage } : Props) {
     const [openFile, setOpenFile] = useState(false);
     return (
         <div className={"Message-container"}>
-            <MessageContent openFile={openFile} setOpenFile={setOpenFile} />
-            {!openFile && <SendingForm setOpenFile={setOpenFile} />}
+            <VeterinaryMessageContent openFile={openFile} setOpenFile={setOpenFile} />
+            {!openFile && <SendingForm setOpenFile={setOpenFile} showMessage={showMessage} />}
         </div>
     )
 }

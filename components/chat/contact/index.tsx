@@ -6,8 +6,11 @@ import { handleChangeNameInitials } from "../../../utils";
 import {contactItemClose, contactItemOpen} from "../../../constants/chat";
 import {contactItemInterface} from "../../../interface/chat";
 
+type Props = {
+    setshowMessage: any
+}
 
-export default function ChatContact() {
+export default function ChatContact({ setshowMessage } : Props) {
     const [tab, setTab] = useState("open");
     const handleChangeClassName = (value: string) : string => tab === value ? "ChatContact-tab-active" : "ChatContact-tab";
 
@@ -34,7 +37,9 @@ export default function ChatContact() {
                       const firstName : string = data.firstName;
                       const lastName: string = data.lastName;
                        return  (
-                          <div className={"ChatContact-item"} key={data.id}>
+                          <div className={"ChatContact-item"} key={data.id} onClick={() => {
+                              if (typeof window === "object" && window.innerWidth < 1164) setshowMessage(true);
+                          }}>
                               <div className={"ChatContact-item-status"} style={{ backgroundColor: `${data.status}` }} />
                               <div className={"ChatContact-item-details"}>
                                   <div className={"ChatContact-item-data"}>

@@ -21,7 +21,6 @@ export default function MessageContent({ openFile, setOpenFile } : Props) {
     const [text, setText] = useState("");
     //if (typeof window === "object" && window.innerWidth < 900) setShowMenu(true);
     const isKeyboardOpen = useDetectKeyboardOpen({ minKeyboardHeight: 300, defaultValue: false });
-    console.log("isKeyboardOpen", isKeyboardOpen)
     return (
       <>
       {!openFile ?
