@@ -13,8 +13,6 @@
 }
 
 .LastConsultation-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -29,8 +27,6 @@
 }
 
 .LastConsultation-item-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 130%;
@@ -66,8 +62,6 @@
 }
 
 .LastConsultation-item-card-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
@@ -92,8 +86,6 @@
 }
 
 .LastConsultation-item-card-option-text {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 130%;

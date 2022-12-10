@@ -11,8 +11,6 @@
     height: inherit;
 }
 .TermsConditionsHeader-content-text {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
@@ -32,8 +30,6 @@
 }
 
 .TermsConditionsContent-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 62px;
@@ -57,8 +53,6 @@
 }
 
 .TermsConditionsContent-items-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
@@ -67,8 +61,6 @@
 }
 
 .TermsConditionsContent-items-text {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;

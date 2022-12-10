@@ -14,8 +14,6 @@
 }
 
 .EnterYourPetForm-content-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 130%;
@@ -30,8 +28,6 @@
 }
 
 .EnterYourPetForm-content-subtitle {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;

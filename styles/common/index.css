@@ -13,8 +13,6 @@
 }
 
 .Input-label-container {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -28,8 +26,6 @@
     pointer-events: none;
 }
 .Input-seconds-label {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 10px;
     line-height: 18px;
@@ -37,8 +33,6 @@
 }
 
 .Input-label-password-container {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
@@ -51,8 +45,6 @@
     -moz-appearance: none;
     border: 1px solid #D2D4DA;
     border-radius: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18;
@@ -71,8 +63,6 @@
 }
 
 .input-list-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -90,8 +80,6 @@
     -moz-appearance: none;
     border: 1px solid #D2D4DA;
     border-radius: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18;
@@ -103,8 +91,6 @@
 .select {
     border: 1px solid #D2D4DA;
     border-radius: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18;
@@ -131,8 +117,6 @@
 
 .input::placeholder, .select::placeholder {
     color: #777986;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18;
@@ -172,8 +156,6 @@
 .PurpleButton-content-disabled {
     background: #F3F4F8;
     border-radius: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -184,8 +166,6 @@
 .PurpleButton-content {
     background: #463677;
     border-radius: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -194,8 +174,6 @@
 }
 
 .whiteButton-content {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -233,8 +211,6 @@
 }
 
 .register-content-text-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 31px;
@@ -244,9 +220,7 @@
 }
 
 .register-content-text-subtitle {
-    font-family: 'Poppins';
     width: 495px;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -285,8 +259,6 @@
 }
 
 .Input-label-validation-text {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 11px;
     line-height: 130%;
@@ -323,8 +295,6 @@
     align-items: center;
 }
 .HeaderText-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -333,8 +303,6 @@
 }
 
 .HeaderText-p2 {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
@@ -366,10 +334,6 @@
     cursor: pointer;
     padding: 0 13px;
     margin: auto;
-}
-
-.TagSelect-p1,.TagSelect-p2, .TagSelect-p3  {
-    font-family: 'Poppins', sans-serif;
 }
 
 .TagSelect-p1 {

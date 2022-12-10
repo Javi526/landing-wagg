@@ -13,8 +13,6 @@
 }
 
 .SmallBoard-container-content-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 41px;
@@ -23,8 +21,6 @@
 }
 
 .SmallBoard-container-content-subtitle {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -50,8 +46,6 @@
 }
 
 .SmallBoard-table-header-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;

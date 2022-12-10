@@ -5,8 +5,6 @@
 }
 
 .MyPets-section-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -30,8 +28,6 @@
 }
 
 .MyPets-content-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 130%;
@@ -161,8 +157,6 @@
 }
 
 .MyPets-box-consultation-content-button-text {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -176,8 +170,6 @@
 }
 
 .MyPets-box-consultation-content-text {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 23px;
@@ -204,8 +196,6 @@
 }
 
 .MyPets-box-items-content-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -214,8 +204,6 @@
 }
 
 .MyPets-box-items-content-p2 {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -224,8 +212,6 @@
 }
 
 .MyPets-box-items-content-text-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
@@ -245,8 +231,6 @@
 }
 
 .MyPets-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 130%;
@@ -264,8 +248,6 @@
 }
 
 .MyPets-content-items-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -292,8 +274,6 @@
     padding-left: 16px;
     padding-right: 11px;
     height: 34px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
@@ -301,8 +281,6 @@
 }
 
 .MyPets-content-info-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -311,8 +289,6 @@
 }
 
 .MyPets-content-info-button-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
@@ -333,8 +309,6 @@
 }
 
 .MyPets-content-info-item-p1 {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -343,8 +317,6 @@
 }
 
 .MyPets-content-info-item-p2 {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -385,8 +357,6 @@
 }
 
 .MyPets-content-info-list-p2-opacity {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -396,8 +366,6 @@
 }
 
 .MyPets-view-button-chat {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
@@ -419,8 +387,6 @@
     align-items: center;
     background: #463677;
     border-radius: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;

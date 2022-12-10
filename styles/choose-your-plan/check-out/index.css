@@ -7,8 +7,6 @@
 }
 
 .CheckOut-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 130%;
@@ -46,8 +44,6 @@
 }
 
 .PaymentData-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
@@ -69,8 +65,6 @@
 }
 
 .PaymentPlan-plan-description-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -88,8 +82,6 @@
     margin-bottom: 11px;
 }
 .PaymentPlan-plan-description-item-text {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -97,8 +89,6 @@
     margin: 0;
 }
 .PaymentPlan-plan-description-item-value {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -118,8 +108,6 @@
 }
 
 .PaymentPlan-plan-description-total {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -133,8 +121,6 @@
 }
 
 .PaymentPlan-term-text {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
@@ -145,8 +131,6 @@
     margin-top: 20px;
 }
 .PaymentPlan-term-text a {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;

@@ -34,3 +34,14 @@ export const My_Pets_list : My_Pets_Info_List_Interface[] = [
     { id: 3, date: "03/08/2022", reason: "Emergencia", attached: "Sin documentos", opacity: true },
     { id: 3, date: "01/07/2022", reason: "Consulta general", attached: "2 documentos", opacity: false }
 ];
+
+export const VeterinaryTab_list : My_Pets_Info_List_Interface[] = [
+    { id: 1, date: "08/11/2022", reason: "Consulta general", attached: "2 documentos", opacity: false },
+    { id: 2, date: "23/09/2022", reason: "Emergencia", attached: "1 documento", opacity: false },
+    { id: 3, date: "03/08/2022", reason: "Emergencia", attached: "Sin documentos", opacity: true },
+    { id: 4, date: "01/07/2022", reason: "Consulta general", attached: "2 documentos", opacity: false },
+    { id: 5, date: "08/11/2022", reason: "Consulta general", attached: "2 documentos", opacity: false },
+    { id: 6, date: "23/09/2022", reason: "Emergencia", attached: "1 documento", opacity: false },
+    { id: 7, date: "03/08/2022", reason: "Emergencia", attached: "Sin documentos", opacity: true },
+    { id: 8, date: "01/07/2022", reason: "Consulta general", attached: "2 documentos", opacity: false }
+];

@@ -1,4 +1,4 @@
-.Chat-container, .ChatContact-item-data-description-container {
+.Chat-container, .ChatContact-item-data-description-container, .VeterinaryTab-modal-title-and-arrow {
     display: flex;
 }
 
@@ -82,14 +82,109 @@
     border-bottom: 2px solid #9188FD;
     cursor: pointer;
 }
+.VeterinaryTab-modal-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 14px;
+    height: 51px;
+    border-bottom: 1px solid #E7EBF8;
+}
+
+.VeterinaryTab-modal-subtitle-container {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.VeterinaryTab-modal-content-message {
+    padding: 0 20px 32px 20px;
+}
+
+.VeterinaryTab-modal-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 0;
+    color: #777986;
+}
+
+.VeterinaryTab-modal-message-content {
+    width: 647px;
+    height: 472px;
+    background: #FFFFFF;
+    overflow-y: auto;
+    border: 1px solid #E7EBF8;
+    border-radius: 10px;
+}
+
+.VeterinaryTab-modal {
+    background: #FFFFFF;
+    width: 695px;
+    box-shadow: 0px 0px 18px rgba(64, 66, 82, 0.2);
+    border-radius: 10px;
+}
+.VeterinaryTab-modal-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    margin: 0;
+    color: #463677;
+}
+
+.VeterinaryTab-modal-arrow {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.VeterinaryTab-view-button-chat {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0;
+    color: #9188FD;
+    cursor: pointer;
+}
+.VeterinaryTab-modal-close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+.VeterinaryTab-list-container {
+    overflow-y: auto;
+    height: 417px;
+}
+.VeterinaryTab-info-list-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 159px 217px 126px;
+    padding: 0 24px;
+    height: 35px;
+    border-bottom: 1px solid #E7EBF8;
+}
+
+.VeterinaryTab-list-content-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 159px 217px 134px 30px 106px;
+    padding: 0 24px;
+    height: 64px;
+    border-bottom: 1px solid #E7EBF8;
+}
+
+.VeterinaryTab-view-chat {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .ChatContact-item-data {
     display: flex;
     align-items: center;
 }
 
 .ChatContact-tab-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 20px;
@@ -121,8 +216,6 @@
     border-radius: 10px;
     padding-left: 32px;
     outline: none;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -149,8 +242,6 @@
 }
 
 .ChatContact-item-data-user-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 14px;
@@ -159,8 +250,6 @@
 }
 
 .ChatContact-item-data-description-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 130%;
@@ -168,8 +257,6 @@
     color: #777986;
 }
 .ChatContact-item-data-time {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 130%;
@@ -178,8 +265,6 @@
 }
 
 .ChatContact-item-data-name-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -203,8 +288,6 @@
 }
 
 .ChatContact-item-data-count-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 10px;
     line-height: 100%;
@@ -245,8 +328,6 @@
 
 
 .SectionVideoAndFinishChat-section-user-online-p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -255,8 +336,6 @@
 }
 
 .SectionVideoAndFinishChat-section-name-p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -281,8 +360,6 @@
     border-radius: 10px;
     border-color: transparent;
     outline: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -306,6 +383,10 @@
    padding: 24px;
    height: calc(100vh - 244px);
    overflow-x: hidden;
+}
+
+.VeterinaryTab-Message-content {
+    padding: 24px;
 }
 
 .DetailsConsultation-reason-consultation-container {
@@ -373,12 +454,9 @@
     padding-top: 11px;
     width: 100%;
     overflow: hidden;
-    width: 100%;
     min-height: 48px;
     border-color: transparent;
     outline: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -388,8 +466,6 @@
 
 .SendingForm-textarea[contenteditable]:empty::before {
     content: "Mensaje";
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -425,8 +501,6 @@
 }
 
 .VeterinaryTab-client-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
@@ -452,8 +526,6 @@
 }
 
 .VeterinaryTab-button-history-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -495,7 +567,6 @@
 }
 
 .TagReceive-content-circle-p {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 10px;
@@ -509,8 +580,6 @@
     height: 40px;
     background: #463677;
     border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -546,8 +615,6 @@
 }
 
 .TagReceive-content-text-p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -556,8 +623,6 @@
 }
 
 .TagTransmitter-content-text-p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -570,8 +635,6 @@
 }
 
 .TagReceive-content-date-p, .TagTransmitter-content-date-p, .MessageImage-content-date-p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     color: #777986;
@@ -665,8 +728,6 @@
 }
 
 .DetailsConsultation-tab-content-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 20px;
@@ -681,9 +742,7 @@
 }
 
 .DetailsConsultation-content-title {
-    font-family: 'Poppins', sans-serif;
     width: max-content;
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
@@ -698,8 +757,6 @@
 }
 
 .DetailsConsultation-reason-text-p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -708,8 +765,6 @@
 }
 
 .DetailsConsultation-reason-text-p2 {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -730,8 +785,6 @@
 }
 
 .DetailsConsultation-reason-text-p3 {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -758,8 +811,6 @@ input[type="checkbox"]:enabled:checked {
 }
 
 .DetailsConsultation-checked-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -769,8 +820,6 @@ input[type="checkbox"]:enabled:checked {
 }
 
 .DetailsConsultation-reason-text-p4 {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
@@ -786,8 +835,6 @@ input[type="checkbox"]:enabled:checked {
 }
 
 .DetailsConsultation-reason-pet-item-p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     text-decoration-line: underline;
@@ -801,8 +848,6 @@ input[type="checkbox"]:enabled:checked {
 }
 
 .DetailsConsultation-reason-pet-button {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -879,8 +924,6 @@ input[type="checkbox"]:enabled:checked {
     outline: none;
     border-color: transparent;
     cursor: pointer;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -888,8 +931,6 @@ input[type="checkbox"]:enabled:checked {
 }
 
 .MessageContent-file-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -927,8 +968,6 @@ input[type="checkbox"]:enabled:checked {
 }
 
 .VeterinarySectionVideoAndFinishChat-section-user-online-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 130%;
@@ -937,8 +976,6 @@ input[type="checkbox"]:enabled:checked {
 }
 
 .VeterinarySectionVideoAndFinishChat-section-name-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
@@ -976,17 +1013,14 @@ input[type="checkbox"]:enabled:checked {
         cursor: pointer;
     }
     .SectionVideoAndFinishChat-section-name-p {
-        font-family: 'Poppins';
-        font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 130%;
         color: #404252;
         margin: 0;
     }
+
     .SectionVideoAndFinishChat-section-user-online-p {
-        font-family: 'Poppins';
-        font-style: normal;
         font-weight: 400;
         font-size: 10px;
         line-height: 130%;
@@ -1029,8 +1063,6 @@ input[type="checkbox"]:enabled:checked {
         border-color: transparent;
         width: 100%;
         height: 40px;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;

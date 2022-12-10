@@ -6,8 +6,6 @@
 }
 
 .ReasonForConsultation-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 130%;
@@ -16,8 +14,6 @@
 }
 
 .ReasonForConsultation-subtitle {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
@@ -43,8 +39,6 @@
 }
 
 .ReasonForConsultation-item-name {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
@@ -76,8 +70,6 @@
 }
 
 .ReasonForConsultation-form-text {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;

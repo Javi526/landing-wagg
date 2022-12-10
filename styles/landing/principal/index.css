@@ -38,7 +38,6 @@
 }
 
 .Initials-title {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -61,7 +60,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -79,7 +77,6 @@
 }
 
 .Initials-subTitle {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -100,7 +97,6 @@
     background: #463677;
     border-radius: 10px;
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.075));
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -115,7 +111,6 @@
 }
 
 .Initial-text-how {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -171,7 +166,6 @@
 }
 
 .HowDoesItWork-content-card-item-title {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -184,7 +178,6 @@
 }
 
 .HowDoesItWork-content-card-item-text {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -223,7 +216,6 @@
     position: relative;
 }
 .why-use-title, .WhatYouShouldKnow-title {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -261,7 +253,6 @@
 
 .why-use-responsive-content-text {
     width: 55%;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -287,7 +278,6 @@
 }
 
 .why-use-item-title {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -297,7 +287,6 @@
 }
 
 .why-use-item-subtitle {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -371,8 +360,6 @@
 }
 
 .WhatYouShouldKnow-content-item-responsive-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -389,8 +376,6 @@
     padding-left: 24px;
 }
 .WhatYouShouldKnow-content-item-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
@@ -400,9 +385,7 @@
 }
 
 .WhatYouShouldKnow-content-item-subTitle {
-    font-family: 'Poppins', sans-serif;
     width: 931px;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -410,8 +393,6 @@
 }
 
 .WhatYouShouldKnow-content-item-subTitle-responsive {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -447,8 +428,6 @@
 }
 
 .Plan-content-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 130%;
@@ -478,8 +457,6 @@
 }
 
 .Plan-content-tabs-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -494,8 +471,6 @@
 
 
 .Plan-content-tabs-title-selected {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -525,8 +500,6 @@
 }
 
 .Plan-content-tabs-card-basic-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
@@ -539,8 +512,6 @@
 }
 
 .Plan-content-tabs-card-basic-price {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 41px;
@@ -549,8 +520,6 @@
 }
 
 .Plan-content-tabs-card-basic-time {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
@@ -559,7 +528,6 @@
 }
 
 .Plan-content-tabs-card-basic-description {
-    font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 14px;
@@ -582,8 +550,6 @@
 }
 
 .Plan-content-tabs-card-basic-item-text {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     color: #FFFFFF;
@@ -604,8 +570,6 @@
     height: 40.78px;
     background: #463677;
     border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -707,8 +671,6 @@
 }
 
 .Plan-content-tabs-card-day-price {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 41px;
@@ -717,8 +679,6 @@
 }
 
 .Plan-content-tabs-card-day-time {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
@@ -727,8 +687,6 @@
 }
 
 .Plan-content-tabs-card-day-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
@@ -751,8 +709,6 @@
 }
 
 .Plan-content-tabs-card-day-item-text {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     color: #5B5D6B;
@@ -781,8 +737,6 @@
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.075));
     background: #9188FD;
     border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -799,8 +753,6 @@
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.075));
     background: #463677;
     border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -860,8 +812,6 @@
 }
 
 .Organizations-content-data-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 130%;
@@ -870,8 +820,6 @@
 }
 
 .Organizations-content-data-description {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -889,7 +837,6 @@
     align-items: center;
     width: 224px;
     height: 46px;
-    font-family: 'Poppins', sans-serif;
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.075));
     background: #9188FD;
     border-radius: 10px;
@@ -935,8 +882,6 @@
 }
 
 .OurTeam-content-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 130%;
@@ -991,8 +936,6 @@
 }
 
 .OurTeam-content-galery-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
@@ -1001,8 +944,6 @@
 }
 
 .OurTeam-content-galery-credential {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -1011,7 +952,6 @@
 }
 
 .OurTeam-content-galery-experience {
-    font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 14px;
@@ -1062,8 +1002,6 @@
 }
 
 .Impact-content-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 41px;
@@ -1074,8 +1012,6 @@
 }
 
 .Impact-content-description {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -1087,8 +1023,6 @@
 }
 
 .Impact-content-description-p2 {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
@@ -1106,8 +1040,6 @@
 
 
 .Impact-content-item-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -1133,8 +1065,6 @@
     height: 46px;
     background: #EEF0F8;
     border-radius: 4px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
@@ -1152,8 +1082,6 @@
     border-radius: 10px;
     border-color: transparent;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -1162,8 +1090,6 @@
 }
 
 .Impact-content-input-label {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 20px;

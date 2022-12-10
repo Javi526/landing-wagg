@@ -26,8 +26,6 @@
 }
 
 .MyAccountVeterinary-content-edit {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -40,8 +38,6 @@
 }
 
 .MyAccountVeterinary-content-name-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 130%;
@@ -50,8 +46,6 @@
 }
 
 .MyAccountVeterinary-content-name-p2 {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -76,8 +70,6 @@
 }
 
 .MyAccountVeterinary-section-info-name {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 130%;
@@ -97,8 +89,6 @@
 }
 
 .MyAccountVeterinary-section-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -107,8 +97,6 @@
 }
 
 .MyAccountVeterinary-section-p2 {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -117,8 +105,6 @@
 }
 
 .MyAccountVeterinary-section-title {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 130%;
@@ -146,8 +132,6 @@
 }
 
 .MyAccountVeterinary-section-resource-name {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -168,8 +152,6 @@
 }
 
 .MyAccountVeterinary-section-resource-button-name {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -195,8 +177,6 @@
 }
 
 .MyAccountVeterinary-section-resource-tab-name-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
@@ -228,8 +208,6 @@
 }
 
 .MyAccountVeterinary-section-head-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
@@ -281,8 +259,6 @@
 }
 
 .MyAccountVeterinary-section-content-tab-text-p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 130%;
@@ -295,8 +271,6 @@
 }
 
 .MyAccountVeterinary-section-modal-drop-text {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -323,8 +297,6 @@
     height: 40px;
     background: #EB5757;
     border-radius: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -340,8 +312,6 @@
     background: #FFFFFF;
     outline: none;
     border-color: transparent;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
