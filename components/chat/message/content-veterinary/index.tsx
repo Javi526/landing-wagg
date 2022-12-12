@@ -46,7 +46,7 @@ export default function VeterinaryMessageContent({ openFile, setOpenFile } : Pro
                         <div className={"MessageContent-file-image-container"}>
                             <Image src={Cat} width={535} height={356} alt={"image-cat-big"} />
                         </div>
-                        <div className={"SendingForm-content"}>
+                        <div className={"SendingForm-content-file"}>
                             <div className={"SendingForm-textarea-container"} style={{ width: "calc(100% - 19px)" }}>
                             <span
                               className={"SendingForm-textarea"}
@@ -56,7 +56,7 @@ export default function VeterinaryMessageContent({ openFile, setOpenFile } : Pro
                              ></span>
                             </div>
                             <div className={"SendingForm-content-send"}>
-                                <div className={"SendingForm-content-send-icon-container"}>
+                                <div className={"SendingForm-content-send-icon-file-container"}>
                                     <div className={"SendingForm-content-send-icon-emoji"} style={{ marginRight: 0 }}>
                                         <Image src={Emoji} width={18} height={18} alt={"Emoji"} />
                                     </div>
@@ -66,7 +66,7 @@ export default function VeterinaryMessageContent({ openFile, setOpenFile } : Pro
                         </div>
                     </div>
                     {!isKeyboardOpen &&
-                        <div className={"SendingForm-content-more-file"}>
+                        <div className={"VeterinaryMessageContent-SendingForm-content-more-file"}>
                             <div className={"SendingForm-content-more-container"}>
                                 <Image src={CatMini} width={56} height={56} alt={"SendingForm-CatMini"}/>
                                 <div className={"SendingForm-content-more-image-container"}>

@@ -17,18 +17,30 @@ import imageCat from "../../../assets/chat/cat.svg";
 
 type Props = {
     showMenu: boolean,
-    setShowMenu: any
+    setShowMenu: any,
+    showModal: boolean,
+    setShowModal: any,
+    showModalMessage: boolean,
+    setShowModalMessage: any,
+    historyMobile: boolean,
+    setOpenHistoryResponsive: any
 }
 
-export default function VeterinaryTab({ showMenu, setShowMenu } : Props) {
+export default function VeterinaryTab({ showMenu, setShowMenu, showModal, setShowModal, showModalMessage, setShowModalMessage, historyMobile, setOpenHistoryResponsive } : Props) {
     const [tab, setTab] = useState("details");
-    const [showModal, setShowModal] = useState(false);
-    const [showModalMessage, setShowModalMessage] = useState(false);
 
     const handleChangeClassNameTab = (value : string) : string => {
         if (tab === value) return "VeterinaryTab-tab-content-active";
         return "VeterinaryTab-tab-content";
     };
+
+    const handleChangeHistory = () : void => {
+        if (!historyMobile) {
+            setShowModal(true);
+        } else {
+            setOpenHistoryResponsive(true);
+        }
+    }
 
     return (
         <>
@@ -80,7 +92,7 @@ export default function VeterinaryTab({ showMenu, setShowMenu } : Props) {
                                 <p className={"DetailsConsultation-checked-p"}>Seguro Emergencia</p>
                             </div>
                             <div className={"VeterinaryTab-button-history-container"}>
-                                <div className={"VeterinaryTab-button-history"} onClick={() => setShowModal(true)}>
+                                <div className={"VeterinaryTab-button-history"} onClick={() => handleChangeHistory()}>
                                     <Image src={Eye} width={16} height={11} alt={"VeterinaryTab-Eye"} />
                                     <p className={"VeterinaryTab-button-history-p"}>Ver historial del chat</p>
                                 </div>

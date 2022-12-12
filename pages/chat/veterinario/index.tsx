@@ -4,10 +4,17 @@ import Contact from "../../../components/chat/contact";
 import VeterinaryTab from "../../../components/chat/veterinary-tab";
 import MessageVeterinary from "../../../components/chat/message/message-veterinary";
 import VeterinarySectionVideoAndFinishChat from "../../../components/chat/veterinary-section-video-and-finish-chat";
+import ChatHistory from "../../../components/chat/history";
 
 export default function ChatVets() {
     const [showMenu, setShowMenu] = useState(false);
     const [showMessage, setshowMessage] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [showModalMessage, setShowModalMessage] = useState(false);
+    const [openHistoryResponsive, setOpenHistoryResponsive] = useState(false);
+    const [openMessage, setOpenMessage] = useState(false);
+    const historyMobile : boolean = typeof window === "object" && window.innerWidth < 710;
+
     return (
         <main>
             {!showMenu ?
@@ -26,12 +33,38 @@ export default function ChatVets() {
                             showMessage={showMessage}
                         />
                     </div>
-                    <VeterinaryTab showMenu={showMenu} setShowMenu={setShowMenu} />
+                    <VeterinaryTab
+                        showMenu={showMenu}
+                        setShowMenu={setShowMenu}
+                        showModal={showModal}
+                        setShowModal={setShowModal}
+                        showModalMessage={showModalMessage}
+                        setShowModalMessage={setShowModalMessage}
+                        historyMobile={historyMobile}
+                        setOpenHistoryResponsive={setOpenHistoryResponsive}
+                    />
                 </div>
                </> :
                 <>
                  <Header_LoggedIn name={"Marina"} image={""} consultation={false} url={""} chat={false}/>
-                 <VeterinaryTab showMenu={showMenu} setShowMenu={setShowMenu} />
+                    {!openHistoryResponsive ?
+                      <VeterinaryTab
+                        showMenu={showMenu}
+                        setShowMenu={setShowMenu}
+                        showModal={showModal}
+                        setShowModal={setShowModal}
+                        showModalMessage={showModalMessage}
+                        setShowModalMessage={setShowModalMessage}
+                        historyMobile={historyMobile}
+                        setOpenHistoryResponsive={setOpenHistoryResponsive}
+                        /> :
+                        <ChatHistory
+                            setShowModal={setShowModal}
+                            setOpenHistoryResponsive={setOpenHistoryResponsive}
+                            setShowModalMessage={setShowModalMessage}
+                            setOpenMessage={setOpenMessage}
+                            openMessage={openMessage}
+                        />}
                 </>
             }
         </main>

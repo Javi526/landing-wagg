@@ -394,6 +394,8 @@
 }
 
 .SendingForm-container {
+    display: flex;
+    align-items: flex-end;
     position: fixed;
     bottom: 0;
     padding: 14px 24px 32px 24px;
@@ -403,6 +405,8 @@
 }
 
 .SendingForm-veterinary-container {
+    display: flex;
+    align-items: flex-end;
     position: fixed;
     bottom: 0;
     padding: 14px 24px 32px 24px;
@@ -430,6 +434,17 @@
     background: #FFFFFF;
     border: 1px solid #D2D4DA;
     border-radius: 10px;
+    width: calc(100% - 116px);
+    height: 100%;
+    padding: 0 14px;
+}
+
+.SendingForm-content-file {
+    display: flex;
+    align-items: flex-end;
+    background: #FFFFFF;
+    border: 1px solid #D2D4DA;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     padding: 0 14px;
@@ -446,7 +461,7 @@
 .SendingForm-textarea-container {
     display: flex;
     align-items: center;
-    width: calc(100% - 57px);
+    width: 100%;
 }
 
 .SendingForm-textarea {
@@ -474,11 +489,14 @@
 
 .SendingForm-content-send-icon-container {
     display: flex;
+    margin-bottom: 10px;
 }
 
-.SendingForm-content-send-icon-emoji {
-    margin-right: 16px;
+
+.SendingForm-content-send-icon-emoji-content {
+    display: none;
 }
+
 
 .SendingForm-content-send-icon {
     display: flex;
@@ -904,6 +922,18 @@ input[type="checkbox"]:enabled:checked {
     height: 87px;
     border-top: 1px solid #E7EBF8;
 }
+
+.VeterinaryMessageContent-SendingForm-content-more-file {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    position: fixed;
+    width: calc(100% - 695px);
+    bottom: 0;
+    height: 87px;
+    border-top: 1px solid #E7EBF8;
+}
+
 .SendingForm-content-more-file-button-container {
     display: flex;
     justify-content: flex-end;
@@ -914,6 +944,16 @@ input[type="checkbox"]:enabled:checked {
 
 .MessageContent-file-cross, .SendingForm-content-send-icon-Attached {
     cursor: pointer;
+}
+
+.SendingForm-content-send-icon-Attached {
+    margin-right: 7px;
+    width: 25px;
+}
+
+.SendingForm-content-send-icon-emoji {
+    width: 25px;
+    margin-right: 4px;
 }
 
 .SendingForm-content-more-file-button {
@@ -983,6 +1023,67 @@ input[type="checkbox"]:enabled:checked {
     margin: 0;
 }
 
+.ChatHistory-list-title-container {
+    display: grid;
+    padding: 10px 15px 12px 15px;
+    grid-template-columns: 71px 117px 90px;
+}
+
+.ChatHistory-list-title-p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    margin: 0;
+    color: #777986;
+
+}
+
+.ChatHistory-list-item-container {
+    padding: 0 15px;
+}
+
+.ChatHistory-list-item {
+    display: grid;
+    grid-template-columns: 57px 118px 111px;
+    align-items: center;
+    padding: 0 12px;
+    width: 100%;
+    height: 64px;
+    border: 1px solid #E7EBF8;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ChatHistory-list-item-p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 0;
+    color: #404252;
+}
+
+.SendingForm-send-action-container {
+    margin-left: 14px;
+    margin-bottom: 15px;
+}
+.SendingForm-send-action-p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #463677;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+
+.SendingForm-send-responsive-container {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
 @media (max-width: 1336px) {
     .MessageContent-file-content-container {
         width: 352px;
@@ -993,7 +1094,7 @@ input[type="checkbox"]:enabled:checked {
     .Veterinary-DetailsConsultation-container {
         display: none;
     }
-    .Chat-content-veterinary, .SendingForm-veterinary-container {
+    .Chat-content-veterinary, .SendingForm-veterinary-container, .VeterinaryMessageContent-SendingForm-content-more-file {
         width: calc(100% - 360px);
     }
 }
@@ -1082,6 +1183,30 @@ input[type="checkbox"]:enabled:checked {
 }
 
 @media (max-width: 822px) {
+    .VeterinaryMessageContent-SendingForm-content-more-file {
+        width: 100%;
+    }
+    .SendingForm-send-action-container {
+       margin-bottom: 10px;
+    }
+    .SendingForm-textarea-container {
+        width: calc(100% - 21px);
+    }
+    .SendingForm-content-send-icon-emoji-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+    .SendingForm-content {
+        width: calc(100% - 78px);
+    }
+    .SendingForm-send-action-p, .SendingForm-content-send-icon-emoji {
+        display: none;
+    }
+    .SendingForm-send-responsive-container  {
+        display: flex;
+    }
+
     .Chat-content-veterinary {
         display: none;
     }
@@ -1166,8 +1291,8 @@ input[type="checkbox"]:enabled:checked {
     .SendingForm-content-send-icon {
         margin-right: 0;
     }
-    .SendingForm-container {
-        padding: 8px 8px 24px 8px;
+    .SendingForm-container, .SendingForm-veterinary-container {
+       padding: 12px 8px 32px 8px;
     }
 }
 
