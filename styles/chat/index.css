@@ -607,7 +607,7 @@
     border-color: transparent;
 }
 
-.TagReceive-content-text {
+.TagReceive-content-text, .TagReceive-content-text-veterinary {
     width: 371px;
     padding: 12px 18px;
     background: #FAFBFF;
@@ -625,7 +625,7 @@
     flex-direction: column;
 }
 
-.TagTransmitter-content-text {
+.TagTransmitter-content-text, .TagTransmitter-content-text-veterinary {
     width: 371px;
     padding: 12px 18px;
     background: #9188FD;
@@ -1268,6 +1268,9 @@ input[type="checkbox"]:enabled:checked {
     }
     .TagReceive-content-text {
         width: 275px;
+    }
+    .TagReceive-content-text-veterinary, .TagTransmitter-content-text-veterinary {
+        width: 229px;
     }
     .TagTransmitter-content-text {
         width: 271px;

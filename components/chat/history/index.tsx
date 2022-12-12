@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ChatArrow from "../../../assets/chat/chat-arrow.svg";
-import TagReceive from "../message/content/tag-receive";
-import TagTransmitter from "../message/content/tag-transmitter";
+import TagReceive from "../message/content-veterinary/tag-receive";
+import TagTransmitter from "../message/content-veterinary/tag-transmitter";
 import MessageImage from "../message/content/image";
 import imageCat from "../../../assets/chat/cat.svg";
 
