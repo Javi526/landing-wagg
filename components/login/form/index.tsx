@@ -9,6 +9,11 @@ import * as yup from 'yup';
 
 export default function LoginForm() {
 
+    const initialValues = {
+        username: "",
+        password: ""
+    }
+
     const handleOnSubmit = () => {};
 
     const FilesDataFormSchema = yup.object().shape({
