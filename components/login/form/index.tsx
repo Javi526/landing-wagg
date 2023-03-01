@@ -2,10 +2,26 @@ import Logo from "../../header/not-logged-in/initial/logo";
 import InputPrincipal from "../../common/input/input-principal";
 import PasswordPrincipal from "../../common/input/password";
 import ContentButtons from "../../common/content-buttons";
-import {ROUTER} from "../../../constants/router";
+import { ROUTER } from "../../../constants/router";
+import { useFormik } from "formik";
+import * as yup from 'yup';
 
 
 export default function LoginForm() {
+
+    const handleOnSubmit = () => {};
+
+    const FilesDataFormSchema = yup.object().shape({
+        username: yup.string().required('Este campo es requerido'),
+        password: yup.string().required('Este campo es requerido')
+    });
+
+    const { values, setFieldValue, touched, errors, submitForm, resetForm } = useFormik({
+        initialValues,
+        onSubmit: handleOnSubmit,
+        validationSchema: FilesDataFormSchema,
+    });
+
     return (
         <div className={"LoginForm-container"}>
             <div className={"LoginForm-content"}>

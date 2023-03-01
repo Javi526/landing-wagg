@@ -16,6 +16,7 @@ const SmallBoard: NextPage = () => {
     const [disabled, setDisabled] = useState<boolean>(true);
     const router = useRouter();
 
+
     return (
         <main>
           <Header_LoggedIn name={"Marina"} image={""} consultation={false} url={""} chat={false} />
