@@ -24,7 +24,7 @@ export default function MessageContent({ openFile, setOpenFile } : Props) {
     return (
       <>
       {!openFile ?
-       <div className={"Message-content"}>
+       <div className={"Message-content"} id={"Message-content-id"}>
           <TagReceive firstName={"María"} lastName={"Fernández"} text={"Hola! En qué puedo ayudarte hoy?"} date={"12:26 pm"}/>
           <TagTransmitter text={"Hola, cómo estas? Greta está con vomitos"} date={"12:27 pm"}/>
           <TagReceive firstName={"María"} lastName={"Fernández"} text={"Contame más, desde cuándo está vomitando?"}  date={"12:27 pm"}/>

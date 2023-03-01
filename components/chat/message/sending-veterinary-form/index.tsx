@@ -2,7 +2,7 @@ import Emoji from "../../../../assets/chat/emoji.svg";
 import Attached from "../../../../assets/chat/attached.svg";
 import Image from "next/image";
 import IconSend from "../../../../assets/chat/icon-send.svg";
-
+import { handleChangeScroll } from "../../../../utils"
 
 type Props = {
     setOpenFile: any,
@@ -41,7 +41,7 @@ export default function SendingVeterinaryForm({ setOpenFile, showMessage }: Prop
                     {/*<button className={"SendingForm-content-send-button"}>Enviar</button>*/}
                 </div>
             </div>
-            <div className={"SendingForm-send-action-container"}>
+            <div className={"SendingForm-send-action-container"} onClick={() => handleChangeScroll("Message-content-veterinary-id")}>
               <p className={"SendingForm-send-action-p"}>Enviar</p>
               <div className={"SendingForm-send-responsive-container"}>
                   <Image className={"SendingForm-send-responsive"} src={IconSend} width={30} height={30} alt={"IconSend"} />

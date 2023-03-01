@@ -24,7 +24,12 @@ export default function VeterinaryMessageContent({ openFile, setOpenFile } : Pro
     return (
         <>
             {!openFile ?
-                <div className={"Message-content"}>
+                <div className={"Message-content"} id={"Message-content-veterinary-id"}>
+                    <TagReceive firstName={"María"} lastName={"Fernández"} text={"Hola! En qué puedo ayudarte hoy?"} date={"12:26 pm"}/>
+                    <TagTransmitter text={"Hola, cómo estas? Greta está con vomitos"} date={"12:27 pm"}/>
+                    <TagReceive firstName={"María"} lastName={"Fernández"} text={"Contame más, desde cuándo está vomitando?"}  date={"12:27 pm"}/>
+                    <TagTransmitter text={"Ayer a la tarde fue la primera vez, luego vomitó por la mañana luego de comer."} date={"12:27 pm"}/>
+                    <TagReceive firstName={"María"} lastName={"Fernández"} text={"Hola! En qué puedo ayudarte hoy?"} date={"12:26 pm"}/>
                     <TagReceive firstName={"María"} lastName={"Fernández"} text={"Hola! En qué puedo ayudarte hoy?"} date={"12:26 pm"}/>
                     <TagTransmitter text={"Hola, cómo estas? Greta está con vomitos"} date={"12:27 pm"}/>
                     <TagReceive firstName={"María"} lastName={"Fernández"} text={"Contame más, desde cuándo está vomitando?"}  date={"12:27 pm"}/>
