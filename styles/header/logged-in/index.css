@@ -1,9 +1,5 @@
 .Header_LoggedIn-container {
     display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 3;
     justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
