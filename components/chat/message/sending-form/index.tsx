@@ -42,7 +42,8 @@ useEffect(() => {
                 /* Message  */
                 ElementID.message.style.height = "150px";
                 ElementID.profesional.style.bottom = "auto";
-                document.scrollTo(0,0);
+                document.scroll(0,0);
+             //   document.classList.add("stop-scrolling");
             }
         };
         document.visualViewport.addEventListener('resize', listener);
