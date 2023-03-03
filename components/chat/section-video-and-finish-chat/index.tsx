@@ -11,7 +11,7 @@ type Props = {
 
 export default function SectionVideoAndFinishChat({ name, setShowMenu } :Props) {
     return (
-        <div className={"SectionVideoAndFinishChat-container"}>
+        <div className={"SectionVideoAndFinishChat-container"} id={"SectionVideoAndFinishChat-container-id"}>
           <div className={"SectionVideoAndFinishChat-section-container"}>
               <div className={"SectionVideoAndFinishChat-section-img-container"}>
                   <div className={"SectionVideoAndFinishChat-section-img"}>

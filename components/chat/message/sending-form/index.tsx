@@ -12,24 +12,37 @@ type Props = {
 export default function SendingForm({ setOpenFile }: Props) {
     const [state, setState] = useState(false);
     const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
-    const [headerElementID] = useState<any>(() => {
-      if (typeof window === "object") return window.document.getElementById("Header_LoggedIn-container-id");
+    const [ElementID] = useState<any>(() => {
+      if (typeof window === "object") {
+          return {
+              profesional: window.document.getElementById("SendingForm-container-id"),
+              message: window.document.getElementById("Message-content-id"),
+          };
+      }
     });
+
 
 useEffect(() => {
     if (typeof window === "object" && state) {
         const document : any = window;
         const listener = () => {
-            const heightHeader : number =  80;
             const newState = window.screen.height - 300 > document.visualViewport.height;
             if (isKeyboardOpen != newState) {
                 setIsKeyboardOpen(newState);
-                headerElementID.style.position = "absolute";
-                headerElementID.style.width = "100%";
-                headerElementID.style.bottom = `${document.visualViewport.height - heightHeader}px`;
-                headerElementID.style.zIndex = 3;
-
-                console.log("height", window.screen.height - document.visualViewport.height, window.screen.height, document.visualViewport.height)
+                /* Header */
+               /* ElementID.header.style.position = "fixed";
+                ElementID.header.style.width = "100%";
+                ElementID.header.style.bottom = `${document.visualViewport.height - heightHeader}px`;
+                ElementID.header.style.zIndex = 3;
+                /* Section Video And FinishChat
+                ElementID.profesional.style.position = "fixed";
+                ElementID.profesional.style.width = "100%";
+                ElementID.profesional.style.bottom = `${document.visualViewport.height - positionSectionVideoAndFinishChat}px`;
+                console.log("height", window.screen.height - document.visualViewport.height, window.screen.height, document.visualViewport.height)*/
+                /* Message  */
+                ElementID.message.style.height = "150px";
+                ElementID.profesional.style.bottom = "auto";
+                document.scrollTo(0,0);
             }
         };
         document.visualViewport.addEventListener('resize', listener);
@@ -41,7 +54,7 @@ useEffect(() => {
 
 
     return (
-        <div className={"SendingForm-container"} style={{ ...(isKeyboardOpen && { background: "red" }) }}>
+        <div className={"SendingForm-container"} id={"SendingForm-container-id"}>
             <div className={"SendingForm-content-send-icon-container"}>
                 <div className={"SendingForm-content-send-icon-Attached"} onClick={() => setOpenFile(true)}>
                     <Image src={Attached} width={18} height={18} alt={"Attached"} />
@@ -63,7 +76,8 @@ useEffect(() => {
                   onBlur={() => {
                       if (state) {
                           setIsKeyboardOpen(false);
-                          headerElementID.style = {};
+                          ElementID.message.style = {};
+                          ElementID.profesional.style.bottom = "0";
                           setState(true);
                       }
                   }}
