@@ -18,7 +18,7 @@ export default function Header_LoggedIn({ name, image, consultation, url, chat }
     };
 
     return (
-        <div className={"Header_LoggedIn-container"}>
+        <div className={"Header_LoggedIn-container"} id={"Header_LoggedIn-container-id"}>
             <Logo />
             <div className={"Header_LoggedIn-user-container"}>
              {consultation &&

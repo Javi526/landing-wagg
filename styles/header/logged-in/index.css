@@ -7,6 +7,10 @@
     height: 80px;
     padding: 0 32px;
     user-select: none;
+   /* position: absolute;
+    bottom: 30%;
+    width: 100%;
+    z-index: 5;*/
 }
 
 .Header_LoggedIn-user-container, .Header_LoggedIn-user-button-and-line {
