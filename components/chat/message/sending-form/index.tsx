@@ -20,13 +20,13 @@ useEffect(() => {
     if (typeof window === "object" && state) {
         const document : any = window;
         const listener = () => {
-            const heightSubmitForm : number =  97;
+            const heightHeader : number =  80;
             const newState = window.screen.height - 300 > document.visualViewport.height;
             if (isKeyboardOpen != newState) {
                 setIsKeyboardOpen(newState);
                 headerElementID.style.position = "absolute";
                 headerElementID.style.width = "100%";
-                headerElementID.style.bottom = `${document.visualViewport.height - heightSubmitForm}px`;
+                headerElementID.style.bottom = `${document.visualViewport.height - heightHeader}px`;
                 headerElementID.style.zIndex = 3;
 
                 console.log("height", window.screen.height - document.visualViewport.height, window.screen.height, document.visualViewport.height)
