@@ -15,8 +15,10 @@ export default function SendingForm({ setOpenFile }: Props) {
     const [ElementID] = useState<any>(() => {
       if (typeof window === "object") {
           return {
-              profesional: window.document.getElementById("SendingForm-container-id"),
+              header: window.document.getElementById("Header_LoggedIn-container-id"),
+              profesional: window.document.getElementById("SectionVideoAndFinishChat-container-id"),
               message: window.document.getElementById("Message-content-id"),
+              submit: window.document.getElementById("SendingForm-container-id"),
           };
       }
     });
@@ -41,10 +43,11 @@ useEffect(() => {
                 console.log("height", window.screen.height - document.visualViewport.height, window.screen.height, document.visualViewport.height)*/
                 /* Message  */
                 ElementID.message.style.height = "150px";
-                ElementID.profesional.style.bottom = "auto";
+                ElementID.submit.style.bottom = "auto";
                 document.scroll(0,0);
-                const element : any = window.document.getElementById("SendingForm-container-id");
-                element.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
+                ElementID.header.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
+                ElementID.profesional.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
+                ElementID.submit.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
              //   document.classList.add("stop-scrolling");
             }
         };
@@ -82,7 +85,7 @@ useEffect(() => {
                       if (state) {
                           setIsKeyboardOpen(false);
                           ElementID.message.style = {};
-                          ElementID.profesional.style.bottom = "0";
+                          ElementID.submit.style.bottom = "0";
                           setState(true);
                       }
                   }}
