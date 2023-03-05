@@ -43,6 +43,8 @@ useEffect(() => {
                 ElementID.message.style.height = "150px";
                 ElementID.profesional.style.bottom = "auto";
                 document.scroll(0,0);
+                const element : any = window.document.getElementById("SendingForm-container-id");
+                element.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
              //   document.classList.add("stop-scrolling");
             }
         };
@@ -52,6 +54,8 @@ useEffect(() => {
         };
     }
 }, [state]);
+
+
 
 
     return (
