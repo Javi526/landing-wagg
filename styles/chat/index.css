@@ -1216,6 +1216,12 @@ input[type="checkbox"]:enabled:checked {
 }
 
 @media (max-width: 461px) {
+
+    .SendingForm-textarea-container, .SendingForm-textarea {
+       height: 75px;
+        overflow-y: scroll;
+    }
+
     .MessageContent-file-image-container {
         margin-top: 25px;
     }
