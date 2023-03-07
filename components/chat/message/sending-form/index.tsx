@@ -44,10 +44,10 @@ useEffect(() => {
                 /* Message  */
                 ElementID.message.style.height = "150px";
                 ElementID.submit.style.bottom = "auto";
-                document.scroll(0,0);
                 ElementID.header.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
                 ElementID.profesional.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
                 ElementID.submit.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
+                document.scroll(0,0);
              //   document.classList.add("stop-scrolling");
             }
         };
