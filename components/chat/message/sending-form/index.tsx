@@ -50,6 +50,7 @@ useEffect(() => {
             if (isKeyboardOpen != newState) {
                 setIsKeyboardOpen(newState);
                 handleChangeStyleTextBox();
+                ElementID.message.style.height = "150"
                 ElementID.submit.style.bottom = "auto";
                 ElementID.header.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
                 ElementID.profesional.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
