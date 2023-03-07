@@ -27,16 +27,13 @@ export default function SendingForm({ setOpenFile }: Props) {
 
 
     const handleChangeStyleTextBox = () => {
-        const TextBoxLine = "150px";
-        const TextBoxSecondLine = "136px";
-        const TextBoxThirdLine = "113px";
         if (window.screen.width < 768 && state && ElementID.submit.clientHeight !== null) {
             if (ElementID.submit.clientHeight === 94) {
-                ElementID.message.style.height = TextBoxLine;
+                ElementID.message.style.height = "150px";
             } else if (ElementID.submit.clientHeight === 105) {
-                ElementID.message.style.height = TextBoxSecondLine;
+                ElementID.message.style.height = "136px";
             } else if (ElementID.submit.clientHeight === 129) {
-                ElementID.message.style.height = TextBoxThirdLine;
+                ElementID.message.style.height = "113px";
             }
         }
     };
