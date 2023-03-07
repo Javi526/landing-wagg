@@ -49,8 +49,8 @@ useEffect(() => {
             const newState = window.screen.height - 300 > document.visualViewport.height;
             if (isKeyboardOpen != newState) {
                 setIsKeyboardOpen(newState);
-                handleChangeStyleTextBox();
-                ElementID.message.style.height = "150"
+               // handleChangeStyleTextBox();
+                ElementID.message.style.height = "150px"
                 ElementID.submit.style.bottom = "auto";
                 ElementID.header.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
                 ElementID.profesional.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
@@ -68,7 +68,7 @@ useEffect(() => {
 
     const handleChangeStyleTextBoxPress = (event: any) => {
         if (event.key === 'Enter' || event.keyCode === 13) {
-            handleChangeStyleTextBox()
+           // handleChangeStyleTextBox()
         }
     };
 
