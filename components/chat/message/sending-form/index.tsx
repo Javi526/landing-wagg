@@ -18,10 +18,28 @@ export default function SendingForm({ setOpenFile }: Props) {
               header: window.document.getElementById("Header_LoggedIn-container-id"),
               profesional: window.document.getElementById("SectionVideoAndFinishChat-container-id"),
               message: window.document.getElementById("Message-content-id"),
+              textBox: window.document.getElementById("SendingForm-textarea-container-id"),
+              textBoxSpan: window.document.getElementById("SendingForm-textarea-id"),
               submit: window.document.getElementById("SendingForm-container-id"),
           };
       }
     });
+
+
+    const handleChangeStyleTextBox = () => {
+        const TextBoxLine = "150px";
+        const TextBoxSecondLine = "136px";
+        const TextBoxThirdLine = "113px";
+        if (window.screen.width < 768 && state && ElementID.submit.clientHeight !== null) {
+            if (ElementID.submit.clientHeight === 94) {
+                ElementID.message.style.height = TextBoxLine;
+            } else if (ElementID.submit.clientHeight === 105) {
+                ElementID.message.style.height = TextBoxSecondLine;
+            } else if (ElementID.submit.clientHeight === 129) {
+                ElementID.message.style.height = TextBoxThirdLine;
+            }
+        }
+    };
 
 
 useEffect(() => {
@@ -31,24 +49,12 @@ useEffect(() => {
             const newState = window.screen.height - 300 > document.visualViewport.height;
             if (isKeyboardOpen != newState) {
                 setIsKeyboardOpen(newState);
-                /* Header */
-               /* ElementID.header.style.position = "fixed";
-                ElementID.header.style.width = "100%";
-                ElementID.header.style.bottom = `${document.visualViewport.height - heightHeader}px`;
-                ElementID.header.style.zIndex = 3;
-                /* Section Video And FinishChat
-                ElementID.profesional.style.position = "fixed";
-                ElementID.profesional.style.width = "100%";
-                ElementID.profesional.style.bottom = `${document.visualViewport.height - positionSectionVideoAndFinishChat}px`;
-                console.log("height", window.screen.height - document.visualViewport.height, window.screen.height, document.visualViewport.height)*/
-                /* Message  */
-                ElementID.message.style.height = "150px";
+                handleChangeStyleTextBox();
                 ElementID.submit.style.bottom = "auto";
                 ElementID.header.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
                 ElementID.profesional.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
                 ElementID.submit.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
                 document.scroll(0,0);
-             //   document.classList.add("stop-scrolling");
             }
         };
         document.visualViewport.addEventListener('resize', listener);
@@ -59,7 +65,27 @@ useEffect(() => {
 }, [state]);
 
 
+    const handleChangeStyleTextBoxPress = (event: any) => {
+        if (event.key === 'Enter' || event.keyCode === 13) {
+            handleChangeStyleTextBox()
+        }
+    };
 
+    const handleChangeKeyboardOpen = () => {
+        if (window.screen.width < 768) {
+            setState(true);
+        }
+    };
+
+    const handleChangeKeyboardClose = () => {
+        if (state) {
+            setIsKeyboardOpen(false);
+            ElementID.message.style = {};
+            ElementID.submit.style.bottom = "0";
+            ElementID.message.style.height = {};
+            setState(true);
+        }
+    };
 
     return (
         <div className={"SendingForm-container"} id={"SendingForm-container-id"}>
@@ -72,23 +98,15 @@ useEffect(() => {
                 </div>
             </div>
           <div className={"SendingForm-content"}>
-           <div className={"SendingForm-textarea-container"}>
+           <div className={"SendingForm-textarea-container"} id={"SendingForm-textarea-container-id"}>
               <span
                   className={"SendingForm-textarea"}
+                  id={"SendingForm-textarea-id"}
                   placeholder={"Mensaje"}
-                  onClick={() => {
-                     if (window.screen.width < 768) {
-                         setState(true);
-                     }
-                  }}
-                  onBlur={() => {
-                      if (state) {
-                          setIsKeyboardOpen(false);
-                          ElementID.message.style = {};
-                          ElementID.submit.style.bottom = "0";
-                          setState(true);
-                      }
-                  }}
+                  onClick={() => handleChangeKeyboardOpen()}
+                  onKeyDown={(event) => handleChangeStyleTextBoxPress(event)}
+                  onInput={(event) => handleChangeStyleTextBox()}
+                  onBlur={() => handleChangeKeyboardClose()}
                   role="textbox" contentEditable={true}
               ></span>
            </div>
