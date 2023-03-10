@@ -50,7 +50,7 @@ useEffect(() => {
                 ElementID.submit.style.bottom = "auto";
                 ElementID.header.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
                 ElementID.profesional.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
-                ElementID.submit.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
+               // ElementID.submit.addEventListener('touchmove', function(e : any) {e.preventDefault()}, false);
                 document.scroll(0,0);
             }
         };
